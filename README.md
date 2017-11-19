@@ -26,7 +26,7 @@ Dependência, plugins e links pessoais.
 |Expo|[expo.io](https://expo.io)|
 
 ### Máterial de Apoio
-Máterial de apoio produzido para Rocketseat:
+Máterial de apoio produzido pela Rocketseat e outros links pessoais:
 - [React Native Facebook ](https://facebook.github.io/react-native/docs/getting-started.html) - Instalação React Native
 - [Yarn](https://yarnpkg.com/lang/pt-br/docs/) - Migração Yarn
 - [Youtube RocketSeat](https://yarnpkg.com/lang/pt-br/docs/) - Canal RocketSeat
