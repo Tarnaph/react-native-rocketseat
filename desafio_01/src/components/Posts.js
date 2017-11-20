@@ -5,12 +5,8 @@ import styles from '../styles/posts';
 
 const Posts = ({ post }) => (
   <View style={styles.card}>
-    <View>
-      <Text style={styles.title} >#{post.id} - {post.title}</Text>
-    </View>
-    <View>
-      <Text style={styles.autor}>@{post.autor}</Text>
-    </View>
+    <Text style={styles.title} >#{post.id} - {post.title}</Text>
+    <Text style={styles.autor}>@{post.autor}</Text>
     <View style={styles.hr}>
       <Text style={styles.description}>{post.description}</Text>
     </View>
