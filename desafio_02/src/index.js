@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import {} from 'react-native';
-import 'config/ReactotronConfig';
-import Routes from 'routes';
+/* Core */
+import React from 'react';
+import RootNavigator from 'routes';
 
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <Routes />
-    );
-  }
-}
+/* Presentational */
+// import { View } from 'react-native';
+
+// import styles from './styles';
+const App = () => (
+  <RootNavigator />
+);
+
+export default App;

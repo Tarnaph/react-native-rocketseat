@@ -1,15 +1,11 @@
 export default {
-  // P&B
+  background: '#EEE',
   white: '#FFF',
-  lowLight: '#EEEEEE',
-  light: '#DDDDDD',
-  medium: '#999999',
-  dark: '#666666',
-  darker: '#333333',
-
-  // Colors
-  primary: '#444a5a',
-  secundary: '#7a91ca',
-  background: '#fbfafa',
-  error: '#ff5a5a',
+  lighter: '#CCC',
+  light: '#999',
+  dusk: '#DDD',
+  dark: '#666',
+  darker: '#333',
+  black: '#000',
+  error: '#FF5A5A',
 };

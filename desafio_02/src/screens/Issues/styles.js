@@ -4,14 +4,12 @@ import { colors, fonts } from 'styles';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    backgroundColor: colors.background,
   },
-  title: {
-    fontSize: fonts.medium,
-    fontWeight: 'bold',
-    color: colors.darker,
+  error: {
+    color: colors.error,
+    fontSize: fonts.small,
+    alignSelf: 'center',
   },
 });
 
