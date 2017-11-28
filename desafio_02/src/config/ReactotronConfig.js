@@ -5,7 +5,5 @@ if (__DEV__) {
     .configure()
     .useReactNative()
     .connect();
-
   console.tron = tron;
-  console.display = tron;
 }
