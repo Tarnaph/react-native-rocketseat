@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import styles from './styles';
-import Card from 'components/card';
+import Card from './components/card';
 
 export default class Repositorys extends Component {
   state= {
