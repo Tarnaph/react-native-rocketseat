@@ -1,6 +1,6 @@
 import { TabNavigator } from 'react-navigation';
 import { colors, fonts } from 'styles';
-import Issues from 'screens/issues';
+import Issues from 'pages/issues';
 // import styles from './styles';
 
 const issuesMenu = TabNavigator({
