@@ -6,10 +6,15 @@ import api from 'services/api';
 import styles from './styles';
 
 export default class Repositorys extends Component {
+  static navigationOptions: {
+    headerTitle: 'Repositório',
+    headerStyle: { backgroundColor: colors.white },
+  }
+
   state= {
     issues: [],
     repositoryName: '',
-    status: 'all',
+    status: 'open',
   }
 
   componentWillMount() {

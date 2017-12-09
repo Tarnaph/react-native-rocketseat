@@ -3,22 +3,26 @@ import { colors, fonts } from 'styles';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'row',
     paddingHorizontal: 15,
+    paddingTop: 20,
+    height: 80,
     alignItems: 'center',
+    alignContent: 'center',
     justifyContent: 'space-between',
+    backgroundColor: colors.white,
   },
   headerTitle: {
     flex: 1,
   },
   rightHeader: {
-    paddingHorizontal: 5,
+    marginHorizontal: 10,
+    marginVertical: 5,
   },
   input: {
     backgroundColor: colors.lowLight,
     borderRadius: 5,
-    height: 25,
+    height: 40,
     fontSize: fonts.small,
     fontWeight: 'bold',
     paddingHorizontal: 10,
@@ -27,7 +31,6 @@ const styles = StyleSheet.create({
   button: {
     fontSize: fonts.medium,
     color: colors.darker,
-    marginLeft: 15,
   },
 });
 

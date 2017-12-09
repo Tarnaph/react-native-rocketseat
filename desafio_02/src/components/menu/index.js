@@ -1,12 +1,14 @@
 import { TabNavigator } from 'react-navigation';
 import { colors, fonts } from 'styles';
 import Issues from 'pages/issues';
+import IssuesOpen from 'pages/issues/open';
+import IssuesClose from 'pages/issues/close';
 // import styles from './styles';
 
 const issuesMenu = TabNavigator({
   Todos: { screen: Issues },
-  Abertos: { screen: Issues },
-  Fechados: { screen: Issues },
+  Abertos: { screen: IssuesOpen },
+  Fechados: { screen: IssuesClose },
 }, {
   tabBarPosition: 'Top',
   tabBarOptions: {
@@ -26,3 +28,4 @@ const issuesMenu = TabNavigator({
 });
 
 export default issuesMenu;
+
