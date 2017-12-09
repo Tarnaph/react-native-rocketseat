@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Alert, FlatList } from 'react-native';
-import CardIssues from 'components/cardIssues';
+import Card from '../card';
 import { colors } from 'styles';
 import api from 'services/api';
 import styles from './styles';
@@ -40,7 +40,7 @@ export default class Repositorys extends Component {
       <FlatList style={styles.flatContainer}
         data={this.state.issues}
         keyExtractor={issues => issues.id}
-        renderItem={({ item }) => <CardIssues issue={item} />}
+        renderItem={({ item }) => <Card issue={item} />}
       />
     );
   }

@@ -4,7 +4,7 @@ import { TouchableOpacity, Image, View, Text, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
 
-const CardIssues = ({ issue: { html_url, title, user: { login, avatar_url } } }) => (
+const Card = ({ issue: { html_url, title, user: { login, avatar_url } } }) => (
   <TouchableOpacity style={styles.container} onPress={() => Linking.openURL(html_url)}>
     <Image style={styles.avatar} source={{ url: avatar_url }} />
     <View style={styles.containerText}>
@@ -15,7 +15,7 @@ const CardIssues = ({ issue: { html_url, title, user: { login, avatar_url } } })
   </TouchableOpacity>
 );
 
-CardIssues.propTypes = {
+Card.propTypes = {
   issue: PropTypes.shape({
     html_url: PropTypes.string,
     title: PropTypes.string,
@@ -26,4 +26,4 @@ CardIssues.propTypes = {
   }).isRequired,
 };
 
-export default CardIssues;
+export default Card;

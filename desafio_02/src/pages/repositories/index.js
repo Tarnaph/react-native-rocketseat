@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Alert, View, AsyncStorage, ActivityIndicator, Text, FlatList, RefreshControl } from 'react-native';
-import Card from 'components/card';
-import Header from 'components/headers/repositorys';
 import { colors } from 'styles';
 import api from 'services/api';
+import Card from './components/card';
+import Header from './components/header';
+
 import styles from './styles';
 
 export default class Repositorys extends Component {

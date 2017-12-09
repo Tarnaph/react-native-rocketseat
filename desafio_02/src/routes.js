@@ -1,23 +1,34 @@
-// Core
-// import React from 'react';
-// import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 import { colors } from 'styles';
-// import Icon from 'react-native-vector-icons/FontAwesome';
-
-// Components, Pages
-import Repositories from 'pages/repositorys';
-// import Issues from 'pages/issues';
-
-import headerIssues from 'components/headers/issues';
-import issuesMenu from 'components/menu';
-
-
+import Repositories from 'pages/repositories';
+import Issues from 'pages/issues';
+import IssuesOpen from 'pages/issues/components/open';
+import IssuesClose from 'pages/issues/components/close';
 
 const Routes = StackNavigator({
   Repo: { screen: Repositories },
   Issu: {
-    screen: issuesMenu,
+    screen: TabNavigator({
+      Todos: { screen: Issues },
+      Abertos: { screen: IssuesOpen },
+      Fechados: { screen: IssuesClose },
+    }, {
+      tabBarPosition: 'Top',
+      tabBarOptions: {
+        activeTintColor: colors.darker,
+        // inactiveTintColor: fonts.inactive,
+        style: {
+          backgroundColor: colors.light,
+          borderRadius: 5,
+          marginHorizontal: 10,
+          marginTop: 10,
+          paddingBottom: 8,
+          height: 30,
+          justifyContent: 'center',
+          borderTopWidth: 0,
+        },
+      },
+    }),
     navigationOptions: {
       headerTitle: 'Repositório',
       headerStyle: { backgroundColor: colors.white },
