@@ -14,7 +14,7 @@ export default class Card extends Component {
   }
 
   goToScreenIssue= (data) => {
-    this.props.navigation.navigate('Issu', { title: data.name, repo: data.fullName });
+    this.props.navigation.navigate('Issu', { title: data.name, repository: data.fullName });
   }
 
   render() {

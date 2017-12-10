@@ -114,7 +114,8 @@ export default class Repositorys extends Component {
 
   renderRepositoriesErro = () => (
     <View style={styles.containerEmpty}>
-      <Text style={styles.textEmpty}>Algo deu errado.</Text>
+      <Text style={styles.textEmpty}>ʕ◉ᴥ◉ʔ</Text>
+      <Text style={styles.textEmpty}>Vamos adicionar um Repositório ?</Text>
     </View>
   )
 

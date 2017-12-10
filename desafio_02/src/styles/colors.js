@@ -12,4 +12,6 @@ export default {
   secundary: '#7a91ca',
   background: '#fbfafa',
   error: '#ff5a5a',
+  orange: '#f96a1d',
+  description: '#a0a0a0',
 };
