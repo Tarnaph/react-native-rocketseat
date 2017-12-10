@@ -41,8 +41,8 @@ export default class Issues extends Component {
   }
 
   componentDidMount() {
-    this.findIssues(this.state.repositoryName, this.state.status);
     this.loadFilter();
+    this.findIssues(this.state.repositoryName, this.state.status);
   }
 
   setStatusState = (status) => {
@@ -61,10 +61,10 @@ export default class Issues extends Component {
   }
 
   loadFilter = async () => {
-    const status = await AsyncStorage.getItem('@Desafio02:status')
+    const status = await AsyncStorage.getItem('@Desafio02:status');
     status
       ? this.setStatusState(status)
-      : this.setStatusState(status: 'all');
+      : this.setState({ status: 'all' });
   }
 
   loadIssues = async () => {
