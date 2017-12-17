@@ -1,5 +1,5 @@
 import { StackNavigator } from 'react-navigation';
-import Home from 'pages/Home';
+import Home from 'pages/home';
 
 const routes = StackNavigator({
   Home: { screen: Home },
