@@ -5,7 +5,7 @@ import styles from './styles';
 
 const save = async (tab, loadIssues, setStatusState) => {
   await AsyncStorage.setItem('@Desafio02:status', tab)
-    .then(() => setStatusState(tab));
+  setStatusState(tab));
   loadIssues();
 };
 

@@ -62,9 +62,8 @@ export default class Issues extends Component {
 
   loadFilter = async () => {
     const status = await AsyncStorage.getItem('@Desafio02:status');
-    status
-      ? this.setStatusState(status)
-      : this.setState({ status: 'all' });
+    if (status)
+    this.setState({ status });
   }
 
   loadIssues = async () => {
