@@ -7,7 +7,10 @@ export default {
   darker: '#333',
   black: '#000',
 
+
   background: '#F5F5F5',
   success: '#9DCA83',
-  danger: '#E37A7A',
+  alfa: 'rgba(0,0,0,0.6)',
+  warning: '#ff9e44',
+  danger: '#ff694c',
 };

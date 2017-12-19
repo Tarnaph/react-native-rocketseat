@@ -99,11 +99,11 @@
 		</data>
 		<key>PlugIns/GitMapsTests.xctest.dSYM/Contents/Resources/DWARF/GitMapsTests</key>
 		<data>
-		qu0hEusP+KHq3phIORx2KNvg9NY=
+		T3Qv/MMz1WS3p0nqqqkvVxsh5uA=
 		</data>
 		<key>PlugIns/GitMapsTests.xctest/GitMapsTests</key>
 		<data>
-		H2SL2Q+q2gCjPT5eVbHL59UDH3o=
+		RaVNdonEzkWRIJHCQM1PeSiIF1c=
 		</data>
 		<key>PlugIns/GitMapsTests.xctest/Info.plist</key>
 		<data>
@@ -121,6 +121,18 @@
 		<data>
 		C9pZx7zT05J94EfgkYdaRCi/0as=
 		</data>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon.png</key>
+		<data>
+		XRSDO3cAbg3v2OCqPF6bU9QrhZ4=
+		</data>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon@2x.png</key>
+		<data>
+		KpVWKg+M5LkrOFYpqYQItOXe/0U=
+		</data>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon@3x.png</key>
+		<data>
+		HJWia1fk86pS7hkOBGAg8fLf5T8=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		WnuAY+P7Ohlskzj6FeueANmY4+I=
@@ -128,6 +140,14 @@
 		<key>ip.txt</key>
 		<data>
 		xCXua1MGtlhh9IExZesCsRpcgS4=
+		</data>
+		<key>main.jsbundle</key>
+		<data>
+		Baxaedi2VeOkpQ0FwAjU8FvguKU=
+		</data>
+		<key>main.jsbundle.meta</key>
+		<data>
+		HCZcK1ebr/XcG1SdfYXx4ZSLP50=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -358,22 +378,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qu0hEusP+KHq3phIORx2KNvg9NY=
+			T3Qv/MMz1WS3p0nqqqkvVxsh5uA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5GMdJ2eOfwW94g/3MtvFUkLohYIIc6ts4Osx2MVcP9o=
+			nX/G3MlMViDx+S0WFEpjeb8s5+G9Hh+c+Y0N9uVc7+8=
 			</data>
 		</dict>
 		<key>PlugIns/GitMapsTests.xctest/GitMapsTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H2SL2Q+q2gCjPT5eVbHL59UDH3o=
+			RaVNdonEzkWRIJHCQM1PeSiIF1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			VaNT0WZOin6ZF+pxizj8BNi+8xQGdqVprq5RH6SglD4=
+			B8fUDRBdLk5is4ERe2cIS/6Q9GbcBPK+ouukJ5MVQIg=
 			</data>
 		</dict>
 		<key>PlugIns/GitMapsTests.xctest/Info.plist</key>
@@ -420,6 +440,39 @@
 			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=
 			</data>
 		</dict>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XRSDO3cAbg3v2OCqPF6bU9QrhZ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OcsOXyvESJ+EeK2mRbvFCOQZyfJCfPSV2tDzVIHsC3M=
+			</data>
+		</dict>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KpVWKg+M5LkrOFYpqYQItOXe/0U=
+			</data>
+			<key>hash2</key>
+			<data>
+			jVrxIKV9kvGh0OOajMYOD7g2S5+7y1SToC1BLrFroGM=
+			</data>
+		</dict>
+		<key>assets/node_modules/react-navigation/src/views/assets/back-icon@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJWia1fk86pS7hkOBGAg8fLf5T8=
+			</data>
+			<key>hash2</key>
+			<data>
+			jmUfY2yrVRa+wbBu4Xr0RzXZuHeLwdI2MGFnBV8eUmM=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
@@ -440,6 +493,28 @@
 			<key>hash2</key>
 			<data>
 			FIZXMABj2xvyqSfOraNTQnSwYxlvlBRKimRqcSwcIOc=
+			</data>
+		</dict>
+		<key>main.jsbundle</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Baxaedi2VeOkpQ0FwAjU8FvguKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			dIDibv9C+kiAfAmgeqa6e4tNWcJceJp3l0gEnktMvSY=
+			</data>
+		</dict>
+		<key>main.jsbundle.meta</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HCZcK1ebr/XcG1SdfYXx4ZSLP50=
+			</data>
+			<key>hash2</key>
+			<data>
+			YmADAaq+y+DY3nSKFgSVv1KhHvIZnlJHnraqmwYlxKk=
 			</data>
 		</dict>
 	</dict>

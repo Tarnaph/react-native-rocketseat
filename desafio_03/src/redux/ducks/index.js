@@ -1,5 +1,5 @@
-import favorites from './favorites';
+import modal from './modal';
 
 export default {
-  favorites
+  modal,
 };

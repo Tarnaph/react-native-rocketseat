@@ -3,13 +3,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { ActivityIndicator, AsyncStorage, View, Text, Modal, Image, TouchableOpacity } from 'react-native';
+import Icons from 'react-native-vector-icons/FontAwesome';
+import MapView from 'react-native-maps';
 
 /* Redux */
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-// import { addAlgo } from 'redux/ducks/favorites';
+import { showModal, hideModal, setCoord, removeUser } from 'redux/ducks/modal';
+
+/* Components */
+import MyModal from './components/modal';
+import MyButton from './components/button';
+import Error from './components/error';
 
 /* Styles */
 import styles from './styles';
@@ -24,23 +30,91 @@ class Main extends Component {
   static propTypes = { };
 
   /* Estado inicial */
-  state = { };
+  state = {
+    latitude: -27.2177659,
+    longitude: -49.6451598,
+    latitudeDelta: 0.0042,
+    longitudeDelta: 0.0031,
+    local: '',
+  };
+
+  componentWillMount() {
+    // this.props.hideModal();
+    // AsyncStorage.clear();
+  }
+
+  openModal = (e) => {
+    this.setState({ local: e.coordinate });
+    this.props.showModal();
+  };
 
   render() {
+    const {
+      latitude,
+      longitude,
+      latitudeDelta,
+      longitudeDelta,
+    } = this.state;
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Ola</Text>
-        <Icon name="github-alt" size={48} style={styles.logoIcon} />
+        <MapView
+          initialRegion={{
+            latitude,
+            longitude,
+            latitudeDelta,
+            longitudeDelta,
+          }}
+          style={styles.mapView}
+          onLongPress={e => this.openModal(e.nativeEvent)}
+        >
+          { this.props.marker.map(mk => (
+            <MapView.Marker
+              key={mk.user.id}
+              coordinate={mk.local}
+              title={mk.user.login}
+              description={mk.user.bio}
+            >
+              <Image source={{ uri: mk.user.avatar_url }} style={styles.avatar} />
+              <MapView.Callout style={styles.callout} tooltip={true}>
+                <View style={styles.card}>
+                  <View style={styles.headerCard}>
+                    <View style={styles.headerCardLeft}>
+                      <Text style={styles.title}>{mk.user.login}</Text>
+                    </View>
+                    <View style={styles.headerCardRight}>
+                      <Text style={styles.infos}>
+                        <Icons name="users" style={styles.iconGithub} />
+                        {mk.user.following}
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={styles.bio}>{mk.user.bio}</Text>
+                  <TouchableOpacity onPress={() => this.props.removeUser(mk.user.id)}>
+                    <MyButton title="Deletar" bg="Danger" style={styles.btnTrash} />
+                  </TouchableOpacity>
+                </View>
+              </MapView.Callout>
+            </MapView.Marker>
+            ))}
+        </MapView>
+        <MyModal status={this.props.visibilityModal} local={this.state.local} />
+        { this.props.error ? <Error /> : null }
       </View>
     );
   }
 }
 
 /* Pega o global state para o props */
-const mapStateToProps = state => ({ });
+const mapStateToProps = state => ({
+  visibilityModal: state.modal.visibilityModal,
+  marker: state.modal.marker,
+  error: state.modal.error,
+  loading: state.modal.loading,
+});
 
 /* Pega func para o props */
-const mapDispatchToProps = dispatch => bindActionCreators({ }, dispatch);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ showModal, hideModal, setCoord, removeUser }, dispatch);
 
 /* Connecta os dois, podendo ser null */
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
