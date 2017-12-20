@@ -4,11 +4,16 @@ import { call, put } from 'redux-saga/effects';
 
 export function* searchAndAddMarker(action) {
   yield put({ type: Types.LOADING });
-  const { latitude, longitude } = action.payload.marker.local;
   const response = yield call(api.get, `/users/${action.payload.marker.user}`);
-  if (response.ok) {
-    yield put({ type: Types.ADD, payload: { marker: { user: response.data, local: { latitude, longitude } }} }) }
-  else {
-    yield put({ type: Types.ERROR });
-  };
+  const { latitude, longitude } = action.payload.marker.local;
+  switch (response.status) {
+    case 200:
+      yield put({ type: Types.ADD, payload: { marker: { user: response.data, local: { latitude, longitude } } } });
+      break;
+    case 404:
+      yield put({ type: Types.ERROR404 });
+      break;
+    default:
+      yield put({ type: Types.ERROR });
+  }
 }

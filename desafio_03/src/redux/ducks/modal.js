@@ -7,6 +7,7 @@ export const Types = {
   REMOVE: 'modal/REMOVE',
   SEARCH: 'modal/SEARCH',
   ERROR: 'modal/ERROR',
+  ERROR404: 'modal/ERROR404',
   HIDEERROR: 'modal/HIDEERROR',
   LOADING: 'modal/LOADING',
 };
@@ -14,10 +15,10 @@ export const Types = {
 /* Reducer */
 const initialState = {
   visibilityModal: false,
-  local: [],
   marker: [],
   error: false,
   loading: false,
+  errorMsg: 'Ops... Algo deu errado.',
 };
 
 export default function modal(state = initialState, action) {
@@ -51,6 +52,14 @@ export default function modal(state = initialState, action) {
         visibilityModal: false,
         error: true,
         loading: false,
+      };
+    case Types.ERROR404:
+      return {
+        ...state,
+        visibilityModal: false,
+        error: true,
+        loading: false,
+        errorMsg: 'Usuário não encontrado.',
       };
     case Types.HIDEERROR:
       return {

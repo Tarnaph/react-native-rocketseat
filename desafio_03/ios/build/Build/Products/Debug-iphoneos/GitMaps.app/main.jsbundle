@@ -65362,21 +65362,28 @@ __d(/* GitMaps/src/redux/ducks/modal.js */function(global, require, module, expo
 exports.default = modal;
 exports.showModal = showModal;
 exports.hideModal = hideModal;
+exports.hideError = hideError;
 exports.setCoord = setCoord;
 exports.searchUser = searchUser;
+exports.removeUser = removeUser;
 var Types = exports.Types = {
   SHOW: 'modal/SHOW',
   HIDE: 'modal/HIDE',
   SET: 'modal/SET',
   ADD: 'modal/ADD',
   REMOVE: 'modal/REMOVE',
-  SEARCH: 'modal/SEARCH'
+  SEARCH: 'modal/SEARCH',
+  ERROR: 'modal/ERROR',
+  HIDEERROR: 'modal/HIDEERROR',
+  LOADING: 'modal/LOADING'
 };
 
 var initialState = {
   visibilityModal: false,
   local: [],
-  marker: []
+  marker: [],
+  error: false,
+  loading: false
 };
 
 function modal() {
@@ -65384,6 +65391,8 @@ function modal() {
   var action = arguments[1];
 
   switch (action.type) {
+    case Types.LOADING:
+      return babelHelpers.extends({}, state, { loading: true });
     case Types.SHOW:
       return babelHelpers.extends({}, state, { visibilityModal: true });
     case Types.HIDE:
@@ -65395,11 +65404,30 @@ function modal() {
 
       return babelHelpers.extends({}, state, { latitude: latitude, longitude: longitude });
     case Types.ADD:
-      return babelHelpers.extends({}, state, { marker: [].concat(babelHelpers.toConsumableArray(state.marker), [action.payload.marker]) });
+      return babelHelpers.extends({}, state, {
+        marker: [].concat(babelHelpers.toConsumableArray(state.marker), [action.payload.marker]),
+        error: false,
+        visibilityModal: false,
+        loading: false
+      });
     case Types.REMOVE:
-      return [].concat(babelHelpers.toConsumableArray(state.filter(function (repository) {
-        return repository.id !== action.payload.id;
-      })));
+      return babelHelpers.extends({}, state, {
+        marker: state.marker.filter(function (marker) {
+          return marker.user.id !== action.payload.id;
+        }),
+        loading: false
+      });
+    case Types.ERROR:
+      return babelHelpers.extends({}, state, {
+        visibilityModal: false,
+        error: true,
+        loading: false
+      });
+    case Types.HIDEERROR:
+      return babelHelpers.extends({}, state, {
+        error: false,
+        loading: false
+      });
     default:
       return state;
   }
@@ -65414,6 +65442,12 @@ function showModal() {
 function hideModal() {
   return {
     type: Types.HIDE
+  };
+}
+
+function hideError() {
+  return {
+    type: Types.HIDEERROR
   };
 }
 
@@ -65434,6 +65468,15 @@ function searchUser(user, local) {
         user: user,
         local: local
       }
+    }
+  };
+}
+
+function removeUser(id) {
+  return {
+    type: Types.REMOVE,
+    payload: {
+      id: id
     }
   };
 }
@@ -65460,16 +65503,37 @@ function searchAndAddMarker(action) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
+          _context.next = 2;
+          return (0, _effects.put)({ type: _modal.Types.LOADING });
+
+        case 2:
           _action$payload$marke = action.payload.marker.local, latitude = _action$payload$marke.latitude, longitude = _action$payload$marke.longitude;
-          _context.next = 3;
+          _context.next = 5;
           return (0, _effects.call)(_api2.default.get, '/users/' + action.payload.marker.user);
 
-        case 3:
+        case 5:
           response = _context.sent;
-          _context.next = 6;
+
+          if (!response.ok) {
+            _context.next = 11;
+            break;
+          }
+
+          _context.next = 9;
           return (0, _effects.put)({ type: _modal.Types.ADD, payload: { marker: { user: response.data, local: { latitude: latitude, longitude: longitude } } } });
 
-        case 6:
+        case 9:
+          _context.next = 13;
+          break;
+
+        case 11:
+          _context.next = 13;
+          return (0, _effects.put)({ type: _modal.Types.ERROR });
+
+        case 13:
+          ;
+
+        case 14:
         case 'end':
           return _context.stop();
       }
@@ -74822,17 +74886,25 @@ var _reactNativeMaps = require(995                ); // 995 = react-native-maps
 
 var _reactNativeMaps2 = babelHelpers.interopRequireDefault(_reactNativeMaps);
 
-var _modal = require(1007                ); // 1007 = ./components/modal
-
-var _modal2 = babelHelpers.interopRequireDefault(_modal);
-
 var _redux = require(661    ); // 661 = redux
 
 var _reactRedux = require(694          ); // 694 = react-redux
 
-var _modal3 = require(743                      ); // 743 = ../../redux/ducks/modal
+var _modal = require(743                      ); // 743 = ../../redux/ducks/modal
 
-var _styles = require(1016      ); // 1016 = ./styles
+var _modal2 = require(1007                ); // 1007 = ./components/modal
+
+var _modal3 = babelHelpers.interopRequireDefault(_modal2);
+
+var _button = require(1008                 ); // 1008 = ./components/button
+
+var _button2 = babelHelpers.interopRequireDefault(_button);
+
+var _error = require(1016                ); // 1016 = ./components/error
+
+var _error2 = babelHelpers.interopRequireDefault(_error);
+
+var _styles = require(1018      ); // 1018 = ./styles
 
 var _styles2 = babelHelpers.interopRequireDefault(_styles);
 
@@ -74880,7 +74952,7 @@ var Main = function (_Component) {
         _reactNative.View,
         { style: _styles2.default.container, __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 59
           }
         },
         _react2.default.createElement(
@@ -74893,36 +74965,133 @@ var Main = function (_Component) {
               longitudeDelta: longitudeDelta
             },
             style: _styles2.default.mapView,
-
             onLongPress: function onLongPress(e) {
               return _this2.openModal(e.nativeEvent);
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 68
+              lineNumber: 60
             }
           },
           this.props.marker.map(function (mk) {
-            return console.tron.log(mk);
-          }),
-          this.props.marker.map(function (mk) {
-            return _react2.default.createElement(_reactNativeMaps2.default.Marker, {
-              coordinate: mk.local,
-              title: mk.user.login,
-              description: mk.user.bio,
-              image: mk.user.avatar_url,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 83
-              }
-            });
+            return _react2.default.createElement(
+              _reactNativeMaps2.default.Marker,
+              {
+                key: mk.user.id,
+                coordinate: mk.local,
+                title: mk.user.login,
+                description: mk.user.bio,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 71
+                }
+              },
+              _react2.default.createElement(_reactNative.Image, { source: { uri: mk.user.avatar_url }, style: _styles2.default.avatar, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 77
+                }
+              }),
+              _react2.default.createElement(
+                _reactNativeMaps2.default.Callout,
+                { style: _styles2.default.callout, tooltip: true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 78
+                  }
+                },
+                _react2.default.createElement(
+                  _reactNative.View,
+                  { style: _styles2.default.card, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 79
+                    }
+                  },
+                  _react2.default.createElement(
+                    _reactNative.View,
+                    { style: _styles2.default.headerCard, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 80
+                      }
+                    },
+                    _react2.default.createElement(
+                      _reactNative.View,
+                      { style: _styles2.default.headerCardLeft, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 81
+                        }
+                      },
+                      _react2.default.createElement(
+                        _reactNative.Text,
+                        { style: _styles2.default.title, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 82
+                          }
+                        },
+                        mk.user.login
+                      )
+                    ),
+                    _react2.default.createElement(
+                      _reactNative.View,
+                      { style: _styles2.default.headerCardRight, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 84
+                        }
+                      },
+                      _react2.default.createElement(
+                        _reactNative.Text,
+                        { style: _styles2.default.infos, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 85
+                          }
+                        },
+                        _react2.default.createElement(_FontAwesome2.default, { name: 'users', style: _styles2.default.iconGithub, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 86
+                          }
+                        }),
+                        mk.user.following
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactNative.Text,
+                    { style: _styles2.default.bio, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 91
+                      }
+                    },
+                    mk.user.bio
+                  ),
+                  _react2.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { onPress: function onPress() {
+                        return _this2.props.removeUser(mk.user.id);
+                      }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 92
+                      }
+                    },
+                    _react2.default.createElement(_button2.default, { title: 'Deletar', bg: 'Danger', style: _styles2.default.btnTrash, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 93
+                      }
+                    })
+                  )
+                )
+              )
+            );
           })
         ),
-        _react2.default.createElement(_modal2.default, { status: this.props.visibilityModal, local: this.state.local, __source: {
+        _react2.default.createElement(_modal3.default, { status: this.props.visibilityModal, local: this.state.local, __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 100
           }
-        })
+        }),
+        this.props.error ? _react2.default.createElement(_error2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 101
+          }
+        }) : null
       );
     }
   }]);
@@ -74937,12 +75106,14 @@ Main.propTypes = {};
 var mapStateToProps = function mapStateToProps(state) {
   return {
     visibilityModal: state.modal.visibilityModal,
-    marker: state.modal.marker
+    marker: state.modal.marker,
+    error: state.modal.error,
+    loading: state.modal.loading
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return (0, _redux.bindActionCreators)({ showModal: _modal3.showModal, hideModal: _modal3.hideModal, setCoord: _modal3.setCoord }, dispatch);
+  return (0, _redux.bindActionCreators)({ showModal: _modal.showModal, hideModal: _modal.hideModal, setCoord: _modal.setCoord, removeUser: _modal.removeUser }, dispatch);
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Main);
@@ -80307,11 +80478,11 @@ var _button = require(1008       ); // 1008 = ../button
 
 var _button2 = babelHelpers.interopRequireDefault(_button);
 
-var _styles = require(1010                ); // 1010 = ../../../../styles
+var _styles = require(1015      ); // 1015 = ./styles
 
-var _styles2 = require(1015      ); // 1015 = ./styles
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
 
-var _styles3 = babelHelpers.interopRequireDefault(_styles2);
+var _styles3 = require(1010                ); // 1010 = ../../../../styles
 
 var MyModal = function (_Component) {
   babelHelpers.inherits(MyModal, _Component);
@@ -80354,88 +80525,101 @@ var MyModal = function (_Component) {
           onDismiss: function onDismiss() {},
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 33
           }
         },
         _react2.default.createElement(
           _reactNative.View,
-          { style: _styles3.default.container, __source: {
+          { style: _styles2.default.container, __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 40
             }
           },
           _react2.default.createElement(
             _reactNative.View,
-            { style: _styles3.default.box, __source: {
+            { style: _styles2.default.box, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 40
+                lineNumber: 41
               }
             },
-            _react2.default.createElement(
+            this.props.loading ? _react2.default.createElement(_reactNative.ActivityIndicator, { size: 'small', color: _styles3.colors.dark, style: _styles2.default.loading, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 43
+              }
+            }) : _react2.default.createElement(
               _reactNative.View,
-              { style: _styles3.default.headerModal, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 41
-                }
-              },
-              _react2.default.createElement(
-                _reactNative.Text,
-                { style: _styles3.default.title, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 42
-                  }
-                },
-                'Quer adicionar novo local ?'
-              ),
-              _react2.default.createElement(_reactNative.TextInput, {
-                style: _styles3.default.input,
-                placeholder: 'Digite um usu\xE1rio do Github',
-                value: this.state.user,
-                onChangeText: function onChangeText(text) {
-                  return _this2.setState({ user: text });
-                },
+              {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 43
-                }
-              })
-            ),
-            _react2.default.createElement(
-              _reactNative.View,
-              { style: _styles3.default.footerModal, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 50
+                  lineNumber: 44
                 }
               },
               _react2.default.createElement(
-                _reactNative.TouchableOpacity,
-                { onPress: function onPress() {
-                    return _this2.props.hideModal();
-                  }, __source: {
+                _reactNative.View,
+                { style: _styles2.default.headerModal, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 51
+                    lineNumber: 45
                   }
                 },
-                _react2.default.createElement(_button2.default, { title: 'Cancelar', bg: 'Cancel', __source: {
+                _react2.default.createElement(
+                  _reactNative.Text,
+                  { style: _styles2.default.title, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 46
+                    }
+                  },
+                  'Quer adicionar novo local ?'
+                ),
+                _react2.default.createElement(_reactNative.TextInput, {
+                  style: _styles2.default.input,
+                  placeholder: 'Digite um usu\xE1rio do Github',
+                  value: this.state.user,
+                  onChangeText: function onChangeText(text) {
+                    return _this2.setState({ user: text });
+                  },
+                  __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 52
+                    lineNumber: 47
                   }
                 })
               ),
               _react2.default.createElement(
-                _reactNative.TouchableOpacity,
-                { onPress: function onPress() {
-                    return _this2.searchUserAndSave(_this2.state.user, local);
-                  }, __source: {
+                _reactNative.View,
+                { style: _styles2.default.footerModal, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 54
                   }
                 },
-                _react2.default.createElement(_button2.default, { title: 'Salvar', bg: 'Save', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 55
-                  }
-                })
+                _react2.default.createElement(
+                  _reactNative.TouchableOpacity,
+                  { onPress: function onPress() {
+                      return _this2.props.hideModal();
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 55
+                    }
+                  },
+                  _react2.default.createElement(_button2.default, { title: 'Cancelar', bg: 'Cancel', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 56
+                    }
+                  })
+                ),
+                _react2.default.createElement(
+                  _reactNative.TouchableOpacity,
+                  { onPress: function onPress() {
+                      return _this2.searchUserAndSave(_this2.state.user, local);
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 58
+                    }
+                  },
+                  _react2.default.createElement(_button2.default, { title: 'Salvar', bg: 'Save', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 59
+                    }
+                  })
+                )
               )
             )
           )
@@ -80448,7 +80632,8 @@ var MyModal = function (_Component) {
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    modal: state.modal
+    modal: state.modal,
+    loading: state.modal.loading
   };
 };
 
@@ -80507,10 +80692,9 @@ var _styles = require(1010                ); // 1010 = ../../../../styles
 
 var styles = _reactNative.StyleSheet.create({
   container: {
-    height: 40,
-    width: 115,
+    minHeight: 40,
+    minWidth: 115,
     borderRadius: 5,
-
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -80521,6 +80705,14 @@ var styles = _reactNative.StyleSheet.create({
 
   'color-Save': {
     backgroundColor: _styles.colors.success
+  },
+
+  'color-Warning': {
+    backgroundColor: _styles.colors.warning
+  },
+
+  'color-Danger': {
+    backgroundColor: _styles.colors.danger
   },
 
   title: {
@@ -80570,11 +80762,12 @@ exports.default = {
   dark: '#666',
   darker: '#333',
   black: '#000',
-  alfa: 'rgba(0,0,0,0.6)',
 
   background: '#F5F5F5',
   success: '#9DCA83',
-  danger: '#E37A7A'
+  alfa: 'rgba(0,0,0,0.6)',
+  warning: '#ff9e44',
+  danger: '#ff694c'
 };
 }, 1011, null, "GitMaps/src/styles/colors.js");
 __d(/* GitMaps/src/styles/fonts.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
@@ -80692,11 +80885,136 @@ var styles = _reactNative.StyleSheet.create({
   footerModal: {
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+
+  loading: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 
 });
 exports.default = styles;
 }, 1015, null, "GitMaps/src/pages/home/components/modal/styles.js");
+__d(/* GitMaps/src/pages/home/components/error/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_03/src/pages/home/components/error/index.js';
+
+var _react = require(35     ); // 35 = react
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactNative = require(12            ); // 12 = react-native
+
+var _redux = require(661    ); // 661 = redux
+
+var _reactRedux = require(694          ); // 694 = react-redux
+
+var _modal = require(743                            ); // 743 = ../../../../redux/ducks/modal
+
+var _styles = require(1017      ); // 1017 = ./styles
+
+var _styles2 = babelHelpers.interopRequireDefault(_styles);
+
+var Error = function (_Component) {
+  babelHelpers.inherits(Error, _Component);
+
+  function Error() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    babelHelpers.classCallCheck(this, Error);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Error.__proto__ || Object.getPrototypeOf(Error)).call.apply(_ref, [this].concat(args))), _this), _this.hideError = function () {
+      return _this.props.hideError();
+    }, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
+  }
+
+  babelHelpers.createClass(Error, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      setTimeout(function () {
+        _this2.hideError();
+      }, 3000);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this3 = this;
+
+      return _react2.default.createElement(
+        _reactNative.TouchableOpacity,
+        { style: _styles2.default.container, onPress: function onPress() {
+            return _this3.hideError;
+          }, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        _react2.default.createElement(
+          _reactNative.Text,
+          { style: _styles2.default.title, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          ' Algo deu errado...'
+        )
+      );
+    }
+  }]);
+  return Error;
+}(_react.Component);
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return (0, _redux.bindActionCreators)({ hideError: _modal.hideError }, dispatch);
+};
+
+exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(Error);
+}, 1016, null, "GitMaps/src/pages/home/components/error/index.js");
+__d(/* GitMaps/src/pages/home/components/error/styles.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactNative = require(12            ); // 12 = react-native
+
+var _styles = require(1010                ); // 1010 = ../../../../styles
+
+var styles = _reactNative.StyleSheet.create({
+  container: {
+    minWidth: _styles.metrics.screenWidth,
+    height: 35,
+    backgroundColor: _styles.colors.danger,
+    position: 'absolute',
+    bottom: 0,
+    zIndex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    borderTopColor: _styles.colors.white,
+    borderTopWidth: 1
+  },
+
+  title: {
+    padding: 5,
+    fontWeight: 'bold',
+    fontSize: _styles.fonts.small,
+    color: _styles.colors.white
+  }
+
+});
+
+exports.default = styles;
+}, 1017, null, "GitMaps/src/pages/home/components/error/styles.js");
 __d(/* GitMaps/src/pages/home/styles.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -80717,11 +81035,91 @@ var styles = _reactNative.StyleSheet.create({
     right: 0,
     bottom: 0,
     zIndex: 1
-  }
+  },
 
+  callout: {
+    flex: 1,
+    zIndex: 1,
+    position: 'absolute'
+  },
+
+  avatar: {
+    height: 50,
+    width: 50,
+    borderRadius: 25,
+    borderWidth: 3,
+    borderColor: _styles.colors.white
+  },
+
+  card: {
+    padding: 10,
+    minHeight: 5,
+    minWidth: 200,
+    borderRadius: 5,
+    backgroundColor: _styles.colors.white,
+    zIndex: 1
+  },
+
+  headerCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'center'
+  },
+
+  headerCardRight: {
+    flexDirection: 'row',
+    alignSelf: 'flex-end',
+    alignContent: 'center'
+  },
+
+  headerCardLeft: {
+    alignSelf: 'flex-start'
+  },
+
+  iconGithub: {
+    color: _styles.colors.dark,
+    fontSize: _styles.fonts.small,
+    alignSelf: 'flex-end'
+  },
+
+  iconName: {
+    color: _styles.colors.warning,
+    fontSize: _styles.fonts.small,
+    marginHorizontal: 3
+  },
+
+  title: {
+    color: _styles.colors.darker,
+    fontWeight: 'bold',
+    fontSize: _styles.fonts.small
+  },
+
+  name: {
+    color: _styles.colors.warning,
+    fontWeight: 'bold',
+    fontSize: _styles.fonts.small
+  },
+
+  infos: {
+    color: _styles.colors.dark,
+    fontSize: _styles.fonts.tiny
+  },
+
+  bio: {
+    color: _styles.colors.dark,
+    fontWeight: 'bold',
+    fontSize: _styles.fonts.smaller,
+    marginTop: 7,
+    marginBottom: 10
+  },
+
+  btnTrash: {
+    flex: 1,
+    flexDirection: 'row'
+  }
 });
 
 exports.default = styles;
-}, 1016, null, "GitMaps/src/pages/home/styles.js");
+}, 1018, null, "GitMaps/src/pages/home/styles.js");
 ;require(50);
 ;require(0);

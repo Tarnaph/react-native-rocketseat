@@ -27,7 +27,12 @@ class Main extends Component {
   };
 
   /* Validação */
-  static propTypes = { };
+  static propTypes = {
+    showModal: PropTypes.func.isRequired,
+    removeUser: PropTypes.func.isRequired,
+    visibilityModal: PropTypes.bool.isRequired,
+    error: PropTypes.bool.isRequired,
+  };
 
   /* Estado inicial */
   state = {
@@ -39,7 +44,6 @@ class Main extends Component {
   };
 
   componentWillMount() {
-    // this.props.hideModal();
     // AsyncStorage.clear();
   }
 
@@ -75,7 +79,7 @@ class Main extends Component {
               description={mk.user.bio}
             >
               <Image source={{ uri: mk.user.avatar_url }} style={styles.avatar} />
-              <MapView.Callout style={styles.callout} tooltip={true}>
+              <MapView.Callout style={styles.callout} tooltip>
                 <View style={styles.card}>
                   <View style={styles.headerCard}>
                     <View style={styles.headerCardLeft}>
@@ -114,7 +118,12 @@ const mapStateToProps = state => ({
 
 /* Pega func para o props */
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ showModal, hideModal, setCoord, removeUser }, dispatch);
+  bindActionCreators({
+    showModal,
+    hideModal,
+    setCoord,
+    removeUser
+  }, dispatch);
 
 /* Connecta os dois, podendo ser null */
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
