@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { ActivityIndicator, AsyncStorage, View, Text, Modal, Image, TouchableOpacity } from 'react-native';
+import { AsyncStorage, View, Text, Image, TouchableOpacity } from 'react-native';
 import Icons from 'react-native-vector-icons/FontAwesome';
 import MapView from 'react-native-maps';
 

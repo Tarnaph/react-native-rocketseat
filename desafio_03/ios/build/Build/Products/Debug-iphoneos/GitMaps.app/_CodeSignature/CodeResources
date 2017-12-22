@@ -4,6 +4,38 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<data>
+		e/kyfFA4Drr83qqM6REzckAaPUU=
+		</data>
+		<key>AppIcon20x20@3x.png</key>
+		<data>
+		UntIAniX/ajF+hn9f75TwzoL8Zo=
+		</data>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		L+DIwun0SNB0ts+gtb7TlwoRugE=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		x9b47Qq54DccRJ1oXkkSK0+UjNA=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		RCVj0dgTDOMa7HQWDb+POT4R1wM=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		RCVj0dgTDOMa7HQWDb+POT4R1wM=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		QvOWOVgwCYTACGeUhTMWZBM5h8g=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		rKHwbWpmKcMWhtqQezYohp4pJCM=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
 		tnj4ktX+wveTpM+oJjcfFnU0PIA=
@@ -71,11 +103,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hUVMCx8fgqNnTWNJpLB7QQTKZzM=
+		TKu+d9/3dS75gyozOgH18fSNySI=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
 		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+		</data>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<data>
+		jUzAVDZErJq8r4xRQMYF5Kc4BgE=
 		</data>
 		<key>MaterialCommunityIcons.ttf</key>
 		<data>
@@ -103,7 +139,7 @@
 		</data>
 		<key>PlugIns/GitMapsTests.xctest/GitMapsTests</key>
 		<data>
-		Kh/nKhVeH6KH6RhAzaAkh0oD5fo=
+		FsiHgGWQZhiyYOWJ/N0MnJsWqgY=
 		</data>
 		<key>PlugIns/GitMapsTests.xctest/Info.plist</key>
 		<data>
@@ -143,15 +179,103 @@
 		</data>
 		<key>main.jsbundle</key>
 		<data>
-		HSu+Y25QR8JeV8AWyUsnYrROQB4=
+		NMDq00sedChI8Sw8XxTi0o3br/I=
 		</data>
 		<key>main.jsbundle.meta</key>
 		<data>
-		l8gYu2pomrMyGYpv7Uc9oSeFTCc=
+		0Vp4wAj0ZKvzr2XfONvWOiz/QN0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e/kyfFA4Drr83qqM6REzckAaPUU=
+			</data>
+			<key>hash2</key>
+			<data>
+			h0iEwos8sNedV0cieXEs2UJAhwvajLJ/ZQGaQwdvJxI=
+			</data>
+		</dict>
+		<key>AppIcon20x20@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UntIAniX/ajF+hn9f75TwzoL8Zo=
+			</data>
+			<key>hash2</key>
+			<data>
+			uKnJRwJE2eHZiEkLJie3HFaHbQ71GJ93AE2r4WF2XIc=
+			</data>
+		</dict>
+		<key>AppIcon29x29@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L+DIwun0SNB0ts+gtb7TlwoRugE=
+			</data>
+			<key>hash2</key>
+			<data>
+			KdeDJXF97pURqem15BVxg0F5PdcQ0vYPDbQmICXcc9w=
+			</data>
+		</dict>
+		<key>AppIcon40x40@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x9b47Qq54DccRJ1oXkkSK0+UjNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			0eoO42+WpClloBEUZAEkqd/N4mDfE4biwhdRZZOSl+Y=
+			</data>
+		</dict>
+		<key>AppIcon40x40@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RCVj0dgTDOMa7HQWDb+POT4R1wM=
+			</data>
+			<key>hash2</key>
+			<data>
+			yTtoM0R8q73l/EM8/mZzivrAIN6X/TsACzikCzFi6aY=
+			</data>
+		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RCVj0dgTDOMa7HQWDb+POT4R1wM=
+			</data>
+			<key>hash2</key>
+			<data>
+			yTtoM0R8q73l/EM8/mZzivrAIN6X/TsACzikCzFi6aY=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QvOWOVgwCYTACGeUhTMWZBM5h8g=
+			</data>
+			<key>hash2</key>
+			<data>
+			6IEHnPfzLtMzEeWu+H71mJ1AE24hg0xDef76moI4OwY=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rKHwbWpmKcMWhtqQezYohp4pJCM=
+			</data>
+			<key>hash2</key>
+			<data>
+			uCS78pcbLkczS1roY9AjI9HwVwMRbqj+zE7GSnDeo0Y=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
@@ -330,6 +454,17 @@
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
 			</data>
 		</dict>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jUzAVDZErJq8r4xRQMYF5Kc4BgE=
+			</data>
+			<key>hash2</key>
+			<data>
+			zk4M8Nt4RUdrZyscD2Fls3DuhrSZpwnGFwXIWTdHmrw=
+			</data>
+		</dict>
 		<key>MaterialCommunityIcons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -389,11 +524,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kh/nKhVeH6KH6RhAzaAkh0oD5fo=
+			FsiHgGWQZhiyYOWJ/N0MnJsWqgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			afUoBbzQDe0tYFfBxk15Ur1ZReHk2wsjDB7HZk5BFPQ=
+			sRg7yvOOMi0p4cVMf5/+gJu/CjHNNZu9NmTXoX1IaHU=
 			</data>
 		</dict>
 		<key>PlugIns/GitMapsTests.xctest/Info.plist</key>
@@ -499,22 +634,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HSu+Y25QR8JeV8AWyUsnYrROQB4=
+			NMDq00sedChI8Sw8XxTi0o3br/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			XadYW8n6RpRJrIqTlViTjeC/1Shm3BRGfMzUhxAHBa4=
+			kY/n2LQd2JQwoW527SL/vO/XRSo2DXnqhA4FNyYjuiQ=
 			</data>
 		</dict>
 		<key>main.jsbundle.meta</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l8gYu2pomrMyGYpv7Uc9oSeFTCc=
+			0Vp4wAj0ZKvzr2XfONvWOiz/QN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fL9RoO7LVM5bn/f2ddj2CTTEIEKug9KdhWCh0fduviI=
+			dFqfVo6jz9xVlpQBYyh0yq25s33K2hgUIf42+7QFbKY=
 			</data>
 		</dict>
 	</dict>
