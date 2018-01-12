@@ -14,7 +14,7 @@ export default class Issues extends Component {
       <Header
         title={scene.route.params.title.toUpperCase()}
         back={() => navigation.goBack()}
-      />
+      ></Header>
     ),
   };
 
