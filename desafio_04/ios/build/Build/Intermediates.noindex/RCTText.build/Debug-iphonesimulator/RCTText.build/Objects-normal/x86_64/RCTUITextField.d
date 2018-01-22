@@ -1,0 +1,13 @@
+dependencies: \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTUITextField.m \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTUITextField.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTBackedTextInputViewProtocol.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTBackedTextInputDelegateAdapter.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTBackedTextInputDelegate.h
