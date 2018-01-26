@@ -56,6 +56,118 @@
           "brand": "Rip Curl",
           "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
           "price": 39.99
+        },
+         {
+          "id": 5,
+          "name": "Camiseta Hyperas Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/czCvp3wBNPfehf7omYZfJacnxPY=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-hyperas-preta-8710-7136243-1-product.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 6,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/EpEXepU-tSbgo6ZMl4Y5BOdjelw=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-double-tap-preta-7115-8165043-1-product.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 7,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://t-static.dafiti.com.br/aC9871vKWfL3bDgbhLx5sFLa7xs=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fred-bull-camiseta-red-bull-logo-azul-0272-7714033-1-product.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 8,
+          "name": "Camiseta Primo Tipper",
+          "brand": "Rip Curl",
+          "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
+          "price": 39.99
+        },
+         {
+          "id": 9,
+          "name": "Camiseta Hyperas Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/czCvp3wBNPfehf7omYZfJacnxPY=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-hyperas-preta-8710-7136243-1-product.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 10,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/EpEXepU-tSbgo6ZMl4Y5BOdjelw=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-double-tap-preta-7115-8165043-1-product.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 11,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://t-static.dafiti.com.br/aC9871vKWfL3bDgbhLx5sFLa7xs=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fred-bull-camiseta-red-bull-logo-azul-0272-7714033-1-product.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 12,
+          "name": "Camiseta Primo Tipper",
+          "brand": "Rip Curl",
+          "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
+          "price": 39.99
+        },
+         {
+          "id": 13,
+          "name": "Camiseta Hyperas Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/czCvp3wBNPfehf7omYZfJacnxPY=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-hyperas-preta-8710-7136243-1-product.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 14,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/EpEXepU-tSbgo6ZMl4Y5BOdjelw=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-double-tap-preta-7115-8165043-1-product.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 15,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://t-static.dafiti.com.br/aC9871vKWfL3bDgbhLx5sFLa7xs=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fred-bull-camiseta-red-bull-logo-azul-0272-7714033-1-product.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 16,
+          "name": "Camiseta Primo Tipper",
+          "brand": "Rip Curl",
+          "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
+          "price": 39.99
+        },
+         {
+          "id": 17,
+          "name": "Camiseta Hyperas Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/czCvp3wBNPfehf7omYZfJacnxPY=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-hyperas-preta-8710-7136243-1-product.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 18,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://t-static.dafiti.com.br/EpEXepU-tSbgo6ZMl4Y5BOdjelw=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fquiksilver-camiseta-quiksilver-double-tap-preta-7115-8165043-1-product.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 19,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://t-static.dafiti.com.br/aC9871vKWfL3bDgbhLx5sFLa7xs=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2fred-bull-camiseta-red-bull-logo-azul-0272-7714033-1-product.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 20,
+          "name": "Camiseta Primo Tipper",
+          "brand": "Rip Curl",
+          "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
+          "price": 39.99
         }
       ]
     },
@@ -88,6 +200,78 @@
           "name": "Camiseta Primo Tipper",
           "brand": "Rip Curl",
           "image": "https://t-static.dafiti.com.br/weG0u9eKZ4KBV-G0XFOQ5hoY4eI=/fit-in/427x620/dafitistatic-a.akamaihd.net%2fp%2frip-curl-camiseta-rip-curl-primo-tipper-preto-8138-3441052-1-product.jpg",
+          "price": 39.99
+        },
+        {
+          "id": 5,
+          "name": "Blusa Amarela",
+          "brand": "Quiksilver",
+          "image": "https://www.forever21.com/images/1_front_750/00255456-02.jpg",
+          "image2": "https://www.forever21.com/images/2_side_750/00255456-02.jpg",
+          "image3": "https://www.forever21.com/images/3_back_750/00255456-02.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 6,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://www.forever21.com/images/1_front_750/00150189-02.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 7,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://www.forever21.com/images/1_front_750/00271021-01.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 8,
+          "name": "Off-the-Shoulder",
+          "brand": "Rip Curl",
+          "image": "https://www.forever21.com/images/1_front_750/00175365-05.jpg",
+          "price": 39.99
+        },
+        {
+          "id": 9,
+          "name": "Camiseta Hyperas Preta",
+          "brand": "Quiksilver",
+          "image": "https://www.forever21.com/images/1_front_750/00158425-04.jpg",
+          "price": 49.99
+        },
+        {
+          "id": 10,
+          "name": "Camiseta Double Tap Preta",
+          "brand": "Quiksilver",
+          "image": "https://www.forever21.com/images/1_front_750/00244662-04.jpg",
+          "price": 59.99
+        },
+        {
+          "id": 11,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://www.forever21.com/images/1_front_750/00242966-02.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 12,
+          "name": "Off-the-Shoulder",
+          "brand": "Rip Curl",
+          "image": "https://www.forever21.com/images/5_detail_750/00241712-02.jpg",
+          "price": 39.99
+        },
+        {
+          "id": 13,
+          "name": "Camiseta Logo Azul",
+          "brand": "Red Bull",
+          "image": "https://www.forever21.com/images/1_front_750/00212569-06.jpg",
+          "price": 54.99
+        },
+        {
+          "id": 14,
+          "name": "Off-the-Shoulder",
+          "brand": "Rip Curl",
+          "image": "https://www.forever21.com/images/1_front_750/00216869-04.jpg",
           "price": 39.99
         }
       ]

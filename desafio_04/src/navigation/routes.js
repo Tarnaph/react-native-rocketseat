@@ -55,7 +55,7 @@ const Routes = TabNavigator({
   Cart: { screen: cartRoutes },
 }, {
   swipeEnabled: false,
-  animationEnabled: true,
+  animationEnabled: false,
   lazy: false,
   tabBarPosition: 'bottom',
   tabBarComponent: Footer,

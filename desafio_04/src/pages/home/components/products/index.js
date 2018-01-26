@@ -28,6 +28,7 @@ class Products extends Component {
     navigation: PropTypes.shape({
     }).isRequired,
     productsRefresh: PropTypes.func.isRequired,
+    productsRequest: PropTypes.func.isRequired,
   };
   /* State */
   state = { refreshing: false };
@@ -42,7 +43,7 @@ class Products extends Component {
     if (this.props.categories.ativeCategory === 0) {
       this.props.productsRefresh(1);
     } else {
-      this.props.productsRefresh(this.props.categories.ativeCategory);
+      this.props.productsRequest(this.props.categories.ativeCategory);
     }
   };
 
@@ -57,12 +58,13 @@ class Products extends Component {
   renderProducts = products => (
     products.error
       ? this.errorOrEmpty(products)
-      : products.data.map(product => (
+      : products.data.map((product, indice) => (
         <Cards
           key={product.id}
           product={product}
           navigation={this.props.navigation}
           ativeCategory={this.props.categories.ativeCategory}
+          indice={indice}
         />))
   );
 
@@ -72,7 +74,6 @@ class Products extends Component {
         showsVerticalScrollIndicator={false}
         refreshControl={
           <RefreshControl
-            tintColor={colors.gray}
             title="Atualizando"
             colors={[colors.white, colors.roseDark]}
             progressBackgroundColor={colors.rose}
@@ -101,6 +102,7 @@ const mapStateToProps = state => ({
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => bindActionCreators({
   productsRefresh: id => dispatch(ProductsActions.productsRefresh(id)),
+  productsRequest: id => dispatch(ProductsActions.productsRequest(id)),
 }, dispatch);
 
 /* Connecta os dois, podendo ser null */

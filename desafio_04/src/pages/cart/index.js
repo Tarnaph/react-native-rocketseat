@@ -33,8 +33,8 @@ class Cart extends Component {
   renderScroll = products => (
     <View style={styles.scrollContainer} >
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-        { products.map(product => (
-          <CartCard key={product.cartProductId} product={product} />
+        { products.map((product,indice) => (
+          <CartCard key={product.cartProductId} product={product} indice={indice} />
         ))}
         <View style={styles.space} />
       </ScrollView>

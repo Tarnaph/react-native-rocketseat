@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { AsyncStorage, View } from 'react-native';
+import { AsyncStorage, View, Animated } from 'react-native';
 
 /* Components */
 import Categories from 'pages/home/components/categories';
@@ -34,17 +34,60 @@ class Main extends Component {
     }).isRequired,
   };
 
+  state = {
+    opacity: new Animated.Value(0),
+    offset: new Animated.ValueXY({ x: 0, y: 25 }),
+    offsetMenu: new Animated.ValueXY({ x: 0, y: -100 }),
+  };
+
   /* Antes de mountar */
   componentWillMount() {
     // AsyncStorage.clear();
     // console.tron.log(this.props);
   }
 
+
+  componentDidMount() {
+    Animated.sequence([
+
+      Animated.timing(this.state.offsetMenu.y, {
+        toValue: 0,
+        duration: 1000,
+      }),
+
+      Animated.delay(20),
+
+      Animated.parallel([
+        Animated.timing(this.state.offset.y, {
+          toValue: 0,
+          duration: 350,
+        }),
+
+        Animated.timing(this.state.opacity, {
+          toValue: 1,
+          duration: 350,
+        }),
+      ]),
+
+    ]).start();
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Categories />
-        <Products navigation={this.props.navigation} />
+      <View style={[styles.container]}>
+        <Animated.View style={[
+          { transform: [...this.state.offsetMenu.getTranslateTransform()] }]}
+        >
+          <Categories />
+        </Animated.View>
+
+        <Animated.View style={[
+        { transform: [...this.state.offset.getTranslateTransform()] },
+        { opacity: this.state.opacity },
+        styles.container]}
+        >
+          <Products navigation={this.props.navigation} />
+        </Animated.View>
       </View>
     );
   }

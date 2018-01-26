@@ -22424,7 +22424,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactDebugTo
 __d(/* ActivityIndicator */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var Platform = require(46        ); // 46 = Platform
@@ -22579,7 +22579,7 @@ module.exports = require(126                ); // 126 = UnimplementedView
 __d(/* UnimplementedView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js';
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
 
@@ -24299,7 +24299,7 @@ module.exports = StyleSheetValidation;
 __d(/* View */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/View/View.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/View/View.js';
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var Platform = require(46        ); // 46 = Platform
 var PropTypes = require(137         ); // 137 = prop-types
@@ -25623,7 +25623,7 @@ module.exports = verifyPropTypes;
 __d(/* ReactNativeART */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/ART/ReactNativeART.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/ART/ReactNativeART.js';
 var Color = require(175             ); // 175 = art/core/color
 var Path = require(176                  ); // 176 = ARTSerializablePath
 var Transform = require(179                 ); // 179 = art/core/transform
@@ -26972,7 +26972,7 @@ module.exports = Class({
 __d(/* Button */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Button.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Button.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var Platform = require(46        ); // 46 = Platform
 var React = require(127    ); // 127 = React
@@ -27123,7 +27123,7 @@ module.exports = Button;
 __d(/* Text */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/Text.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Text/Text.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var EdgeInsetsPropType = require(152                 ); // 152 = EdgeInsetsPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
@@ -27362,7 +27362,7 @@ __d(/* Touchable */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Touchable/Touchable.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Touchable/Touchable.js';
 var BoundingDimensions = require(183                 ); // 183 = BoundingDimensions
 var Platform = require(46        ); // 46 = Platform
 var Position = require(185       ); // 185 = Position
@@ -28015,7 +28015,7 @@ __d(/* TouchableNativeFeedback */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.ios.js';
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
 var Text = require(181   ); // 181 = Text
@@ -28076,7 +28076,7 @@ module.exports = DummyTouchableNativeFeedback;
 __d(/* TouchableOpacity */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js';
 
 
 var Animated = require(191       ); // 191 = Animated
@@ -31644,7 +31644,7 @@ module.exports = function bezier(mX1, mY1, mX2, mY2) {
 __d(/* createAnimatedComponent */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Animated/src/createAnimatedComponent.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Animated/src/createAnimatedComponent.js';
 
 var _require = require(193              ), // 193 = ./AnimatedEvent
     AnimatedEvent = _require.AnimatedEvent;
@@ -31813,7 +31813,7 @@ module.exports = createAnimatedComponent;
 __d(/* Image */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Image/Image.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Image/Image.ios.js';
 var EdgeInsetsPropType = require(152                 ); // 152 = EdgeInsetsPropType
 var ImageResizeMode = require(134              ); // 134 = ImageResizeMode
 var ImageSourcePropType = require(220                  ); // 220 = ImageSourcePropType
@@ -31984,7 +31984,7 @@ module.exports = ImageSourcePropType;
 __d(/* ScrollView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js';
 var Animated = require(191       ); // 191 = Animated
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var EdgeInsetsPropType = require(152                 ); // 152 = EdgeInsetsPropType
@@ -32857,7 +32857,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactNativeC
 __d(/* ScrollViewStickyHeader */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js';
 var Animated = require(191       ); // 191 = Animated
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
@@ -33213,7 +33213,7 @@ module.exports = require(126                ); // 126 = UnimplementedView
 __d(/* DatePickerIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/DatePicker/DatePickerIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/DatePicker/DatePickerIOS.ios.js';
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var React = require(127    ); // 127 = React
 var PropTypes = require(137         ); // 137 = prop-types
@@ -33333,7 +33333,7 @@ module.exports = require(126                ); // 126 = UnimplementedView
 __d(/* FlatList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/FlatList.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/FlatList.js';
 var MetroListView = require(239            ); // 239 = MetroListView
 var React = require(127    ); // 127 = React
 var View = require(149   ); // 149 = View
@@ -33614,7 +33614,7 @@ module.exports = FlatList;
 __d(/* MetroListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/MetroListView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/MetroListView.js';
 var ListView = require(240       ); // 240 = ListView
 var React = require(127    ); // 127 = React
 var RefreshControl = require(245             ); // 245 = RefreshControl
@@ -33804,7 +33804,7 @@ module.exports = MetroListView;
 __d(/* ListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/ListView/ListView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/ListView/ListView.js';
 var ListViewDataSource = require(241                 ); // 241 = ListViewDataSource
 var Platform = require(46        ); // 46 = Platform
 var React = require(127    ); // 127 = React
@@ -34602,7 +34602,7 @@ module.exports = cloneReferencedElement;
 __d(/* RefreshControl */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var Platform = require(46        ); // 46 = Platform
@@ -34697,7 +34697,7 @@ module.exports = RefreshControl;
 __d(/* VirtualizedList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/VirtualizedList.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/VirtualizedList.js';
 var Batchinator = require(247          ); // 247 = Batchinator
 var FillRateHelper = require(248             ); // 248 = FillRateHelper
 var PropTypes = require(137         ); // 137 = prop-types
@@ -36320,7 +36320,7 @@ module.exports = VirtualizeUtils;
 __d(/* ImageBackground */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Image/ImageBackground.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Image/ImageBackground.js';
 var Image = require(219    ); // 219 = Image
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
@@ -36473,7 +36473,7 @@ module.exports = ImageStore;
 __d(/* KeyboardAvoidingView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js';
 var createReactClass = require(161                 ); // 161 = create-react-class
 var Keyboard = require(225       ); // 225 = Keyboard
 var LayoutAnimation = require(256              ); // 256 = LayoutAnimation
@@ -36752,7 +36752,7 @@ var LayoutAnimation = {
 
 module.exports = LayoutAnimation;
 }, 256, null, "LayoutAnimation");
-__d(/* MaskedViewIOS */function(global, require, module, exports) {var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/MaskedView/MaskedViewIOS.ios.js';
+__d(/* MaskedViewIOS */function(global, require, module, exports) {var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/MaskedView/MaskedViewIOS.ios.js';
 
 
 var PropTypes = require(137         ); // 137 = prop-types
@@ -36845,7 +36845,7 @@ module.exports = MaskedViewIOS;
 __d(/* Modal */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Modal/Modal.js',
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Modal/Modal.js',
     _container;
 
 var AppContainer = require(259           ); // 259 = AppContainer
@@ -37033,7 +37033,7 @@ __d(/* AppContainer */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/ReactNative/AppContainer.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/ReactNative/AppContainer.js';
 var EmitterSubscription = require(79                   ); // 79 = EmitterSubscription
 var PropTypes = require(137         ); // 137 = prop-types
 var RCTDeviceEventEmitter = require(84                     ); // 84 = RCTDeviceEventEmitter
@@ -37185,7 +37185,7 @@ __d(/* Inspector */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/Inspector.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/Inspector.js';
 var Dimensions = require(130         ); // 130 = Dimensions
 var InspectorOverlay = require(261               ); // 261 = InspectorOverlay
 var InspectorPanel = require(265             ); // 265 = InspectorPanel
@@ -37469,7 +37469,7 @@ module.exports = Inspector;
 __d(/* InspectorOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/InspectorOverlay.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/InspectorOverlay.js';
 var Dimensions = require(130         ); // 130 = Dimensions
 var ElementBox = require(262         ); // 262 = ElementBox
 var PropTypes = require(137         ); // 137 = prop-types
@@ -37560,7 +37560,7 @@ module.exports = InspectorOverlay;
 __d(/* ElementBox */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/ElementBox.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/ElementBox.js';
 var React = require(127    ); // 127 = React
 var View = require(149   ); // 149 = View
 var StyleSheet = require(128         ); // 128 = StyleSheet
@@ -37656,7 +37656,7 @@ module.exports = ElementBox;
 __d(/* BorderBox */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/BorderBox.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/BorderBox.js';
 var React = require(127    ); // 127 = React
 var View = require(149   ); // 149 = View
 
@@ -37740,7 +37740,7 @@ module.exports = resolveBoxStyle;
 __d(/* InspectorPanel */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/InspectorPanel.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/InspectorPanel.js';
 var ElementProperties = require(266                ); // 266 = ElementProperties
 var NetworkOverlay = require(273             ); // 273 = NetworkOverlay
 var PerformanceOverlay = require(276                 ); // 276 = PerformanceOverlay
@@ -37980,7 +37980,7 @@ module.exports = InspectorPanel;
 __d(/* ElementProperties */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/ElementProperties.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/ElementProperties.js';
 var BoxInspector = require(267           ); // 267 = BoxInspector
 var PropTypes = require(137         ); // 137 = prop-types
 var React = require(127    ); // 127 = React
@@ -38200,7 +38200,7 @@ module.exports = ElementProperties;
 __d(/* BoxInspector */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/BoxInspector.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/BoxInspector.js';
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
 var Text = require(181   ); // 181 = Text
@@ -38417,7 +38417,7 @@ module.exports = BoxInspector;
 __d(/* StyleInspector */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/StyleInspector.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/StyleInspector.js';
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
 var Text = require(181   ); // 181 = Text
@@ -38532,7 +38532,7 @@ module.exports = StyleInspector;
 __d(/* TouchableHighlight */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var PropTypes = require(137         ); // 137 = prop-types
@@ -38802,7 +38802,7 @@ module.exports = openFileInEditor;
 __d(/* NetworkOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/NetworkOverlay.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/NetworkOverlay.js';
 var ListView = require(240       ); // 240 = ListView
 var React = require(127    ); // 127 = React
 var ScrollView = require(221         ); // 221 = ScrollView
@@ -39731,7 +39731,7 @@ module.exports = XHRInterceptor;
 __d(/* PerformanceOverlay */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Inspector/PerformanceOverlay.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Inspector/PerformanceOverlay.js';
 var PerformanceLogger = require(107                ); // 107 = PerformanceLogger
 var React = require(127    ); // 127 = React
 var StyleSheet = require(128         ); // 128 = StyleSheet
@@ -39825,7 +39825,7 @@ __d(/* YellowBox */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/ReactNative/YellowBox.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/ReactNative/YellowBox.js';
 var EventEmitter = require(81            ); // 81 = EventEmitter
 var Platform = require(46        ); // 46 = Platform
 var React = require(127    ); // 127 = React
@@ -40488,7 +40488,7 @@ var styles = StyleSheet.create({
 
 module.exports = YellowBox;
 }, 277, null, "YellowBox");
-__d(/* SafeAreaView */function(global, require, module, exports) {var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.ios.js';
+__d(/* SafeAreaView */function(global, require, module, exports) {var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.ios.js';
 
 
 var React = require(127    ); // 127 = React
@@ -40544,7 +40544,7 @@ module.exports = I18nManager;
 __d(/* NavigatorIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Navigation/NavigatorIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Navigation/NavigatorIOS.ios.js';
 var EventEmitter = require(81            ); // 81 = EventEmitter
 var Image = require(219    ); // 219 = Image
 var RCTNavigatorManager = require(15             ).NavigatorManager; // 15 = NativeModules
@@ -41095,7 +41095,7 @@ __d(/* Picker */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Picker/Picker.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Picker/Picker.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var PickerIOS = require(283        ); // 283 = PickerIOS
 var PickerAndroid = require(284            ); // 284 = PickerAndroid
@@ -41220,7 +41220,7 @@ module.exports = Picker;
 __d(/* PickerIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Picker/PickerIOS.ios.js',
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Picker/PickerIOS.ios.js',
     _class,
     _temp;
 
@@ -41368,7 +41368,7 @@ module.exports = require(126                ); // 126 = UnimplementedView
 __d(/* ProgressViewIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/ProgressViewIOS/ProgressViewIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/ProgressViewIOS/ProgressViewIOS.ios.js';
 var Image = require(219    ); // 219 = Image
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var React = require(127    ); // 127 = React
@@ -41421,7 +41421,7 @@ module.exports = ProgressViewIOS;
 __d(/* SectionList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/SectionList.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/SectionList.js';
 var MetroListView = require(239            ); // 239 = MetroListView
 var Platform = require(46        ); // 46 = Platform
 var React = require(127    ); // 127 = React
@@ -41514,7 +41514,7 @@ module.exports = SectionList;
 __d(/* VirtualizedSectionList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js';
 var React = require(127    ); // 127 = React
 var View = require(149   ); // 149 = View
 var VirtualizedList = require(246              ); // 246 = VirtualizedList
@@ -41912,7 +41912,7 @@ module.exports = VirtualizedSectionList;
 __d(/* SegmentedControlIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.js';
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var React = require(127    ); // 127 = React
 var PropTypes = require(137         ); // 137 = prop-types
@@ -41982,7 +41982,7 @@ module.exports = SegmentedControlIOS;
 __d(/* Slider */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Slider/Slider.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Slider/Slider.js';
 var Image = require(219    ); // 219 = Image
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
@@ -42118,7 +42118,7 @@ module.exports = Slider;
 __d(/* SnapshotViewIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/RCTTest/SnapshotViewIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/RCTTest/SnapshotViewIOS.ios.js';
 var React = require(127    ); // 127 = React
 var PropTypes = require(137         ); // 137 = prop-types
 var StyleSheet = require(128         ); // 128 = StyleSheet
@@ -42192,7 +42192,7 @@ module.exports = SnapshotViewIOS;
 __d(/* Switch */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/Switch/Switch.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/Switch/Switch.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var NativeMethodsMixin = require(124                 ); // 124 = NativeMethodsMixin
 var Platform = require(46        ); // 46 = Platform
@@ -42519,7 +42519,7 @@ module.exports = StatusBar;
 __d(/* SwipeableFlatList */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableFlatList.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableFlatList.js';
 
 
 var PropTypes = require(137         ); // 137 = prop-types
@@ -42674,7 +42674,7 @@ module.exports = SwipeableFlatList;
 __d(/* SwipeableRow */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableRow.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableRow.js';
 var Animated = require(191       ); // 191 = Animated
 var I18nManager = require(279          ); // 279 = I18nManager
 var PanResponder = require(295           ); // 295 = PanResponder
@@ -43131,7 +43131,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.TouchHistory
 __d(/* SwipeableListView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableListView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableListView.js';
 var ListView = require(240       ); // 240 = ListView
 var PropTypes = require(137         ); // 137 = prop-types
 var React = require(127    ); // 127 = React
@@ -43385,7 +43385,7 @@ module.exports = SwipeableListViewDataSource;
 __d(/* TabBarIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarIOS.ios.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var React = require(127    ); // 127 = React
 var PropTypes = require(137         ); // 137 = prop-types
@@ -43461,7 +43461,7 @@ module.exports = TabBarIOS;
 __d(/* TabBarItemIOS */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarItemIOS.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/TabBarIOS/TabBarItemIOS.ios.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var Image = require(219    ); // 219 = Image
 var React = require(127    ); // 127 = React
@@ -43591,7 +43591,7 @@ module.exports = TabBarItemIOS;
 __d(/* TextInput */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/TextInput/TextInput.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/TextInput/TextInput.js';
 var ColorPropType = require(123            ); // 123 = ColorPropType
 var DocumentSelectionState = require(302                     ); // 302 = DocumentSelectionState
 var EventEmitter = require(81            ); // 81 = EventEmitter
@@ -44585,7 +44585,7 @@ module.exports = require(126                ); // 126 = UnimplementedView
 __d(/* WebView */function(global, require, module, exports) {
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Components/WebView/WebView.ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Components/WebView/WebView.ios.js';
 var ActivityIndicator = require(122                ); // 122 = ActivityIndicator
 var EdgeInsetsPropType = require(152                 ); // 152 = EdgeInsetsPropType
 var React = require(127    ); // 127 = React
@@ -45302,7 +45302,7 @@ __d(/* renderApplication */function(global, require, module, exports) {
 
 'use strict';
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/ReactNative/renderApplication.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/ReactNative/renderApplication.js';
 var AppContainer = require(259           ); // 259 = AppContainer
 var React = require(127    ); // 127 = React
 var ReactNative = require(21           ); // 21 = ReactNative
@@ -46541,7 +46541,7 @@ module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.takeSnapshot
 __d(/* Desafio04/src/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/index.js';
 
 require(335                        ); // 335 = ./config/ReactotronConfig
 
@@ -67082,7 +67082,7 @@ module.exports = {
 __d(/* react-navigation/src/createNavigationContainer.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/createNavigationContainer.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/createNavigationContainer.js';
 exports.default = createNavigationContainer;
 
 var _react = require(35     ); // 35 = react
@@ -67620,7 +67620,7 @@ exports.default = StateUtils;
 __d(/* react-navigation/src/navigators/createNavigator.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/navigators/createNavigator.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/navigators/createNavigator.js';
 exports.default = createNavigator;
 
 var _react = require(35     ); // 35 = react
@@ -67663,7 +67663,7 @@ function createNavigator(router, routeConfigs, navigatorConfig, navigatorType) {
 __d(/* react-navigation/src/navigators/StackNavigator.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/navigators/StackNavigator.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/navigators/StackNavigator.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -67733,7 +67733,7 @@ exports.default = function (routeConfigMap) {
 __d(/* react-navigation/src/views/CardStack/CardStackTransitioner.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/CardStack/CardStackTransitioner.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/CardStack/CardStackTransitioner.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -67833,7 +67833,7 @@ exports.default = CardStackTransitioner;
 __d(/* react-navigation/src/views/CardStack/CardStack.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/CardStack/CardStack.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/CardStack/CardStack.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -68258,7 +68258,7 @@ function clamp(value, min, max) {
 __d(/* react-navigation/src/views/CardStack/Card.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/CardStack/Card.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/CardStack/Card.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -68326,7 +68326,7 @@ exports.default = Card;
 __d(/* react-navigation/src/views/CardStack/PointerEventsContainer.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/CardStack/PointerEventsContainer.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/CardStack/PointerEventsContainer.js';
 exports.default = create;
 
 var _react = require(35     ); // 35 = react
@@ -68474,7 +68474,7 @@ __d(/* react-navigation/src/views/Header/Header.js */function(global, require, m
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Header/Header.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Header/Header.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -68864,7 +68864,7 @@ exports.default = (0, _withOrientation2.default)(Header);
 __d(/* react-navigation/src/views/Header/HeaderTitle.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Header/HeaderTitle.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Header/HeaderTitle.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -68904,7 +68904,7 @@ exports.default = HeaderTitle;
 __d(/* react-navigation/src/views/Header/HeaderBackButton.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Header/HeaderBackButton.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Header/HeaderBackButton.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -69055,7 +69055,7 @@ exports.default = HeaderBackButton;
 __d(/* react-navigation/src/views/TouchableItem.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/TouchableItem.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/TouchableItem.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -69260,7 +69260,7 @@ exports.default = getSceneIndicesForInterpolationInputRange;
 __d(/* react-navigation/src/views/SafeAreaView.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/SafeAreaView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/SafeAreaView.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -69612,7 +69612,7 @@ __d(/* react-navigation/src/views/withOrientation.js */function(global, require,
   value: true
 });
 exports.isOrientationLandscape = undefined;
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/withOrientation.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/withOrientation.js';
 
 exports.default = function (WrappedComponent) {
   var withOrientation = function (_React$Component) {
@@ -69687,7 +69687,7 @@ var isOrientationLandscape = exports.isOrientationLandscape = function isOrienta
 __d(/* react-navigation/src/views/SceneView.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/SceneView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/SceneView.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -69985,7 +69985,7 @@ exports.default = {
 __d(/* react-navigation/src/views/Transitioner.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Transitioner.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Transitioner.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -71284,7 +71284,7 @@ exports.default = {
 __d(/* react-navigation/src/navigators/TabNavigator.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/navigators/TabNavigator.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/navigators/TabNavigator.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -71657,7 +71657,7 @@ exports.default = function (routeConfigs) {
 __d(/* react-navigation/src/views/TabView/TabView.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/TabView/TabView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/TabView/TabView.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -71899,7 +71899,7 @@ module.exports = {
 __d(/* react-native-tab-view/src/TabViewAnimated.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TabViewAnimated.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TabViewAnimated.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -72219,7 +72219,7 @@ var SceneRendererPropType = exports.SceneRendererPropType = {
 __d(/* react-native-tab-view/src/TabViewPagerAndroid.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerAndroid.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerAndroid.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -72412,7 +72412,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-native-tab-view/src/TabViewPagerScroll.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerScroll.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerScroll.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -72578,7 +72578,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-native-tab-view/src/TabViewPagerPan.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerPan.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TabViewPagerPan.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -72844,7 +72844,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-native-tab-view/src/TabBar.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TabBar.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TabBar.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -73389,7 +73389,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-native-tab-view/src/TouchableItem.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/TouchableItem.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/TouchableItem.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -73490,7 +73490,7 @@ exports.default = TouchableItem;
 __d(/* react-native-tab-view/src/SceneMap.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-tab-view/src/SceneMap.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-tab-view/src/SceneMap.js';
 exports.default = SceneMap;
 
 var _react = require(35     ); // 35 = react
@@ -73528,7 +73528,7 @@ function SceneMap(scenes) {
 __d(/* react-navigation/src/withCachedChildNavigation.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/withCachedChildNavigation.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/withCachedChildNavigation.js';
 exports.default = withCachedChildNavigation;
 
 var _react = require(35     ); // 35 = react
@@ -73603,7 +73603,7 @@ function withCachedChildNavigation(Comp) {
 __d(/* react-navigation/src/views/TabView/TabBarTop.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarTop.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarTop.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -73770,7 +73770,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-navigation/src/views/TabView/TabBarIcon.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarIcon.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarIcon.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -73875,7 +73875,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-navigation/src/views/TabView/TabBarBottom.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarBottom.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/TabView/TabBarBottom.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -74157,7 +74157,7 @@ exports.default = (0, _withOrientation2.default)(TabBarBottom);
 __d(/* react-navigation/src/navigators/DrawerNavigator.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/navigators/DrawerNavigator.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/navigators/DrawerNavigator.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -74308,7 +74308,7 @@ exports.default = DrawerNavigator;
 __d(/* react-navigation/src/views/Drawer/DrawerScreen.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerScreen.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerScreen.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -74363,7 +74363,7 @@ exports.default = (0, _withCachedChildNavigation2.default)(DrawerScreen);
 __d(/* react-navigation/src/views/Drawer/DrawerView.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerView.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerView.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -74803,7 +74803,7 @@ module.exports = exports.default;
 __d(/* react-navigation/src/views/Drawer/DrawerSidebar.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerSidebar.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerSidebar.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -74948,7 +74948,7 @@ var styles = _reactNative.StyleSheet.create({
 __d(/* react-navigation/src/views/Drawer/DrawerNavigatorItems.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerNavigatorItems.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/Drawer/DrawerNavigatorItems.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -75089,7 +75089,7 @@ exports.default = DrawerNavigatorItems;
 __d(/* react-navigation/src/views/withNavigation.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-navigation/src/views/withNavigation.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-navigation/src/views/withNavigation.js';
 exports.default = withNavigation;
 
 var _react = require(35     ); // 35 = react
@@ -75150,7 +75150,7 @@ var homeRoutes = (0, _reactNavigation.StackNavigator)({
   Home: {
     screen: _home2.default,
     navigationOptions: {
-      title: 'FOREVER 21',
+      title: 'Go Native Store',
       headerTitleStyle: {
         color: '#FF9696'
       },
@@ -75195,7 +75195,7 @@ var Routes = (0, _reactNavigation.TabNavigator)({
 }, {
   swipeEnabled: false,
   animationEnabled: true,
-  lazy: false,
+  lazy: true,
   tabBarPosition: 'bottom',
   tabBarComponent: _footer2.default
 });
@@ -75205,7 +75205,7 @@ exports.default = Routes;
 __d(/* Desafio04/src/navigation/components/footer/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/navigation/components/footer/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/navigation/components/footer/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -75252,9 +75252,7 @@ var Footer = function (_Component) {
 
   babelHelpers.createClass(Footer, [{
     key: 'componentWillMount',
-    value: function componentWillMount() {
-      console.tron.log(this.props);
-    }
+    value: function componentWillMount() {}
   }, {
     key: 'render',
     value: function render() {
@@ -75374,7 +75372,7 @@ var getImageSource = exports.getImageSource = iconSet.getImageSource;
 __d(/* react-native-vector-icons/lib/create-icon-set.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-vector-icons/lib/create-icon-set.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-vector-icons/lib/create-icon-set.js';
 exports.default = createIconSet;
 
 var _react = require(35     ); // 35 = react
@@ -75591,7 +75589,7 @@ Object.keys(_reactNative).forEach(function (key) {
 __d(/* react-native-vector-icons/lib/icon-button.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-vector-icons/lib/icon-button.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-vector-icons/lib/icon-button.js';
 exports.default = createIconButtonComponent;
 
 var _isString = require(848              ); // 848 = lodash/isString
@@ -77846,7 +77844,7 @@ module.exports = hasPath;
 __d(/* react-native-vector-icons/lib/tab-bar-item-ios.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-vector-icons/lib/tab-bar-item-ios.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-vector-icons/lib/tab-bar-item-ios.js';
 exports.default = createTabBarItemIOSComponent;
 
 var _isEqual = require(986             ); // 986 = lodash/isEqual
@@ -78293,7 +78291,7 @@ module.exports = equalObjects;
 __d(/* react-native-vector-icons/lib/toolbar-android.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native-vector-icons/lib/toolbar-android.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native-vector-icons/lib/toolbar-android.js';
 exports.default = createToolbarAndroidComponent;
 
 var _isEqual = require(986             ); // 986 = lodash/isEqual
@@ -79389,7 +79387,7 @@ exports.default = {
 __d(/* Desafio04/src/pages/home/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/home/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/home/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -79429,34 +79427,79 @@ var Main = function (_Component) {
   babelHelpers.inherits(Main, _Component);
 
   function Main() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     babelHelpers.classCallCheck(this, Main);
-    return babelHelpers.possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Main.__proto__ || Object.getPrototypeOf(Main)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      opacity: new _reactNative.Animated.Value(0),
+      offset: new _reactNative.Animated.ValueXY({ x: 0, y: 25 }),
+      offsetMenu: new _reactNative.Animated.ValueXY({ x: 0, y: -100 })
+    }, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
   }
 
   babelHelpers.createClass(Main, [{
     key: 'componentWillMount',
     value: function componentWillMount() {}
   }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      _reactNative.Animated.sequence([_reactNative.Animated.timing(this.state.offsetMenu.y, {
+        toValue: 0,
+        duration: 1000
+      }), _reactNative.Animated.delay(20), _reactNative.Animated.parallel([_reactNative.Animated.timing(this.state.offset.y, {
+        toValue: 0,
+        duration: 100
+      }), _reactNative.Animated.timing(this.state.opacity, {
+        toValue: 1,
+        duration: 100
+      })])]).start();
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _reactNative.View,
-        { style: _styles2.default.container, __source: {
+        { style: [_styles2.default.container], __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 77
           }
         },
-        _react2.default.createElement(_categories2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 46
-          }
-        }),
-        _react2.default.createElement(_products2.default, { navigation: this.props.navigation, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 47
-          }
-        })
+        _react2.default.createElement(
+          _reactNative.Animated.View,
+          { style: [{ transform: [].concat(babelHelpers.toConsumableArray(this.state.offsetMenu.getTranslateTransform())) }],
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 78
+            }
+          },
+          _react2.default.createElement(_categories2.default, {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 81
+            }
+          })
+        ),
+        _react2.default.createElement(
+          _reactNative.Animated.View,
+          { style: [{ transform: [].concat(babelHelpers.toConsumableArray(this.state.offset.getTranslateTransform())) }, { opacity: this.state.opacity }, _styles2.default.container],
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 84
+            }
+          },
+          _react2.default.createElement(_products2.default, { navigation: this.props.navigation, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 89
+            }
+          })
+        )
       );
     }
   }]);
@@ -79499,7 +79542,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 __d(/* Desafio04/src/pages/home/components/categories/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/home/components/categories/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/home/components/categories/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -79779,7 +79822,7 @@ exports.default = styles;
 __d(/* Desafio04/src/pages/home/components/products/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/home/components/products/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/home/components/products/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -79944,7 +79987,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 __d(/* Desafio04/src/pages/home/components/products/components/card/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/home/components/products/components/card/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/home/components/products/components/card/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -80206,11 +80249,15 @@ exports.default = styles;
 __d(/* Desafio04/src/pages/cart/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/cart/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/cart/index.js';
 
 var _react = require(35     ); // 35 = react
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _propTypes = require(137         ); // 137 = prop-types
+
+var _propTypes2 = babelHelpers.interopRequireDefault(_propTypes);
 
 var _reactNative = require(12            ); // 12 = react-native
 
@@ -80223,10 +80270,6 @@ var _amountCard = require(1017                     ); // 1017 = ./components/amo
 var _amountCard2 = babelHelpers.interopRequireDefault(_amountCard);
 
 var _reactRedux = require(694          ); // 694 = react-redux
-
-var _cart = require(1015                    ); // 1015 = ../../redux/ducks/cart
-
-var _cart2 = babelHelpers.interopRequireDefault(_cart);
 
 var _styles = require(1019      ); // 1019 = ./styles
 
@@ -80246,41 +80289,37 @@ var Cart = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Cart.__proto__ || Object.getPrototypeOf(Cart)).call.apply(_ref, [this].concat(args))), _this), _this.sub = function () {
-      return _this.props.cart.products.reduce(function (amount, item) {
-        return amount + item.data.price * item.qty;
-      }, 0);
-    }, _this.renderScroll = function (products) {
+    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Cart.__proto__ || Object.getPrototypeOf(Cart)).call.apply(_ref, [this].concat(args))), _this), _this.renderScroll = function (products) {
       return _react2.default.createElement(
         _reactNative.View,
         { style: _styles2.default.scrollContainer, __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 34
           }
         },
         _react2.default.createElement(
           _reactNative.ScrollView,
           { showsVerticalScrollIndicator: false, style: _styles2.default.scroll, __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 35
             }
           },
           products.map(function (product) {
             return _react2.default.createElement(_card2.default, { key: product.cartProductId, product: product, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 35
+                lineNumber: 37
               }
             });
           }),
           _react2.default.createElement(_reactNative.View, { style: _styles2.default.space, __source: {
               fileName: _jsxFileName,
-              lineNumber: 37
+              lineNumber: 39
             }
           })
         ),
-        _react2.default.createElement(_amountCard2.default, { style: _styles2.default.amountContainer, subtotal: _this.sub(), __source: {
+        _react2.default.createElement(_amountCard2.default, { style: _styles2.default.amountContainer, __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 41
           }
         })
       );
@@ -80289,7 +80328,7 @@ var Cart = function (_Component) {
         _reactNative.Text,
         { style: _styles2.default.errorMsg, __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
+            lineNumber: 49
           }
         },
         'Carrinho Vazio'
@@ -80307,7 +80346,7 @@ var Cart = function (_Component) {
         _reactNative.View,
         { style: _styles2.default.container, __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 54
           }
         },
         this.renderOrFail(this.props.cart.products)
@@ -80317,42 +80356,38 @@ var Cart = function (_Component) {
   return Cart;
 }(_react.Component);
 
+Cart.propTypes = {
+  cart: _propTypes2.default.shape({
+    products: _propTypes2.default.arrayOf(_propTypes2.default.shape).isRequired
+  }).isRequired
+};
+
 var mapStateToProps = function mapStateToProps(state) {
   return {
     cart: state.cart
   };
 };
 
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return {
-    cartAdd: function cartAdd(data) {
-      return dispatch(_cart2.default.cartAdd(data));
-    },
-    cartRemove: function cartRemove(data) {
-      return dispatch(_cart2.default.cartRemove(data));
-    },
-    cartSubtotal: function cartSubtotal(data) {
-      return dispatch(_cart2.default.cartSubtotal(data));
-    }
-  };
-};
-
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Cart);
+exports.default = (0, _reactRedux.connect)(mapStateToProps, null)(Cart);
 }, 1013, null, "Desafio04/src/pages/cart/index.js");
 __d(/* Desafio04/src/pages/cart/components/card/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/cart/components/card/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/cart/components/card/index.js';
 
 var _react = require(35     ); // 35 = react
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
+var _propTypes = require(137         ); // 137 = prop-types
+
+var _propTypes2 = babelHelpers.interopRequireDefault(_propTypes);
+
+var _reactNative = require(12            ); // 12 = react-native
+
 var _FontAwesome = require(844                                    ); // 844 = react-native-vector-icons/FontAwesome
 
 var _FontAwesome2 = babelHelpers.interopRequireDefault(_FontAwesome);
-
-var _reactNative = require(12            ); // 12 = react-native
 
 var _reactRedux = require(694          ); // 694 = react-redux
 
@@ -80387,6 +80422,12 @@ var CartCard = function (_Component) {
       setTimeout(function () {
         _this.setState({ error: false });
       }, 800);
+    }, _this.myError = function () {
+      return _react2.default.createElement(_reactNative.ActivityIndicator, { size: 'small', color: _styles.colors.rose, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        }
+      });
     }, _this.changeQty = function (qty) {
       if (qty === '0') {
         _this.setState({ error: true });
@@ -80409,13 +80450,7 @@ var CartCard = function (_Component) {
         numberOfLines: 2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
-        }
-      });
-    }, _this.myError = function () {
-      return _react2.default.createElement(_reactNative.ActivityIndicator, { size: 'small', color: _styles.colors.rose, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 71
         }
       });
     }, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
@@ -80437,14 +80472,14 @@ var CartCard = function (_Component) {
           activeOpacity: 1,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 85
           }
         },
         _react2.default.createElement(
           _reactNative.View,
           { style: _styles3.default.left, __source: {
               fileName: _jsxFileName,
-              lineNumber: 71
+              lineNumber: 90
             }
           },
           _react2.default.createElement(_reactNative.Image, {
@@ -80452,7 +80487,7 @@ var CartCard = function (_Component) {
             style: _styles3.default.cover,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 72
+              lineNumber: 91
             }
           })
         ),
@@ -80460,21 +80495,21 @@ var CartCard = function (_Component) {
           _reactNative.View,
           { style: _styles3.default.containerText, __source: {
               fileName: _jsxFileName,
-              lineNumber: 77
+              lineNumber: 96
             }
           },
           _react2.default.createElement(
             _reactNative.View,
             { style: _styles3.default.center, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 78
+                lineNumber: 97
               }
             },
             _react2.default.createElement(
               _reactNative.Text,
               { style: _styles3.default.title, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 79
+                  lineNumber: 98
                 }
               },
               this.props.product.data.name
@@ -80483,7 +80518,7 @@ var CartCard = function (_Component) {
               _reactNative.Text,
               { style: _styles3.default.subTitle, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 80
+                  lineNumber: 99
                 }
               },
               this.props.product.data.brand
@@ -80492,7 +80527,7 @@ var CartCard = function (_Component) {
               _reactNative.Text,
               { style: _styles3.default.price, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 81
+                  lineNumber: 100
                 }
               },
               'R$',
@@ -80503,7 +80538,7 @@ var CartCard = function (_Component) {
             _reactNative.View,
             { style: _styles3.default.right, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 83
+                lineNumber: 102
               }
             },
             this.state.error ? this.myError() : this.myInput(),
@@ -80517,12 +80552,12 @@ var CartCard = function (_Component) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 85
+                  lineNumber: 104
                 }
               },
               _react2.default.createElement(_FontAwesome2.default, { name: 'remove', style: _styles3.default.removeIcon, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 90
+                  lineNumber: 109
                 }
               })
             )
@@ -80533,6 +80568,22 @@ var CartCard = function (_Component) {
   }]);
   return CartCard;
 }(_react.Component);
+
+CartCard.propTypes = {
+  product: _propTypes2.default.shape({
+    data: _propTypes2.default.shape({
+      id: _propTypes2.default.number.isRequired,
+      name: _propTypes2.default.string.isRequired,
+      brand: _propTypes2.default.string.isRequired,
+      image: _propTypes2.default.string.isRequired,
+      price: _propTypes2.default.number.isRequired
+    }).isRequired,
+    cartProductId: _propTypes2.default.string.isRequired,
+    qty: _propTypes2.default.number.isRequired
+  }).isRequired,
+  cartUpdate: _propTypes2.default.func.isRequired,
+  cartRemove: _propTypes2.default.func.isRequired
+};
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
@@ -80556,7 +80607,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 __d(/* Desafio04/src/redux/ducks/cart.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sum = exports.reducer = exports.subtotal = exports.update = exports.remove = exports.add = exports.INITIAL_STATE = exports.Types = undefined;
+exports.reducer = exports.subtotal = exports.update = exports.remove = exports.add = exports.INITIAL_STATE = exports.Types = undefined;
 
 var _createReducer;
 
@@ -80566,7 +80617,7 @@ var _createActions = (0, _reduxsauce.createActions)({
   cartAdd: ['product'],
   cartRemove: ['id'],
   cartUpdate: ['id', 'qty'],
-  cartSubtotal: null
+  cartSubtotal: ['subtotal']
 }),
     Types = _createActions.Types,
     Creators = _createActions.Creators;
@@ -80615,25 +80666,13 @@ var update = exports.update = function update(state, action) {
   });
 };
 
-var subtotal = exports.subtotal = function subtotal(state) {
-  var sumSubtotal = state.products.reduce(function (amount, item) {
-    return amount + item.data.price * item.qty;
-  }, 0);
-
+var subtotal = exports.subtotal = function subtotal(state, action) {
   return babelHelpers.extends({}, state, {
-    subtotal: sumSubtotal
+    subtotal: action.subtotal
   });
 };
 
 var reducer = exports.reducer = (0, _reduxsauce.createReducer)(INITIAL_STATE, (_createReducer = {}, babelHelpers.defineProperty(_createReducer, Types.CART_ADD, add), babelHelpers.defineProperty(_createReducer, Types.CART_REMOVE, remove), babelHelpers.defineProperty(_createReducer, Types.CART_UPDATE, update), babelHelpers.defineProperty(_createReducer, Types.CART_SUBTOTAL, subtotal), _createReducer));
-
-var sum = function sum(state) {
-  return state.products.reduce(function (amount, item) {
-    return amount + item.data.price * item.qty;
-  }, 0);
-};
-
-exports.sum = sum;
 }, 1015, null, "Desafio04/src/redux/ducks/cart.js");
 __d(/* Desafio04/src/pages/cart/components/card/styles.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
@@ -80747,11 +80786,15 @@ exports.default = styles;
 __d(/* Desafio04/src/pages/cart/components/amountCard/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/cart/components/amountCard/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/cart/components/amountCard/index.js';
 
 var _react = require(35     ); // 35 = react
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _propTypes = require(137         ); // 137 = prop-types
+
+var _propTypes2 = babelHelpers.interopRequireDefault(_propTypes);
 
 var _reactNative = require(12            ); // 12 = react-native
 
@@ -80769,8 +80812,21 @@ var AmountCard = function (_Component) {
   babelHelpers.inherits(AmountCard, _Component);
 
   function AmountCard() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     babelHelpers.classCallCheck(this, AmountCard);
-    return babelHelpers.possibleConstructorReturn(this, (AmountCard.__proto__ || Object.getPrototypeOf(AmountCard)).apply(this, arguments));
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = AmountCard.__proto__ || Object.getPrototypeOf(AmountCard)).call.apply(_ref, [this].concat(args))), _this), _this.getSubtotal = function () {
+      return _this.props.cart.products.reduce(function (amount, item) {
+        return amount + item.data.price * item.qty;
+      }, 0);
+    }, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
   }
 
   babelHelpers.createClass(AmountCard, [{
@@ -80783,14 +80839,14 @@ var AmountCard = function (_Component) {
         _reactNative.View,
         { style: _styles2.default.container, __source: {
             fileName: _jsxFileName,
-            lineNumber: 21
+            lineNumber: 37
           }
         },
         _react2.default.createElement(
           _reactNative.Text,
           { style: _styles2.default.title, __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 38
             }
           },
           'Subtotal'
@@ -80799,11 +80855,11 @@ var AmountCard = function (_Component) {
           _reactNative.Text,
           { style: _styles2.default.subtitle, __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 39
             }
           },
           'R$: ',
-          this.props.subtotal.toFixed(2)
+          this.getSubtotal().toFixed(2)
         )
       );
     }
@@ -80811,14 +80867,22 @@ var AmountCard = function (_Component) {
   return AmountCard;
 }(_react.Component);
 
+AmountCard.propTypes = {
+  cart: _propTypes2.default.shape({
+    products: _propTypes2.default.arrayOf(_propTypes2.default.shape).isRequired
+  }).isRequired
+};
+
 var mapStateToProps = function mapStateToProps(state) {
-  return {};
+  return {
+    cart: state.cart
+  };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    cartAdd: function cartAdd(data) {
-      return dispatch(_cart2.default.cartAdd(data));
+    cartSubtotal: function cartSubtotal(data) {
+      return dispatch(_cart2.default.cartSubtotal(data));
     }
   };
 };
@@ -80908,7 +80972,7 @@ exports.default = styles;
 __d(/* Desafio04/src/pages/product/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/product/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/product/index.js';
 
 var _react = require(35     ); // 35 = react
 
@@ -80982,7 +81046,7 @@ __d(/* Desafio04/src/pages/product/components/card/index.js */function(global, r
   value: true
 });
 
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/pages/product/components/card/index.js',
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/pages/product/components/card/index.js',
     _this2 = this;
 
 var _react = require(35     ); // 35 = react
@@ -81001,9 +81065,11 @@ var _cart = require(1015                          ); // 1015 = ../../../../redux
 
 var _cart2 = babelHelpers.interopRequireDefault(_cart);
 
-var _styles = require(1022      ); // 1022 = ./styles
+var _styles = require(1000                ); // 1000 = ../../../../styles
 
-var _styles2 = babelHelpers.interopRequireDefault(_styles);
+var _styles2 = require(1022      ); // 1022 = ./styles
+
+var _styles3 = babelHelpers.interopRequireDefault(_styles2);
 
 var ProductCart = function (_Component) {
   babelHelpers.inherits(ProductCart, _Component);
@@ -81019,7 +81085,12 @@ var ProductCart = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = ProductCart.__proto__ || Object.getPrototypeOf(ProductCart)).call.apply(_ref, [this].concat(args))), _this), _this.addOrRemove = function () {
+    return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = ProductCart.__proto__ || Object.getPrototypeOf(ProductCart)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      opacity: new _reactNative.Animated.Value(0),
+      offset: new _reactNative.Animated.ValueXY({ x: _styles.metrics.screenWidth / 2, y: 0 }),
+      offsetTitle: new _reactNative.Animated.ValueXY({ x: _styles.metrics.screenWidth / 2, y: 0 }),
+      offsetBtn: new _reactNative.Animated.ValueXY({ x: _styles.metrics.screenWidth / 2, y: 0 })
+    }, _this.addOrRemove = function () {
       if (_this.marked()) {
         _this.props.cartRemove(_this.props.product.cartProductId);
       } else {
@@ -81036,109 +81107,145 @@ var ProductCart = function (_Component) {
     key: 'componentWillMount',
     value: function componentWillMount() {}
   }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      _reactNative.Animated.sequence([_reactNative.Animated.delay(20), _reactNative.Animated.parallel([_reactNative.Animated.timing(this.state.offset.x, {
+        toValue: 0,
+        duration: 200
+      }), _reactNative.Animated.timing(this.state.offsetTitle.x, {
+        toValue: 0,
+        duration: 240
+      }), _reactNative.Animated.timing(this.state.offsetBtn.x, {
+        toValue: 0,
+        duration: 380
+      }), _reactNative.Animated.timing(this.state.opacity, {
+        toValue: 1,
+        duration: 580
+      })])]).start();
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _reactNative.View,
-        { style: _styles2.default.container, __source: {
+        _reactNative.Animated.View,
+        { style: [{ transform: [].concat(babelHelpers.toConsumableArray(this.state.offset.getTranslateTransform())) }, { opacity: this.state.opacity }, _styles3.default.container],
+          __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 102
           }
         },
         _react2.default.createElement(
           _reactNative.View,
-          { style: _styles2.default.containerImg, __source: {
+          { style: _styles3.default.containerImg, __source: {
               fileName: _jsxFileName,
-              lineNumber: 65
+              lineNumber: 108
             }
           },
           _react2.default.createElement(_reactNative.Image, {
             source: { uri: this.props.product.data.image },
-            style: _styles2.default.cover,
+            style: _styles3.default.cover,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 66
+              lineNumber: 109
             }
           })
         ),
         _react2.default.createElement(
-          _reactNative.View,
-          { style: _styles2.default.containerText, __source: {
+          _reactNative.Animated.View,
+          { style: [{ transform: [].concat(babelHelpers.toConsumableArray(this.state.offsetTitle.getTranslateTransform())) }, { opacity: this.state.opacity }],
+            __source: {
               fileName: _jsxFileName,
-              lineNumber: 71
+              lineNumber: 115
             }
           },
           _react2.default.createElement(
             _reactNative.View,
-            { style: _styles2.default.left, __source: {
+            { style: _styles3.default.containerText, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 72
+                lineNumber: 119
               }
             },
             _react2.default.createElement(
-              _reactNative.Text,
-              { style: _styles2.default.title, __source: {
+              _reactNative.View,
+              { style: _styles3.default.left, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 73
+                  lineNumber: 120
                 }
               },
-              this.props.product.data.name
+              _react2.default.createElement(
+                _reactNative.Text,
+                { style: _styles3.default.title, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 121
+                  }
+                },
+                this.props.product.data.name
+              ),
+              _react2.default.createElement(
+                _reactNative.Text,
+                { style: _styles3.default.subTitle, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 122
+                  }
+                },
+                this.props.product.data.brand
+              )
             ),
             _react2.default.createElement(
-              _reactNative.Text,
-              { style: _styles2.default.subTitle, __source: {
+              _reactNative.View,
+              { style: _styles3.default.right, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 74
+                  lineNumber: 125
                 }
               },
-              this.props.product.data.brand
-            )
-          ),
-          _react2.default.createElement(
-            _reactNative.View,
-            { style: _styles2.default.right, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 77
-              }
-            },
-            _react2.default.createElement(
-              _reactNative.Text,
-              { style: _styles2.default.price, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 78
-                }
-              },
-              'R$',
-              this.props.product.data.price
+              _react2.default.createElement(
+                _reactNative.Text,
+                { style: _styles3.default.price, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 126
+                  }
+                },
+                'R$',
+                this.props.product.data.price
+              )
             )
           )
         ),
         _react2.default.createElement(
-          _reactNative.View,
-          { style: _styles2.default.footer, __source: {
+          _reactNative.Animated.View,
+          { style: [{ transform: [].concat(babelHelpers.toConsumableArray(this.state.offsetBtn.getTranslateTransform())) }, { opacity: this.state.opacity }],
+            __source: {
               fileName: _jsxFileName,
-              lineNumber: 81
+              lineNumber: 131
             }
           },
           _react2.default.createElement(
-            _reactNative.TouchableOpacity,
-            {
-              style: [_styles2.default.btn, this.marked() ? _styles2.default.rose : _styles2.default.green],
-              activeOpacity: 0.8,
-              onPress: this.addOrRemove,
-              __source: {
+            _reactNative.View,
+            { style: _styles3.default.footer, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 82
+                lineNumber: 135
               }
             },
             _react2.default.createElement(
-              _reactNative.Text,
-              { style: _styles2.default.btnText, __source: {
+              _reactNative.TouchableOpacity,
+              {
+                style: [_styles3.default.btn, this.marked() ? _styles3.default.rose : _styles3.default.green],
+                activeOpacity: 0.8,
+                onPress: this.addOrRemove,
+                __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 87
+                  lineNumber: 136
                 }
               },
-              this.marked() ? 'Remover do Carrinho' : 'Adicionar ao Carrinho'
+              _react2.default.createElement(
+                _reactNative.Text,
+                { style: _styles3.default.btnText, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 141
+                  }
+                },
+                this.marked() ? 'Remover do Carrinho' : 'Adicionar ao Carrinho'
+              )
             )
           )
         )
@@ -81159,7 +81266,9 @@ ProductCart.propTypes = {
     }),
     cartProductId: _propTypes2.default.string
   }),
-  cart: _propTypes2.default.shape({}).isRequired,
+  cart: _propTypes2.default.shape({
+    products: _propTypes2.default.arrayOf(_propTypes2.default.shape).isRequired
+  }).isRequired,
   cartAdd: _propTypes2.default.func.isRequired,
   cartRemove: _propTypes2.default.func.isRequired
 };
@@ -81312,7 +81421,7 @@ exports.default = styles;
 __d(/* Desafio04/src/navigation/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/src/navigation/index.js';
+var _jsxFileName = '/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/src/navigation/index.js';
 
 var _react = require(35     ); // 35 = react
 

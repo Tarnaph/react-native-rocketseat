@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { View, Text, Image, TextInput, TouchableOpacity, ActivityIndicator, Keyboard } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, ActivityIndicator, Keyboard, Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 /* Redux */
@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import CartActions from 'redux/ducks/cart';
 
 /* Styles */
-import { colors } from 'styles';
+import { colors, metrics } from 'styles';
 import styles from './styles';
 
 /* Class */
@@ -31,11 +31,15 @@ class CartCard extends Component {
     }).isRequired,
     cartUpdate: PropTypes.func.isRequired,
     cartRemove: PropTypes.func.isRequired,
+    indice: PropTypes.number.isRequired,
   };
 
   state = {
+    loading: false,
     qty: this.props.product.qty,
     error: false,
+    opacity: new Animated.Value(0),
+    offset: new Animated.ValueXY({ y: -(metrics.screenHeight), x: 0 }),
   };
 
   /* Antes de montar */
@@ -43,9 +47,45 @@ class CartCard extends Component {
     // console.tron.log(this.props);
   }
 
+  componentDidMount() {
+    Animated.sequence([
+
+      Animated.delay(100 + (this.props.indice * 1001)),
+
+      Animated.parallel([
+        Animated.timing(this.state.offset.y, {
+          toValue: 0,
+          duration: 2001,
+        }),
+        Animated.timing(this.state.opacity, {
+          toValue: 1,
+          duration: 580,
+        }),
+      ]),
+    ]).start();
+  }
+
+  componentWillUnmount() {
+    Animated.sequence([
+
+      Animated.delay(100 + (this.props.indice * 1001)),
+
+      Animated.parallel([
+        Animated.timing(this.state.offset.y, {
+          toValue: 0,
+          duration: 2001,
+        }),
+        Animated.timing(this.state.opacity, {
+          toValue: 1,
+          duration: 580,
+        }),
+      ]),
+    ]).start();
+  }
+
   /* Timer do erro */
   hideError = () => {
-    setTimeout(() => { this.setState({ error: false }); }, 800);
+    setTimeout(() => { this.setState({ error: false, loading: false }); }, 800);
   };
 
   /* Erro no input */
@@ -80,8 +120,11 @@ class CartCard extends Component {
     />
   );
 
-  render() {
-    return (
+  finalRender = () => (
+    <Animated.View style={[
+          { transform: [...this.state.offset.getTranslateTransform()] },
+          { opacity: this.state.opacity }]}
+    >
       <TouchableOpacity
         style={styles.container}
         onPress={Keyboard.dismiss}
@@ -111,6 +154,17 @@ class CartCard extends Component {
           </View>
         </View>
       </TouchableOpacity>
+    </Animated.View>
+  );
+
+  render() {
+    return (
+      <View>
+        { this.state.loading
+          ? this.myError()
+          : this.finalRender()
+        }
+      </View>
     );
   }
 }

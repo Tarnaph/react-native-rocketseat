@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { View, Text, Image, TouchableOpacity, AsyncStorage } from 'react-native';
+import { View, Text, Image, TouchableOpacity, AsyncStorage, Animated, Easing } from 'react-native';
 
 /* Redux */
 import { connect } from 'react-redux';
 import CartActions from 'redux/ducks/cart';
 
 /* Styles */
+import { metrics } from 'styles';
 import styles from './styles';
 
 /* Class */
@@ -40,10 +41,45 @@ class ProductCart extends Component {
     },
   };
 
+  state = {
+    opacity: new Animated.Value(0.1),
+    offset: new Animated.ValueXY({ y: (metrics.screenHeight) / 80, x: 0 }),
+    offsetTitle: new Animated.ValueXY({ x: (metrics.screenWidth), y: 0 }),
+    offsetBtn: new Animated.ValueXY({ x: (metrics.screenWidth), y: 0 }),
+  };
+
   /* Antes de Montar */
   componentWillMount() {
     // AsyncStorage.clear();
-    console.tron.log(this.props);
+  }
+
+  componentDidMount() {
+    Animated.sequence([
+
+      Animated.delay(20),
+
+      Animated.parallel([
+        Animated.timing(this.state.offset.y, {
+          toValue: 0,
+          duration: 700,
+          easing: Easing.linear(Easing.bounce),
+        }),
+        Animated.timing(this.state.offsetTitle.x, {
+          toValue: 0,
+          duration: 150,
+          easing: Easing.in(Easing.bounce),
+        }),
+        Animated.timing(this.state.offsetBtn.x, {
+          toValue: 0,
+          duration: 170,
+          easing: Easing.in(Easing.bounce),
+        }),
+        Animated.timing(this.state.opacity, {
+          toValue: 1,
+          duration: 100,
+        }),
+      ]),
+    ]).start();
   }
 
   /* Adiciona ao carrinho ou remove */
@@ -63,35 +99,54 @@ class ProductCart extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Animated.View style={[
+        { transform: [...this.state.offset.getTranslateTransform()] },
+        { opacity: this.state.opacity },
+        styles.container]}
+      >
+
         <View style={styles.containerImg}>
           <Image
             source={{ uri: this.props.product.data.image }}
             style={styles.cover}
           />
         </View>
-        <View style={styles.containerText}>
-          <View style={styles.left}>
-            <Text style={styles.title}>{this.props.product.data.name}</Text>
-            <Text style={styles.subTitle}>{this.props.product.data.brand}</Text>
-          </View>
 
-          <View style={styles.right}>
-            <Text style={styles.price}>R${this.props.product.data.price}</Text>
+        <Animated.View style={[
+          { transform: [...this.state.offsetTitle.getTranslateTransform()] },
+          { opacity: this.state.opacity }]}
+        >
+          <View style={styles.containerText}>
+            <View style={styles.left}>
+              <Text style={styles.title}>{this.props.product.data.name}</Text>
+              <Text style={styles.subTitle}>{this.props.product.data.brand}</Text>
+            </View>
+
+            <View style={styles.right}>
+              <Text style={styles.price}>R${this.props.product.data.price}</Text>
+            </View>
           </View>
-        </View>
-        <View style={styles.footer} >
-          <TouchableOpacity
-            style={[styles.btn, this.marked() ? styles.rose : styles.green]}
-            activeOpacity={0.8}
-            onPress={this.addOrRemove}
-          >
-            <Text style={styles.btnText}>
-              { this.marked() ? 'Remover do Carrinho' : 'Adicionar ao Carrinho'}
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+        </Animated.View>
+
+        <Animated.View style={[
+          { transform: [...this.state.offsetBtn.getTranslateTransform()] },
+          { opacity: this.state.opacity }]}
+        >
+          <View style={styles.footer} >
+            <TouchableOpacity
+              style={[styles.btn, this.marked() ? styles.rose : styles.green]}
+              activeOpacity={0.8}
+              onPress={this.addOrRemove}
+            >
+              <Text style={styles.btnText}>
+                { this.marked() ? 'Remover do Carrinho' : 'Adicionar ao Carrinho'}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </Animated.View>
+
+
+      </Animated.View>
     );
   }
 }

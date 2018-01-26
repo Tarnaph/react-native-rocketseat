@@ -25,6 +25,7 @@ export const request = state => ({
 
 export const refresh = state => ({
   ...state,
+  loading: true,
 });
 
 export const success = (state, action) => ({

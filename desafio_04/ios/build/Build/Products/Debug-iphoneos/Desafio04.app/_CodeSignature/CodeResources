@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		UJ5fUw9fgj0J6+1n4srs3FjrfXo=
+		Iwh34q/egNKq1xm6cIJJgyhurqc=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
-		ZDByIVOTzvsZfSrUMMPDw42nYCQ=
+		olNBXE7LrViy1azzTBAhZrpLB2k=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<data>
-		e8asyHZTTDRFhvmsfOIBr/onPNI=
+		PEUwWNebA2u+ph0fxUpa46FGtRc=
 		</data>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -99,11 +99,11 @@
 		</data>
 		<key>PlugIns/Desafio04Tests.xctest.dSYM/Contents/Resources/DWARF/Desafio04Tests</key>
 		<data>
-		wd5TW9vp9olrciIm2rUnnk5ihbM=
+		e/W86ZsIG3X/WdIp9hKriXl9zAg=
 		</data>
 		<key>PlugIns/Desafio04Tests.xctest/Desafio04Tests</key>
 		<data>
-		/W9Tzso+UPuqm1EPDVvCbARo6+o=
+		rGoXiptxF/N9xEpmfLS6jToiXiM=
 		</data>
 		<key>PlugIns/Desafio04Tests.xctest/Info.plist</key>
 		<data>
@@ -135,7 +135,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		TG9uI1irfSLHbFpPwCMLUJKC86M=
+		1X8BHl1fZoeYM5HBODIGov9LOwg=
 		</data>
 		<key>ip.txt</key>
 		<data>
@@ -143,11 +143,11 @@
 		</data>
 		<key>main.jsbundle</key>
 		<data>
-		xXCywMmtWJomjzH8oYVMj61YcHI=
+		CaUVQ2y7DbcYTKFE2MCyDvczGmw=
 		</data>
 		<key>main.jsbundle.meta</key>
 		<data>
-		Qcd2mpO34eVsldm1kvikIywQeFk=
+		R43K53KjHOoclbuiz2UBOPKoFnU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -156,11 +156,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UJ5fUw9fgj0J6+1n4srs3FjrfXo=
+			Iwh34q/egNKq1xm6cIJJgyhurqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4iO7+D4J5YayO+5bbr51FZfKnvYTZEJqo8smBh4nuiU=
+			rv9ufyzTOIpskpY6eLBPplbXpliqo2PDXNwQGXMfpnE=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -222,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZDByIVOTzvsZfSrUMMPDw42nYCQ=
+			olNBXE7LrViy1azzTBAhZrpLB2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			z5W2QWQoIRs3TDAH6IeiXe4w9hLwt+aA9V8T+5Yu9vk=
+			38rhnnd/QsuUvGIJNrsgkmwELJlIRqcHRG5QsOSmE64=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
@@ -277,11 +277,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e8asyHZTTDRFhvmsfOIBr/onPNI=
+			PEUwWNebA2u+ph0fxUpa46FGtRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rgVcYLcccgYWh0ZwQFYOE0ASJqvBDCfXJuT7CSKWBTs=
+			e1NvomCtx4GkdrlyZUhc4V/k8Sb53JOlnGw0rJ9g4l4=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
@@ -378,22 +378,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wd5TW9vp9olrciIm2rUnnk5ihbM=
+			e/W86ZsIG3X/WdIp9hKriXl9zAg=
 			</data>
 			<key>hash2</key>
 			<data>
-			QO/JzDfIZkz8N9EWmbjFjfuoYwMozNH3bV6IKWCh6m8=
+			CQIXqw0t/Ywce/OdSteVkJGESUOevxLPOW0bj24JuVk=
 			</data>
 		</dict>
 		<key>PlugIns/Desafio04Tests.xctest/Desafio04Tests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/W9Tzso+UPuqm1EPDVvCbARo6+o=
+			rGoXiptxF/N9xEpmfLS6jToiXiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			yvnWL3OMjDUoG+AwvVmgMbB35buzw0lINYHRhAdQ2GY=
+			Ud1j7LtpXBN8FaFY4dE9drWQYBF2B50GBa5xhKZxI/I=
 			</data>
 		</dict>
 		<key>PlugIns/Desafio04Tests.xctest/Info.plist</key>
@@ -477,11 +477,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TG9uI1irfSLHbFpPwCMLUJKC86M=
+			1X8BHl1fZoeYM5HBODIGov9LOwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kJl1URtyWV6QAytrXqf3pbqIWZ5MQjAl5DSnlvgcLiA=
+			BmyzXhiLevWBFKymPnQDTbw2XhSH4G8HaZuJFUSk4ew=
 			</data>
 		</dict>
 		<key>ip.txt</key>
@@ -499,22 +499,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xXCywMmtWJomjzH8oYVMj61YcHI=
+			CaUVQ2y7DbcYTKFE2MCyDvczGmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jS6FzFbvR0p9wGR1HXBtYXe1VeNN8vNnwKyclgByHyU=
+			f7Eg/c1Dm1Cz3b68d2sjGcA4w9dOh//EE7yyG+9B+mU=
 			</data>
 		</dict>
 		<key>main.jsbundle.meta</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qcd2mpO34eVsldm1kvikIywQeFk=
+			R43K53KjHOoclbuiz2UBOPKoFnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kMFAf5YuMFmAT7GxGlWJxXovjvgvRr8t3x1Yu4+LvpQ=
+			lxN1PjSE8vo3Kp0z08B0CV7FKmNV9adMrqekSTjQe9o=
 			</data>
 		</dict>
 	</dict>

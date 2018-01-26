@@ -6,7 +6,7 @@
 <string>Apple LLVM version 9.0.0 (clang-900.0.38)</string>
  <key>files</key>
  <array>
-  <string>/Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/React/Base/RCTModuleMethod.mm</string>
+  <string>/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/React/Base/RCTModuleMethod.mm</string>
  </array>
  <key>diagnostics</key>
  <array>

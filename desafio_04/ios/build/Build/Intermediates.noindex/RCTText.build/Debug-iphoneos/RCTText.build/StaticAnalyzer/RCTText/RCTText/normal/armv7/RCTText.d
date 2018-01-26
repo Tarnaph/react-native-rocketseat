@@ -1,21 +1,21 @@
 dependencies: \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTText.m \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTText.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTUtils.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTAssert.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTDefines.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/UIView+React.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTComponent.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGEnums.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGMacros.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/node_modules/react-native/Libraries/Text/RCTShadowText.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTShadowView.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTRootView.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridge.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeDelegate.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTJavaScriptLoader.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeModule.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTFrameUpdate.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTInvalidating.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/Yoga.h \
-  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafios/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTTextDecorationLineType.h
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Text/RCTText.m \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Text/RCTText.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTUtils.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTAssert.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTDefines.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/UIView+React.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTComponent.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGEnums.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGMacros.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTShadowView.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTRootView.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridge.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeDelegate.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTJavaScriptLoader.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeModule.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTFrameUpdate.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTInvalidating.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/yoga/Yoga.h \
+  /Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/desafio_04/ios/build/Build/Products/Debug-iphoneos/include/React/RCTTextDecorationLineType.h
