@@ -1,0 +1,4 @@
+#Wed Jan 31 14:22:30 BRST 2018
+base.0=/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/graphql_desafio/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/raphaelmorales/codes/app/estudos/rocketseat/desafio/graphql_desafio/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
