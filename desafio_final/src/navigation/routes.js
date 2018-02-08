@@ -48,4 +48,5 @@ const Drawer = DrawerNavigator({
   drawerWidth: 300,
 });
 
-export default Drawer;
+
+export default Stack;

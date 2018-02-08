@@ -28,6 +28,15 @@ const styles = StyleSheet.create({
     height: metrics.navBarHeight,
   },
 
+  iconAddContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.green,
+    borderRadius: (metrics.baseMargin * 1.5) / 2,
+    width: metrics.baseMargin * 1.5,
+    height: metrics.baseMargin * 1.5,
+  },
+
 });
 
 export default styles;

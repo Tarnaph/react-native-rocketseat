@@ -25,6 +25,13 @@ export default class header extends Component {
           <Icon name="bars" size={fonts.regular} color={colors.white} />
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.iconAddContainer}
+          onPress={() => this.props.navigation.navigate('Adder')}
+        >
+          <Icon name="plus" size={fonts.small} color={colors.white} />
+        </TouchableOpacity>
+
         <Text style={styles.title}>{this.props.defaultTitle}</Text>
 
         <TouchableOpacity

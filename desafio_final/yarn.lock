@@ -4002,6 +4002,13 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-calendars@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.17.0.tgz#dae3e988422390f6beca690689ace0f5b14398c3"
+  dependencies:
+    prop-types "^15.5.10"
+    xdate "^0.8.0"
+
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
@@ -5218,6 +5225,10 @@ xcode@^0.9.1:
     pegjs "^0.10.0"
     simple-plist "^0.2.1"
     uuid "3.0.1"
+
+xdate@^0.8.0:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/xdate/-/xdate-0.8.2.tgz#d7b033c00485d02695baf0044f4eacda3fc961a3"
 
 xml-name-validator@^2.0.1:
   version "2.0.1"

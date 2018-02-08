@@ -15,4 +15,5 @@ export default {
   purpleDarker: '#7e3fa8',
 
   green: '#49C7A7',
+  alfa: 'rgba(0,0,0,0.6)',
 };
