@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 /* Presentational */
 import { View } from 'react-native';
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
-import {LocaleConfig} from 'react-native-calendars';
+import { LocaleConfig } from 'react-native-calendars';
 
 import { general, colors, fonts, metrics } from 'styles';
 import styles from './styles';

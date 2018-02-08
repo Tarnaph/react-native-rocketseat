@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 import { View, Text, TextInput } from 'react-native';
 
 /* Components */
-import Btn from 'pages/login/components/btn';
-import Input from 'pages/login/components/input';
+import Btn from 'pages/components/btn';
+import Input from 'pages/components/input';
 
 import styles from './styles';
 

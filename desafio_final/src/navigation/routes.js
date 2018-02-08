@@ -11,10 +11,10 @@ import Header from 'navigation/components/header';
 import Bugger from 'navigation/components/bugger';
 
 /* Login */
-import Identification from 'pages/login/identification';
-import Login from 'pages/login/login';
-import Register from 'pages/login/register';
-import Dashboard from 'pages/login/dashboard';
+import Identification from 'pages/identification';
+import Login from 'pages/login';
+import Register from 'pages/register';
+import Dashboard from 'pages/dashboard';
 
 /* Calendar */
 import Calendar from 'pages/calendar';
