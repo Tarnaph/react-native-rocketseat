@@ -15,12 +15,20 @@ export default class index extends Component {
     return (
       <View style={styles.containerInput}>
         <TextInput
-          style={styles.celInput}
+          style={[styles.celInput,styles[`${this.props.color}`]]}
           placeholder={this.props.title}
-          placeholderTextColor={ colors.light }
+          placeholderTextColor={this.props.color === 'gray' ? colors.dark : colors.light}
           underlineColorAndroid={'transparent'}
+          onChangeText={this.props.onChangeText}
+          value={this.props.value}
+          keyboardType={this.props.keyboardType}
+          secureTextEntry={!!this.props.secureTextEntry && true}
         />
-        <Icon name={this.props.icon} size={fonts.big} style={styles.phoneIcon} />
+        <Icon
+          name={this.props.icon}
+          size={fonts.big}
+          style={[styles.phoneIcon, styles[`${this.props.color}`]]}
+        />
       </View>
     );
   }

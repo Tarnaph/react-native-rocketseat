@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     borderRadius: metrics.baseRadius,
     padding: metrics.basePadding,
     justifyContent: 'space-around',
+    elevation: 10,
   },
 
   title: {

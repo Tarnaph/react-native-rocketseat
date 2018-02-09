@@ -6,12 +6,20 @@ const styles = StyleSheet.create({
 
   },
 
+  purple: {
+    backgroundColor: colors.purpleDark,
+    color: colors.white,
+  },
+
+  gray: {
+    backgroundColor: colors.light,
+    color: colors.dark,
+  },
+
   celInput: {
     height: metrics.navBarHeight,
     paddingLeft: (metrics.basePadding * 3) + metrics.basePadding,
-    backgroundColor: colors.purpleDark,
     borderRadius: metrics.baseRadius,
-    color: colors.white,
     marginBottom: metrics.baseMargin / 2,
   },
 
@@ -20,7 +28,6 @@ const styles = StyleSheet.create({
     left: metrics.basePadding,
     top: metrics.navBarHeight / 3,
     zIndex: 1,
-    color: colors.white,
     paddingRight: metrics.basePadding,
     borderRightColor: colors.purpleDarker,
     borderRightWidth: 1,
