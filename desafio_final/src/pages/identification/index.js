@@ -1,24 +1,43 @@
 /* Core */
 import React, { Component } from 'react';
+import _ from 'lodash';
 
 /* Presentational */
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
 
+/* Redux */
+import { connect } from 'react-redux';
+import UserActions from 'redux/ducks/user';
+
 /* Styles */
 import styles from './styles';
 
-export default class Identication extends Component {
+class Identication extends Component {
   static navigationOptions = { header: null };
-  state = { phone: '', loading: false };
-  checkPhone = () => {
-    this.setState({ loading: true });
-    if (this.state.phone.length < 8) { this.setState({ loading: false }); return; }
-    this.props.navigation.navigate('Register');
+  state = { phone: '' };
+
+  componentWillMount(){
+    console.tron.log(this.props);
+    console.tron.log(this.state);
   }
+
+  componentDidUpdate(){
+    this.props.user.registered === true
+      && this.props.navigation.navigate('Login');
+    this.props.user.registered === false
+      && this.props.navigation.navigate('Register');
+  }
+
+  checkAndFindPhone = () => {
+    if (this.state.phone.length > 1) {
+      this.props.checkPhone(this.state.phone);
+    }
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -32,11 +51,24 @@ export default class Identication extends Component {
           color="purple"
         />
         <Btn
-          title="Entrar"
-          link={this.checkPhone}
-          loading={this.state.loading}
+          title={this.props.user.registered ? 'Login' : 'Cadastrar'}
+          link={this.checkAndFindPhone}
+          loading={this.props.user.loading}
         />
       </View>
     );
   }
 }
+
+/* Pega o global state para o props */
+const mapStateToProps = state => ({
+  user: state.user,
+});
+
+/* Pega func para o props */
+const mapDispatchToProps = dispatch => ({
+  checkPhone: phone => dispatch(UserActions.userFindPhone(phone)),
+});
+
+/* Connecta os dois, podendo ser null */
+export default connect(mapStateToProps, mapDispatchToProps)(Identication);

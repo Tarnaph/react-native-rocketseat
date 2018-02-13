@@ -37,6 +37,20 @@ const styles = StyleSheet.create({
     height: metrics.baseMargin * 1.5,
   },
 
+  iconBackContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: (metrics.baseMargin * 1.5) / 2,
+    width: metrics.baseMargin * 1.5,
+    height: metrics.baseMargin * 1.5,
+  },
+
+  iconBack: {
+    fontSize: fonts.bigger,
+    fontWeight: 'bold',
+    color: colors.white,
+  },
+
 });
 
 export default styles;

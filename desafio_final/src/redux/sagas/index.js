@@ -1,9 +1,13 @@
 import { takeLatest } from 'redux-saga/effects';
-import { Types as FavoritesTypes } from 'redux/ducks/favorites';
-import { searchAndAddRepository } from 'redux/sagas/favorites';
+
+/* Types */
+import { Types as UserTypes } from 'redux/ducks/user';
+
+/* Sagas */
+import { findPhone, isRegistered } from 'redux/sagas/user';
 
 export default function* root() {
   yield [
-    takeLatest(FavoritesTypes.SEARCH, searchAndAddRepository),
+    takeLatest(UserTypes.USER_FIND_PHONE, findPhone),
   ];
 }

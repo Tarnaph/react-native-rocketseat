@@ -4,30 +4,23 @@ import React, { Component } from 'react';
 /* Presentational */
 import { Modal, TouchableOpacity, View, Text } from 'react-native';
 
-/* Styles */
-import styles from './styles';
-
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
+import Datepicker from 'pages/components/datepicker';
+
+/* Styles */
+import styles from './styles';
 
 export default class Adder extends Component {
-  state = { modalVisible: true, date: '', title: '', text: '', loading: false };
-
-  openModal() {
-    this.setState({modalVisible: true });
-  }
-
-  closeModal() {
-    this.setState({modalVisible: false });
-  }
+  state = { modalVisible: true, datetime: '', title: '', text: '', loading: false };
   render() {
     return (
       <Modal
         transparent
         visible={this.state.modalVisible}
         animationType={'fade'}
-        onRequestClose={() => this.closeModal()}
+        onRequestClose={() => this.setState({modalVisible: false })}
       >
         <View style={styles.container}>
           <View style={styles.box}>
@@ -37,17 +30,16 @@ export default class Adder extends Component {
             </View>
 
             <View>
-              <Input
+              <Datepicker
                 title="Selecione data e horário"
                 icon="calendar"
-                onChangeText={date => this.setState({ date })}
-                value={this.state.date}
-                keyboardType="default"
                 color="gray"
+                date={this.state.datetime}
+                onDateChange={(datetime) => {this.setState({datetime: datetime})}}
               />
               <Input
                 title="Qual nome do evento ?"
-                icon="user"
+                icon="comment"
                 onChangeText={title => this.setState({ title })}
                 value={this.state.title}
                 keyboardType="default"
@@ -55,7 +47,7 @@ export default class Adder extends Component {
               />
               <Input
                 title="Onde Ocorrerá ?"
-                icon="lock"
+                icon="comments"
                 onChangeText={text => this.setState({ text })}
                 value={this.state.text}
                 keyboardType="default"
@@ -69,7 +61,7 @@ export default class Adder extends Component {
             </View>
 
             <View style={styles.bottom}>
-              <TouchableOpacity activeOpacity={0.7} onPress={() => this.closeModal()}>
+              <TouchableOpacity activeOpacity={0.7} onPress={() => this.setState({modalVisible: false })}>
                 <Text style={styles.backTitle}> Cancelar</Text>
               </TouchableOpacity>
             </View>

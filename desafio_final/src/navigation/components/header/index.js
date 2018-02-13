@@ -14,23 +14,32 @@ export default class header extends Component {
     // console.tron.error(this.props);
   }
 
+  adder = () => (
+    <TouchableOpacity
+      style={styles.iconAddContainer}
+      onPress={() => this.props.navigation.navigate('Adder')}
+      >
+      <Icon name="plus" size={fonts.small} color={colors.white} />
+    </TouchableOpacity>
+  );
+
+  back = () => (
+    <TouchableOpacity
+      style={styles.iconBackContainer}
+      onPress={() => this.props.navigation.goBack()}
+      >
+      <Icon name="angle-left" style={styles.iconBack} />
+    </TouchableOpacity>
+  );
+
   render() {
     return (
       <View style={styles.container}>
 
-        <TouchableOpacity
-          style={styles.iconContainer}
-          onPress={() => this.props.navigation.navigate('DrawerOpen')}
-        >
-          <Icon name="bars" size={fonts.regular} color={colors.white} />
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.iconAddContainer}
-          onPress={() => this.props.navigation.navigate('Adder')}
-        >
-          <Icon name="plus" size={fonts.small} color={colors.white} />
-        </TouchableOpacity>
+        { this.props.scene.route.routeName != 'Calendar'
+          ? this.back()
+          : this.adder()
+        }
 
         <Text style={styles.title}>{this.props.defaultTitle}</Text>
 
