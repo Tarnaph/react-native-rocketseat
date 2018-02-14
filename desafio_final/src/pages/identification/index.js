@@ -1,13 +1,14 @@
 /* Core */
 import React, { Component } from 'react';
-import _ from 'lodash';
+import VMasker from 'vanilla-masker';
 
 /* Presentational */
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, Keyboard } from 'react-native';
 
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
+import Error from 'pages/components/error';
 
 /* Redux */
 import { connect } from 'react-redux';
@@ -18,40 +19,43 @@ import styles from './styles';
 
 class Identication extends Component {
   static navigationOptions = { header: null };
-  state = { phone: '' };
-
-  componentWillMount(){
-    console.tron.log(this.props);
-    console.tron.log(this.state);
-  }
+  state = { phone: '', localError: false, localErrorMsg: '' };
 
   componentDidUpdate(){
-    this.props.user.registered === true
-      && this.props.navigation.navigate('Login');
-    this.props.user.registered === false
-      && this.props.navigation.navigate('Register');
+    if (this.props.user.isPhoneScreen === true)
+    {
+      this.props.user.registered === true
+        && this.props.navigation.navigate('Login');
+      this.props.user.registered === false
+        && this.props.navigation.navigate('Register');
+    }
   }
 
   checkAndFindPhone = () => {
-    if (this.state.phone.length > 1) {
+    Keyboard.dismiss();
+    if (this.state.phone.length > 8) {
       this.props.checkPhone(this.state.phone);
+    } else {
+      this.setState({ localError: true, localErrorMsg: 'Invalid format' })
     }
   };
 
   render() {
     return (
       <View style={styles.container}>
+        { this.state.localError && <Error msg={this.state.localErrorMsg} /> }
         <Text style={styles.title}>Scheduler</Text>
         <Input
           title="Seu número de telefone"
           icon="phone"
-          onChangeText={phone => this.setState({ phone })}
+          onChangeText={phone => this.setState({
+            phone: VMasker.toPattern(phone, "(99) 9999-99999999") })}
           value={this.state.phone}
           keyboardType="phone-pad"
           color="purple"
         />
         <Btn
-          title={this.props.user.registered ? 'Login' : 'Cadastrar'}
+          title="Entrar"
           link={this.checkAndFindPhone}
           loading={this.props.user.loading}
         />

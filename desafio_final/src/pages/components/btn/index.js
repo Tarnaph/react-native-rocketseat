@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import { TouchableOpacity, Text, ActivityIndicator } from 'react-native';
 
 /* Styles */
+import { colors } from 'styles';
 import styles from './styles';
 
 export default class Btn extends Component {
@@ -12,7 +13,7 @@ export default class Btn extends Component {
     return (
       <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={this.props.link}>
         {	this.props.loading
-          ? <ActivityIndicator size="small" color="#00ff00" />
+          ? <ActivityIndicator size="small" color={colors.white} />
           : <Text style={styles.title}>{this.props.title}</Text>
         }
       </TouchableOpacity>
