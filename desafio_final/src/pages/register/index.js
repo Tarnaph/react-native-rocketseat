@@ -89,7 +89,7 @@ class Register extends Component {
         <Input
           title="Seu número de telefone"
           icon="phone"
-          onChangeText={phone => this.setState({ phone: VMasker.toPattern(phone, '(99) 9999-99999999') })}
+          onChangeText={phone => this.setState({ phone: VMasker.toPattern(phone, '(99)9999-99999999') })}
           value={this.state.phone}
           keyboardType="phone-pad"
           color="purple"
