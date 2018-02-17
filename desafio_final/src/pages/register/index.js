@@ -2,45 +2,49 @@
 import React, { Component } from 'react';
 import VMasker from 'vanilla-masker';
 
+/* Navitation */
+import { NavigationActions } from 'react-navigation';
+
 /* Presentational */
 import { View, Text, TouchableOpacity, Keyboard } from 'react-native';
 
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
-import Error from 'pages/components/error';
+import Notification from 'pages/components/notification';
 
 /* Redux */
 import { connect } from 'react-redux';
 import UserActions from 'redux/ducks/user';
+import LoginActions from 'redux/ducks/login';
 
 /* Styles */
 import styles from './styles';
 
 class Register extends Component {
-  static navigationOptions = { header: null };
+  // static navigationOptions = { header: null };
 
   componentWillMount(){
-    // console.tron.log(this.props);
+    console.tron.log(this.props);
   }
 
   componentDidUpdate(){
-    if(this.props.user.isRegisterScreen === true) {
-      this.props.user.isAuthorized && this.props.navigation.navigate('Calendar');
-    }
+    this.props.login.isAuthorized
+    && this.props.navigation.dispatch(this.navitagionTo('Calendar'));
   }
 
   state = { phone: this.props.user.phone, name: '', password: '', loading: false };
 
   backToLogin = () => (this.props.navigation.navigate('Login'));
 
-  login = () => {
-    this.setState({ loading: true });
-    if (!!this.state.phone && !!this.state.name && !!this.state.password) {
-      this.props.navigation.navigate('Calendar');
-    }
-    this.setState({ loading: false });
-  };
+  navitagionTo = routeName => (
+    NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName }),
+      ],
+    })
+  )
 
   register = () => {
     Keyboard.dismiss();
@@ -50,7 +54,7 @@ class Register extends Component {
   render() {
     return (
       <View style={styles.container}>
-        { this.props.user.error && <Error msg={this.props.user.msgError} /> }
+        <Notification />
         <Text style={styles.title}>Scheduler</Text>
         <Input
           title="Seu número de telefone"
@@ -81,7 +85,7 @@ class Register extends Component {
         <Btn
           title="Entrar"
           link={this.register}
-          loading={this.props.user.loading}
+          loading={this.props.ux.loading}
         />
         <TouchableOpacity activeOpacity={0.7} onPress={this.backToLogin}>
           <Text style={styles.backTitle}> Mas... eu já tenho uma conta.</Text>
@@ -94,11 +98,13 @@ class Register extends Component {
 /* Pega o global state para o props */
 const mapStateToProps = state => ({
   user: state.user,
+  ux: state.ux,
+  login: state.login,
 });
 
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => ({
-  requestRegister: (phone, name, password) => dispatch(UserActions.userRequestRegister(phone, name, password)),
+  requestRegister: (phone, name, password) => dispatch(LoginActions.loginRequestRegister(phone, name, password)),
 });
 
 /* Connecta os dois, podendo ser null */

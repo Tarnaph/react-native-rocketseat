@@ -2,54 +2,62 @@
 import React, { Component } from 'react';
 import VMasker from 'vanilla-masker';
 
+/* Navitation */
+import { NavigationActions } from 'react-navigation';
+
 /* Presentational */
 import { View, Text, Keyboard } from 'react-native';
 
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
-import Error from 'pages/components/error';
+import Notification from 'pages/components/notification';
 
 /* Redux */
 import { connect } from 'react-redux';
 import UserActions from 'redux/ducks/user';
+import LoginActions from 'redux/ducks/login';
 
 /* Styles */
 import styles from './styles';
 
 class Identication extends Component {
-  static navigationOptions = { header: null };
-  state = { phone: '', localError: false, localErrorMsg: '' };
+  static navigationOptions = { header: null }
 
-  componentDidUpdate(){
-    if (this.props.user.isPhoneScreen === true)
-    {
-      this.props.user.registered === true
-        && this.props.navigation.navigate('Login');
-      this.props.user.registered === false
-        && this.props.navigation.navigate('Register');
-    }
+  state = { phone: '' }
+
+  componentWillMount() { console.tron.log(this.props); }
+  componentDidUpdate() {
+    if (this.props.login.isRegistered === true) { this.props.navigation.dispatch(this.navitagionTo('Login')); }
+    if (this.props.login.isRegistered === false) { this.props.navigation.dispatch(this.navitagionTo('Register')); }
   }
 
+  navitagionTo = routeName => (
+    NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName }),
+      ],
+    })
+  )
+
   checkAndFindPhone = () => {
-    Keyboard.dismiss();
-    if (this.state.phone.length > 8) {
+    if (this.state.phone.length > 1) {
+      Keyboard.dismiss();
       this.props.checkPhone(this.state.phone);
-    } else {
-      this.setState({ localError: true, localErrorMsg: 'Invalid format' })
     }
-  };
+  }
 
   render() {
     return (
       <View style={styles.container}>
-        { this.state.localError && <Error msg={this.state.localErrorMsg} /> }
+        <Notification />
         <Text style={styles.title}>Scheduler</Text>
         <Input
           title="Seu número de telefone"
           icon="phone"
           onChangeText={phone => this.setState({
-            phone: VMasker.toPattern(phone, "(99) 9999-99999999") })}
+            phone: VMasker.toPattern(phone, "(99)9999-99999999") })}
           value={this.state.phone}
           keyboardType="phone-pad"
           color="purple"
@@ -57,7 +65,7 @@ class Identication extends Component {
         <Btn
           title="Entrar"
           link={this.checkAndFindPhone}
-          loading={this.props.user.loading}
+          loading={this.props.ux.loading}
         />
       </View>
     );
@@ -67,11 +75,14 @@ class Identication extends Component {
 /* Pega o global state para o props */
 const mapStateToProps = state => ({
   user: state.user,
+  ux: state.ux,
+  login: state.login,
+  notification: state.notification,
 });
 
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => ({
-  checkPhone: phone => dispatch(UserActions.userFindPhone(phone)),
+  checkPhone: phone => dispatch(LoginActions.loginPhoneCheck(phone)),
 });
 
 /* Connecta os dois, podendo ser null */
