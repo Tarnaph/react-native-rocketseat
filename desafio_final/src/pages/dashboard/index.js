@@ -2,24 +2,48 @@
 import React, { Component } from 'react';
 
 /* Presentational */
-import { View, Text } from 'react-native';
+import { View, Text, Keyboard } from 'react-native';
 
 /* Components */
 import Btn from 'pages/components/btn';
 import Input from 'pages/components/input';
 
+/* Redux */
+import { connect } from 'react-redux';
+import UserActions from 'redux/ducks/user';
+
+/* Styles */
 import styles from './styles';
 
-export default class Dashboard extends Component {
-  state = { name: '', password: '', confirmPassword: '', loading: false };
+class Dashboard extends Component {
+  state = {
+    name: this.props.user.name,
+    password: '',
+    confirmPassword: '',
+  };
+
+  componentWillMount(){
+    console.tron.log(this.props);
+  }
+
+  /* Update User */
+  update = () => {
+    Keyboard.dismiss();
+    this.props.updateUser(
+      this.props.user.id,
+      this.props.user.token,
+      this.state.name,
+      this.state.password,
+      this.state.confirmPassword,
+    );
+  }
+
   render() {
     return (
       <View style={styles.container}>
-
         <View style={styles.containerTitle}>
           <Text style={styles.title}>Minha Conta</Text>
         </View>
-
         <View style={styles.containerMedium}>
           <Input
             title="Nome..."
@@ -50,11 +74,28 @@ export default class Dashboard extends Component {
           />
           <Btn
             title="Alterar informações"
-            loading={this.state.loading}
+            link={this.update}
+            loading={this.props.ux.loading}
           />
         </View>
-
       </View>
     );
   }
 }
+
+/* Pega o global state para o props */
+const mapStateToProps = state => ({
+  user: state.user,
+  ux: state.ux,
+  login: state.login,
+  notification: state.notification,
+});
+
+/* Pega func para o props */
+const mapDispatchToProps = dispatch => ({
+  updateUser: (id, token, name, password, confirmPassword) =>
+    dispatch(UserActions.userUpdateRequest(id, token, name, password, confirmPassword)),
+});
+
+/* Connecta os dois, podendo ser null */
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

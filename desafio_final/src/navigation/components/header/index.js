@@ -5,6 +5,9 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+/* Components */
+import Notification from 'pages/components/notification';
+
 /* Styles */
 import { colors, fonts } from 'styles';
 import styles from './styles';
@@ -35,6 +38,8 @@ export default class header extends Component {
   render() {
     return (
       <View style={styles.container}>
+
+        <Notification />
 
         { this.props.scene.route.routeName != 'Calendar'
           ? this.back()

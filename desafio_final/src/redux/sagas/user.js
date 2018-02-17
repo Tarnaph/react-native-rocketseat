@@ -1,37 +1,44 @@
+/* Presentational */
 import api from 'services/api';
 import { call, put } from 'redux-saga/effects';
-import ActionsCreatorsUser from 'redux/ducks/user';
-import ActionsCreatorsNotification from 'redux/ducks/notification';
-import ActionsCreatorsUX from 'redux/ducks/ux';
 
-export function* findPhone(action) {
-  yield put(ActionsCreatorsUX.uxLoadingTrue());
-  const response = yield call(api.get, `/user/find/${action.phone}`);
-  if (response.ok) {
-    yield put(ActionsCreatorsUX.uxLoadingFalse());
-    yield put(ActionsCreatorsUser.userIsRegistered(response.ok, action.phone));
-  } else {
-    yield put(ActionsCreatorsUX.uxLoadingFalse());
-    yield put(ActionsCreatorsNotification.notificationShow(response.data));
-  }
-}
+/* Actions */
+import Ux from 'redux/ducks/ux';
+import User from 'redux/ducks/user';
+import Login from 'redux/ducks/login';
+import Notification from 'redux/ducks/notification';
 
-export function* loginRequest(action) {
-  const response = yield call(
-    api.post, '/user/login', { phone: action.phone, password: action.password });
-  if (response.ok) {
-    yield put(ActionsCreatorsUser.userIsAuthorized(response.data));
-  } else {
-    yield put(ActionsCreatorsNotification.userNotAuthorized(response.data));
-  }
-}
+/* Update infos do user */
+export function* userUpdateRequest(action) {
+  yield put(Ux.uxLoadingTrue());
 
-export function* requestRegister(action) {
-  const response = yield call(
-    api.post, '/user/register', { phone: action.phone, name: action.name, password: action.password });
-  if (response.ok) {
-    yield put(ActionsCreatorsUser.userRegisterAuthorized(response.data));
-  } else {
-    yield put(ActionsCreatorsUser.userRegisterNotAuthorized(response.data));
+  const response = yield call(api.post, 'user/update', {
+    id: action.id,
+    token: action.token,
+    name: action.name,
+    password: action.password,
+    confirmPassword: action.confirmPassword,
+  });
+
+  switch (response.status) {
+    case 200:
+      yield put(Notification.notificationShow(response.data));
+      yield put(User.userUpdateAll(response.data));
+      break;
+    case 203:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    case 400:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    case 404:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    default:
+      yield put(Notification.notificationShow(response.data));
   }
+
+  console.tron.log(response);
+
+  yield put(Ux.uxLoadingFalse());
 }

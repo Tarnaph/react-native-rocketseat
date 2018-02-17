@@ -18,7 +18,7 @@ import styles from './styles';
 
 class Calendar extends Component {
   componentWillMount(){
-    console.tron.log(this.props);
+    // console.tron.log(this.props);
   }
 
   render() {
@@ -58,6 +58,9 @@ class Calendar extends Component {
 /* Pega o global state para o props */
 const mapStateToProps = state => ({
   user: state.user,
+  ux: state.ux,
+  login: state.login,
+  notification: state.notification,
 });
 
 /* Pega func para o props */

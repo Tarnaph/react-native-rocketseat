@@ -37,7 +37,6 @@ export function* loginPhoneCheck(action) {
 
 /* Request para Login */
 export function* loginRequest(action) {
-
   yield put(Ux.uxLoadingTrue());
 
   const response = yield call(api.post, '/user/login', { phone: action.phone, password: action.password });
@@ -62,7 +61,6 @@ export function* loginRequest(action) {
 
 /* Request para Registar */
 export function* loginRequestRegister(action) {
-
   yield put(Ux.uxLoadingTrue());
 
   const response = yield call(api.post, '/user/register', { phone: action.phone, name: action.name, password: action.password });
