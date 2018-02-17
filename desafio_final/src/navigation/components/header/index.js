@@ -1,5 +1,6 @@
 /* Core */
 import React, { Component } from 'react';
+
 /* Presentational */
 import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';

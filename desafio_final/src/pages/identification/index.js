@@ -1,6 +1,7 @@
 /* Core */
 import React, { Component } from 'react';
 import VMasker from 'vanilla-masker';
+import PropTypes from 'prop-types';
 
 /* Navitation */
 import { NavigationActions } from 'react-navigation';
@@ -15,23 +16,45 @@ import Notification from 'pages/components/notification';
 
 /* Redux */
 import { connect } from 'react-redux';
-import UserActions from 'redux/ducks/user';
 import LoginActions from 'redux/ducks/login';
 
 /* Styles */
 import styles from './styles';
 
 class Identication extends Component {
+  /* Hide Header */
   static navigationOptions = { header: null }
 
+  /* Validacoes */
+  static propTypes = {
+    login: PropTypes.shape({
+      isRegistered: PropTypes.bool,
+      isAuthorized: PropTypes.bool.isRequired,
+    }).isRequired,
+    navigation: PropTypes.shape({
+      dispatch: PropTypes.func.isRequired,
+    }).isRequired,
+    ux: PropTypes.shape({
+      loading: PropTypes.bool.isRequired,
+    }).isRequired,
+    checkPhone: PropTypes.func.isRequired,
+  }
+
+  /* Initial State */
   state = { phone: '' }
 
-  componentWillMount() { console.tron.log(this.props); }
+  /* Antes de montar o component */
+  componentWillMount() {
+    // console.tron.log(this.props);
+  }
+
+  /* Sempre que tiver update */
   componentDidUpdate() {
     if (this.props.login.isRegistered === true) { this.props.navigation.dispatch(this.navitagionTo('Login')); }
     if (this.props.login.isRegistered === false) { this.props.navigation.dispatch(this.navitagionTo('Register')); }
   }
 
+  /* Reseta o navigation para a nota de destino */
   navitagionTo = routeName => (
     NavigationActions.reset({
       index: 0,
@@ -41,13 +64,13 @@ class Identication extends Component {
     })
   )
 
+  /* Verifica se o phone esta registrado no bd */
   checkAndFindPhone = () => {
-    if (this.state.phone.length > 1) {
-      Keyboard.dismiss();
-      this.props.checkPhone(this.state.phone);
-    }
+    Keyboard.dismiss();
+    this.props.checkPhone(this.state.phone);
   }
 
+  /* Render duh! */
   render() {
     return (
       <View style={styles.container}>
@@ -56,14 +79,13 @@ class Identication extends Component {
         <Input
           title="Seu número de telefone"
           icon="phone"
-          onChangeText={phone => this.setState({
-            phone: VMasker.toPattern(phone, "(99)9999-99999999") })}
+          onChangeText={phone => this.setState({ phone: VMasker.toPattern(phone, '(99)9999-99999999') })}
           value={this.state.phone}
           keyboardType="phone-pad"
           color="purple"
         />
         <Btn
-          title="Entrar"
+          title="Verificar"
           link={this.checkAndFindPhone}
           loading={this.props.ux.loading}
         />

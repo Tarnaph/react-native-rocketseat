@@ -1,6 +1,7 @@
 /* Core */
 import React, { Component } from 'react';
 import VMasker from 'vanilla-masker';
+import PropTypes from 'prop-types';
 
 /* Navitation */
 import { NavigationActions } from 'react-navigation';
@@ -15,25 +16,47 @@ import Notification from 'pages/components/notification';
 
 /* Redux */
 import { connect } from 'react-redux';
-import UserActions from 'redux/ducks/user';
 import LoginActions from 'redux/ducks/login';
 
 /* Styles */
 import styles from './styles';
 
 class Login extends Component {
-  // static navigationOptions = { header: null };
-  state = { phone: this.props.user.phone, password: ''};
+  /* Hide Header */
+  static navigationOptions = { header: null };
 
-  componentWillMount(){
-    console.tron.log(this.props);
-  };
-
-  componentDidUpdate(){
-    this.props.login.isAuthorized
-    && this.props.navigation.dispatch(this.navitagionTo('Calendar'));
+  /* Validacoes */
+  static propTypes = {
+    login: PropTypes.shape({
+      isRegistered: PropTypes.bool,
+      isAuthorized: PropTypes.bool.isRequired,
+    }).isRequired,
+    navigation: PropTypes.shape({
+      dispatch: PropTypes.func.isRequired,
+    }).isRequired,
+    user: PropTypes.shape({
+      phone: PropTypes.string.isRequired,
+    }).isRequired,
+    ux: PropTypes.shape({
+      loading: PropTypes.bool.isRequired,
+    }).isRequired,
+    loginRequest: PropTypes.func.isRequired,
   }
 
+  /* Initial State */
+  state = { phone: this.props.user.phone, password: '' };
+
+  /* Antes de montar o component */
+  componentWillMount() {
+    console.tron.log(this.props);
+  }
+
+  /* Sempre que tiver update */
+  componentDidUpdate() {
+    if (this.props.login.isAuthorized) { this.props.navigation.dispatch(this.navitagionTo('Calendar')); }
+  }
+
+  /* Reseta o navigation para a nota de destino */
   navitagionTo = routeName => (
     NavigationActions.reset({
       index: 0,
@@ -43,11 +66,13 @@ class Login extends Component {
     })
   )
 
+  /* Tenta logar */
   login = () => {
     Keyboard.dismiss();
     this.props.loginRequest(this.state.phone, this.state.password);
   };
 
+  /* Render duh! */
   render() {
     return (
       <View style={styles.container}>
@@ -56,8 +81,7 @@ class Login extends Component {
         <Input
           title="Seu número de telefone"
           icon="phone"
-          onChangeText={phone => this.setState({
-            phone: VMasker.toPattern(phone, "(99)9999-99999999") })}
+          onChangeText={phone => this.setState({ phone: VMasker.toPattern(phone, '(99)9999-99999999') })}
           value={this.state.phone}
           keyboardType="phone-pad"
           color="purple"
@@ -87,11 +111,12 @@ const mapStateToProps = state => ({
   user: state.user,
   ux: state.ux,
   login: state.login,
+  notification: state.notification,
 });
 
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => ({
-  loginRequest: (phone,password) => dispatch(LoginActions.loginRequest(phone, password)),
+  loginRequest: (phone, password) => dispatch(LoginActions.loginRequest(phone, password)),
 });
 
 /* Connecta os dois, podendo ser null */
