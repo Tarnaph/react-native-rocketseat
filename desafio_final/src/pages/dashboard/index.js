@@ -1,5 +1,6 @@
 /* Core */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 /* Presentational */
 import { View, Text, Keyboard } from 'react-native';
@@ -16,13 +17,28 @@ import UserActions from 'redux/ducks/user';
 import styles from './styles';
 
 class Dashboard extends Component {
+  /* Validacoes */
+  static propTypes = {
+    user: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      token: PropTypes.string.isRequired,
+    }).isRequired,
+    ux: PropTypes.shape({
+      loading: PropTypes.bool.isRequired,
+    }).isRequired,
+    updateUser: PropTypes.func.isRequired,
+  }
+
+  /* Initial State */
   state = {
     name: this.props.user.name,
     password: '',
     confirmPassword: '',
   };
 
-  componentWillMount(){
+  /* Antes de montar com component */
+  componentWillMount() {
     console.tron.log(this.props);
   }
 
@@ -38,6 +54,7 @@ class Dashboard extends Component {
     );
   }
 
+  /* Redenr Duh! */
   render() {
     return (
       <View style={styles.container}>
@@ -53,7 +70,7 @@ class Dashboard extends Component {
             keyboardType="default"
             color="purple"
           />
-          <View style={styles.hr}/>
+          <View style={styles.hr} />
           <Input
             title="Quer alterar sua senha?"
             icon="lock"
