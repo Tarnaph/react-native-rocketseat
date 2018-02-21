@@ -1,61 +1,30 @@
 # Projeto base para React Native
-Foi instalado nesse projeto:
-Reactron,Eslint,PropTypes,Icons,React Navigation,ApiSauce
+Nesse desafio você irá construir um aplicativo de agenda, o usuário poderá acessar a aplicação com seu número de celular criando uma conta sem a necessidade de e-mail. Na tela inicial o usuário poderá ver seus eventos, criar novo agendamento, deletar evento ou até compartilhar evento. Para essa aplicação, você deverá construir o backend com a linguagem que preferir ou utilizar o Firebase para autenticar e guardar os dados cadastrados pelo usuário.
 
-### Install App
-Update displayName in app.json to the new name
-
-Update name in index.js
-
-Delete ios/ and android/ directories in root project
-
-`react-native eject`
-
-`react-native link `
-
-#### Iniciar um novo projeto
-`react-native init projeto`
-
-#### Instalando Reactotron
-`yarn add reactotron-react-native --dev`
-`yarn add reactotron-redux`
-
-#### Reactotron Redux
-`yarn add reactotron-redux`
-
-#### Eslint
-
-	yarn add eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react-native eslint-plugin-import babel-eslint eslint-plugin-react --dev
-
-#### PropTypes
-
-`yarn add prop-types`
-
-####  Module Resolver
-`yarn add babel-plugin-module-resolver --dev`
-
-`react-native start -- --reset-cache`
-
-`yarn add eslint-import-resolver-babel-module`
-
-####  Icons
-
-`yarn add react-native-vector-icons`
-
-####  ApiSauce
-#### [ApiSauce - Site](https://github.com/infinitered/apisauce)
-Talking to APIs doesn't have to be awkward anymore.
-####
-`yarn add apisauce`
+### Progress App
+| Pages | Layout | isRun |ESLINT | Proptypes | Test |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| Calendar | ------ | ------ | ------ | ------ | ------ |
+| Identification | ------ | ------ | ------ | ------ | ------ |
+| Register | ------ | ------ | ------ | ------ | ------ |
+| Login | ------ | ------ | ------ | ------ | ------ |
+| Dashboard | ------ | ------ | ------ | ------ | ------ |
 
 
-####  Redux
-`yarn add react-redux redux`
+#### Calendar Components
+| Components | Layout | isRun |ESLINT | Proptypes | Test |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| Adder | ------ | ------ | ------ | ------ | ------ |
+| Calendars | ------ | ------ | ------ | ------ | ------ |
+| Cards | ------ | ------ | ------ | ------ | ------ |
 
-####  Redux Saga
-`yarn add redux-saga`
+#### Global Components
+| Components | Layout | isRun |ESLINT | Proptypes | Test |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| Btn | ------ | ------ | ------ | ------ | ------ |
+| Datapicker | ------ | ------ | ------ | ------ | ------ |
+| Input | ------ | ------ | ------ | ------ | ------ |
+| Notification | ------ | ------ | ------ | ------ | ------ |
 
-####  Redux Persist
-`yarn add redux-persist`
 
 ----------------
