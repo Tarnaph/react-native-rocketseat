@@ -4,8 +4,7 @@ import { colors, fonts, metrics } from 'styles';
 const styles = StyleSheet.create({
   container: {
     minWidth: metrics.screenWidth,
-    height: 35,
-    backgroundColor: colors.purpleDark,
+    height: metrics.navBarHeight,
     position: 'absolute',
     zIndex: 1,
     justifyContent: 'center',
@@ -13,6 +12,13 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     elevation: 10,
+  },
+  error: {
+    backgroundColor: colors.danger,
+  },
+
+  success: {
+    backgroundColor: colors.success,
   },
 
   show: {
@@ -26,7 +32,7 @@ const styles = StyleSheet.create({
   title: {
     padding: 5,
     fontWeight: 'bold',
-    fontSize: fonts.small,
+    fontSize: fonts.regular,
     color: colors.lighter,
   },
 

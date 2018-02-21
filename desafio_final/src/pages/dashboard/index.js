@@ -52,6 +52,7 @@ class Dashboard extends Component {
       this.state.password,
       this.state.confirmPassword,
     );
+    this.setState({ password: '', confirmPassword: '' });
   }
 
   /* Redenr Duh! */

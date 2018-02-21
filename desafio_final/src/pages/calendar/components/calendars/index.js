@@ -1,17 +1,39 @@
 /* Core */
 import React, { Component } from 'react';
+import moment from 'moment';
 
 /* Presentational */
 import { View } from 'react-native';
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 import { LocaleConfig } from 'react-native-calendars';
 
+/* Redux */
+import { connect } from 'react-redux';
+import TodoActions from 'redux/ducks/todo';
+
+/* Styles */
 import { general, colors, fonts, metrics } from 'styles';
 import styles from './styles';
 
-export default class Calendars extends Component {
+class Calendars extends Component {
   state = {
     selected: '',
+    today: moment().format('YYYY-MM-DD'),
+  }
+
+  componentWillMount(){
+    // console.tron.log(this.props);
+    // console.tron.log(this.state.today);
+    this.getTodo(
+      this.props.user.id,
+      this.props.user.token,
+      this.state.today,
+    );
+  }
+
+  getTodo = (id, token, date) => {
+    this.props.todoGetDay(id, token, date);
+    this.setState({ selected: date });
   }
 
   render() {
@@ -48,9 +70,9 @@ export default class Calendars extends Component {
           selectedDotColor: colors.green,
           arrowColor: colors.white,
           monthTextColor: colors.white,
-          textDayFontFamily: 'monospace',
-          textMonthFontFamily: 'monospace',
-          textDayHeaderFontFamily: 'monospace',
+          // textDayFontFamily: 'monospace',
+          // textMonthFontFamily: 'monospace',
+          // textDayHeaderFontFamily: 'monospace',
           textDayFontSize: 14,
           textMonthFontSize: 14,
           textDayHeaderFontSize: 14,
@@ -64,7 +86,8 @@ export default class Calendars extends Component {
         // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
         // maxDate={'2018-05-30'}
         // Handler which gets executed on day press. Default = undefined
-        onDayPress={(day) => this.setState({ selected: day.dateString }) }
+        // onDayPress={(day) => this.setState({ selected: day.dateString }) }
+        onDayPress={(day) => this.getTodo(this.props.user.id, this.props.user.token, day.dateString)}
         // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
         monthFormat={'MMMM'}
         // Handler which gets executed when visible month changes in calendar. Default = undefined
@@ -88,3 +111,21 @@ export default class Calendars extends Component {
     );
   }
 }
+
+/* Pega o global state para o props */
+const mapStateToProps = state => ({
+  user: state.user,
+  ux: state.ux,
+  login: state.login,
+  notification: state.notification,
+  todo: state.todo,
+});
+
+/* Pega func para o props */
+const mapDispatchToProps = dispatch => ({
+  todoGetDay: (id, token, date) => dispatch(TodoActions.todoGetDay(id, token, date)),
+});
+
+/* Connecta os dois, podendo ser null */
+export default connect(mapStateToProps, mapDispatchToProps)(Calendars);
+

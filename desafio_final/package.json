@@ -9,6 +9,7 @@
   "dependencies": {
     "apisauce": "^0.14.2",
     "eslint-import-resolver-babel-module": "^4.0.0",
+    "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "16.0.0",
     "react-native": "0.51.0",

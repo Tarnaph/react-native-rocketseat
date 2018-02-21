@@ -9,9 +9,7 @@ export { Types };
 export default Creators;
 
 /* Initial State */
-export const INITIAL_STATE = {
-  loading: false,
-};
+export const INITIAL_STATE = { loading: false };
 
 /* Reducers */
 export const loadingTrue = state => ({ ...state, loading: true });

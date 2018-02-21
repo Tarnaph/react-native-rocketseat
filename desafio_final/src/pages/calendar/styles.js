@@ -8,23 +8,26 @@ const styles = StyleSheet.create({
   },
 
   top: {
-    flex: 1,
     flexDirection: 'row',
     backgroundColor: colors.purpleDark,
-    alignItems: 'center',
-    alignContent: 'center',
-    paddingVertical: metrics.basePadding,
     borderBottomWidth: 1,
     borderBottomColor: colors.purpleDarker,
   },
 
   medium: {
-    padding: metrics.basePadding,
+  },
+
+  list: {
+    paddingHorizontal: metrics.basePadding,
   },
 
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
+  },
+
+  loading: {
+    marginTop: metrics.basePadding,
   },
 
 });

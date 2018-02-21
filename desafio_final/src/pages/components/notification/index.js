@@ -43,7 +43,7 @@ class Notification extends Component {
     return (
       <View style={styles.container}>
         { this.props.notification.show === true
-          ? <Msg msg={this.props.notification.msg} />
+          ? <Msg msg={this.props.notification.msg} error={this.props.notification.error}/>
           : <View />
         }
       </View>

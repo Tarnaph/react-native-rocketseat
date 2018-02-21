@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 /* Presentational */
 import { View, Text } from 'react-native';
 
+/* Styles */
 import styles from './styles';
 
 export default class Cards extends Component {

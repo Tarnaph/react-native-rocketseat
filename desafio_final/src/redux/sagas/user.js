@@ -38,7 +38,5 @@ export function* userUpdateRequest(action) {
       yield put(Notification.notificationShow(response.data));
   }
 
-  console.tron.log(response);
-
   yield put(Ux.uxLoadingFalse());
 }

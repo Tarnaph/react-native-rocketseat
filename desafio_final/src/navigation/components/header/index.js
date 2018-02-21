@@ -8,11 +8,15 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 /* Components */
 import Notification from 'pages/components/notification';
 
+/* Redux */
+import { connect } from 'react-redux';
+import TodoActions from 'redux/ducks/todo';
+
 /* Styles */
 import { colors, fonts } from 'styles';
 import styles from './styles';
 
-export default class header extends Component {
+class Header extends Component {
   componentWillMount() {
     // console.tron.error(this.props);
   }
@@ -20,7 +24,7 @@ export default class header extends Component {
   adder = () => (
     <TouchableOpacity
       style={styles.iconAddContainer}
-      onPress={() => this.props.navigation.navigate('Adder')}
+      onPress={this.props.todoShowModal}
       >
       <Icon name="plus" size={fonts.small} color={colors.white} />
     </TouchableOpacity>
@@ -30,7 +34,7 @@ export default class header extends Component {
     <TouchableOpacity
       style={styles.iconBackContainer}
       onPress={() => this.props.navigation.goBack()}
-      >
+    >
       <Icon name="angle-left" style={styles.iconBack} />
     </TouchableOpacity>
   );
@@ -59,3 +63,22 @@ export default class header extends Component {
     );
   }
 }
+
+
+/* Pega o global state para o props */
+const mapStateToProps = state => ({
+  user: state.user,
+  ux: state.ux,
+  todo: state.todo,
+  login: state.login,
+  notification: state.notification,
+});
+
+/* Pega func para o props */
+const mapDispatchToProps = dispatch => ({
+  todoShowModal: () => dispatch(TodoActions.todoShowModal()),
+});
+
+/* Connecta os dois, podendo ser null */
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+

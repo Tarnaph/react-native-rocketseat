@@ -8,10 +8,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: metrics.navBarHeight * 1.5,
     backgroundColor: colors.white,
-    marginBottom: metrics.baseMargin / 2,
+    marginBottom: metrics.baseMargin / 4,
+    marginTop: metrics.baseMargin / 2,
     borderRadius: metrics.baseRadius,
     padding: metrics.basePadding,
-    elevation: 6,
+    borderLeftWidth: 5,
+    borderLeftColor: colors.green,
   },
 
   left: {
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: fonts.big,
     fontWeight: 'bold',
-    color: colors.purpleDarker,
+    color: colors.dark,
   },
 
   description: {
