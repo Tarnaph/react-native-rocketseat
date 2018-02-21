@@ -1,5 +1,6 @@
 /* Core */
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /* Presentational */
 import { TouchableOpacity, Text, ActivityIndicator } from 'react-native';
@@ -8,15 +9,21 @@ import { TouchableOpacity, Text, ActivityIndicator } from 'react-native';
 import { colors } from 'styles';
 import styles from './styles';
 
-export default class Btn extends Component {
-  render() {
-    return (
-      <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={this.props.link}>
-        {	this.props.loading
-          ? <ActivityIndicator size="small" color={colors.white} />
-          : <Text style={styles.title}>{this.props.title}</Text>
-        }
-      </TouchableOpacity>
-    );
-  }
-}
+/* Render duh! */
+const Btn = ({ title, link, loading }) => (
+  <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={link}>
+    { loading
+      ? <ActivityIndicator size="small" color={colors.white} />
+      : <Text style={styles.title}>{title}</Text>
+    }
+  </TouchableOpacity>
+);
+
+/* PropTypes */
+Btn.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
+};
+
+export default Btn;
