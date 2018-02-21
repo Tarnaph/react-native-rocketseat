@@ -39,7 +39,7 @@ class Dashboard extends Component {
 
   /* Antes de montar com component */
   componentWillMount() {
-    console.tron.log(this.props);
+    // console.tron.log(this.props);
   }
 
   /* Update User */
