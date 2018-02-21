@@ -9,7 +9,7 @@ import { TouchableOpacity, Text, ActivityIndicator } from 'react-native';
 import { colors } from 'styles';
 import styles from './styles';
 
-/* Render duh! */
+/* Const Btn */
 const Btn = ({ title, link, loading }) => (
   <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={link}>
     { loading

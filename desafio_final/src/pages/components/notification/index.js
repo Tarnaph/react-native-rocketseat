@@ -22,6 +22,7 @@ class Notification extends Component {
     notification: PropTypes.shape({
       show: PropTypes.bool.isRequired,
       msg: PropTypes.string.isRequired,
+      error: PropTypes.bool.isRequired,
     }).isRequired,
     notificationHide: PropTypes.func.isRequired,
   }
@@ -43,7 +44,7 @@ class Notification extends Component {
     return (
       <View style={styles.container}>
         { this.props.notification.show === true
-          ? <Msg msg={this.props.notification.msg} error={this.props.notification.error}/>
+          ? <Msg msg={this.props.notification.msg} error={this.props.notification.error} />
           : <View />
         }
       </View>

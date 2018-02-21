@@ -18,9 +18,9 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 |   ヾ(＾∇＾) |  |  |  |  |  |  |
 | **Global Components** |  |  |  |  |  |  |
 | Btn | OK | OK | OK | OK | ------ | ------ |
-| Datapicker | OK | OK | ------ | ------ | ------ | ------ |
-| Input | OK | OK | ------ | ------ | ------ |
-| Notification | OK | OK | ------ | ------ | ------ | ------ |
+| Datapicker | OK | OK | OK | OK | ------ | ------ |
+| Input | OK | OK | OK | OK | ------ |
+| Notification | OK | OK | OK | OK | ------ | ------ |
 
 
 
