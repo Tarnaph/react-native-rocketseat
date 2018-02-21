@@ -9,9 +9,7 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 | Register | OK | OK | OK | OK | ------ | ------ |
 | Login | OK | OK | OK | OK | ------ | ------ |
 | Dashboard | OK | OK | OK | OK | ------ | ------ |
-
-
-##### Calendar Components
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | Components | Layout | isRun | ESLINT | Proptypes | Test | Refactoring |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | Adder | OK | ------ | ------ | ------ | ------ | ------ |
