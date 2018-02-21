@@ -12,9 +12,9 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 | Dashboard | OK | OK | OK | OK | ------ | ------ |
 | (＃´ー´)旦 |  |  |  |  |  |  |
 | **Calendar > Components** |  |  |  |  |  |  |
-| Adder | OK | OK | OK | ------ | ------ | ------ |
+| Adder | OK | OK | OK | OK | ------ | ------ |
 | Calendars | OK | ------ | ------ | ------ | ------ | ------ |
-| Cards | OK | OK | OK| ------ | ------ | ------ |
+| Cards | OK | OK | OK| OK | ------ | ------ |
 |   ヾ(＾∇＾) |  |  |  |  |  |  |
 | **Global Components** |  |  |  |  |  |  |
 | Btn | OK | OK | OK | OK | ------ | ------ |
