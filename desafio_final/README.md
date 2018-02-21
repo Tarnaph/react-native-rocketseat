@@ -9,11 +9,13 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 | Register | OK | OK | OK | OK | ------ | ------ |
 | Login | OK | OK | OK | OK | ------ | ------ |
 | Dashboard | OK | OK | OK | OK | ------ | ------ |
-| ** Components ** |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+| Components |  |  |  |  |  |  |
 | Adder | OK | ------ | ------ | ------ | ------ | ------ |
 | Calendars | OK | ------ | ------ | ------ | ------ | ------ |
 | Cards | OK | ------ | ------ | ------ | ------ | ------ |
-| ** Global Components ** |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+| Global Components |  |  |  |  |  |  |
 | Btn | OK | OK | ------ | ------ | ------ | ------ |
 | Datapicker | OK | OK | ------ | ------ | ------ | ------ |
 | Input | OK | OK | ------ | ------ | ------ |
