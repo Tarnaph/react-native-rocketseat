@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: metrics.navBarHeight * 1.5,
+    minHeight: metrics.navBarHeight * 1.5,
     backgroundColor: colors.white,
     marginBottom: metrics.baseMargin / 4,
     marginTop: metrics.baseMargin / 2,
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
 
   left: {
-    flexDirection: 'column',
+
   },
 
   right: {
@@ -25,14 +25,17 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: fonts.big,
+    fontSize: fonts.regular,
     fontWeight: 'bold',
     color: colors.dark,
+    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4),
   },
 
   description: {
+    marginTop: metrics.tinyMargin,
     fontSize: fonts.regular,
     color: colors.dark,
+    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4),
   },
 
   time: {

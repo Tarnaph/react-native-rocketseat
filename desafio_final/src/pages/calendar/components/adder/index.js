@@ -1,7 +1,6 @@
 /* Core */
 import React, { Component } from 'react';
-import VMasker from 'vanilla-masker';
-import moment from 'moment';
+import PropTypes from 'prop-types';
 
 /* Presentational */
 import { Modal, TouchableOpacity, View, Text, Keyboard } from 'react-native';
@@ -19,12 +18,33 @@ import TodoActions from 'redux/ducks/todo';
 import styles from './styles';
 
 class Adder extends Component {
-  state = { dateTime: '', title: '', text: '' };
-
-  componentWillMount(){
-    //console.tron.log(this.props);
+  /* Validacoes */
+  static propTypes = {
+    user: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      token: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
+    }).isRequired,
+    ux: PropTypes.shape({
+      loading: PropTypes.bool.isRequired,
+    }).isRequired,
+    calendar: PropTypes.shape({
+      date: PropTypes.string.isRequired,
+    }).isRequired,
+    todo: PropTypes.shape({
+      modal: PropTypes.bool.isRequired,
+    }).isRequired,
+    todoRequest: PropTypes.func.isRequired,
+    todoHideModal: PropTypes.func.isRequired,
   }
 
+  /* Initial State */
+  state = { dateTime: '', title: '', text: '' };
+
+  /* Antes de Montar */
+  // componentWillMount() { console.tron.log(this.props); }
+
+  /* Cria um Todo */
   createTodo = () => {
     Keyboard.dismiss();
     this.props.todoRequest(
@@ -38,16 +58,13 @@ class Adder extends Component {
     this.setState({ dateTime: '', title: '', text: '' });
   }
 
-  resetInputs = () => (
-    this.setState({ dateTime: '', title: '', text: '' })
-  )
-
+  /* Render duh! */
   render() {
     return (
       <Modal
         transparent
         visible={this.props.todo.modal}
-        animationType={'fade'}
+        animationType="fade"
         onRequestClose={this.props.todoHideModal}
       >
         <View style={styles.container}>
@@ -61,7 +78,7 @@ class Adder extends Component {
                 icon="calendar"
                 color="gray"
                 date={this.state.dateTime}
-                onDateChange={(dateTime) => {this.setState({ dateTime })}}
+                onDateChange={(dateTime) => { this.setState({ dateTime }); }}
               />
               <Input
                 title="Qual nome do evento ?"
