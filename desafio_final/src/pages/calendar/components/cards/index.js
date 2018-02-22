@@ -8,6 +8,7 @@ import { View, Text } from 'react-native';
 /* Styles */
 import styles from './styles';
 
+/* Const */
 const Cards = ({ title, description, time }) => (
   <View style={styles.container}>
     <View sytle={styles.left}>
