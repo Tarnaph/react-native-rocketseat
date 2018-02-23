@@ -13,8 +13,6 @@ import { colors } from 'styles';
 
 // Get TODO by Day
 export function* calendarGetMarked(action) {
-  yield put(Ux.uxLoadingTrue());
-
   const response = yield call(api.post, 'getTodobyMonth', {
     id: action.id,
     token: action.token,
@@ -40,8 +38,6 @@ export function* calendarGetMarked(action) {
       //yield put(Notification.notificationShow(response.data));
       break;
     default:
-      //yield put(Notification.notificationShow(response.data));
+      yield put(Notification.notificationShow(response.data));
   }
-  yield put(Ux.uxLoadingFalse());
-
 }

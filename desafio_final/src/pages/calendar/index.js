@@ -1,38 +1,65 @@
 /* Core */
 import React, { Component } from 'react';
 import VMasker from 'vanilla-masker';
-import moment from 'moment';
+import PropTypes from 'prop-types';
 
 /* Presentational */
 import { View, Text, ScrollView, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 /* Components */
-import Cards from './components/cards';
-import MyCalendar from './components/calendars';
-import Adder from './components/adder';
-
+import Cards from 'pages/calendar/components/cards';
+import MyCalendar from 'pages/calendar/components/calendars';
+import Adder from 'pages/calendar/components/adder';
 
 /* Redux */
 import { connect } from 'react-redux';
 import TodoActions from 'redux/ducks/todo';
 
 /* Styles */
-import { colors } from 'styles';
+import { colors, fonts } from 'styles';
 import styles from './styles';
 
 class Calendar extends Component {
-  state = { refreshing: false };
-
-  componentWillMount(){
-    console.tron.log(this.props);
-    //console.tron.log(this.state);
-    //this.getAllTodobyDay();
+  /* Validacoes */
+  static propTypes = {
+    ux: PropTypes.shape({
+      loading: PropTypes.bool.isRequired,
+    }).isRequired,
+    user: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      token: PropTypes.string.isRequired,
+    }).isRequired,
+    calendar: PropTypes.shape({
+      date: PropTypes.string.isRequired,
+    }).isRequired,
+    todo: PropTypes.shape({
+      list: PropTypes.arrayOf(PropTypes.shape).isRequired,
+    }).isRequired,
+    todoGetDay: PropTypes.func.isRequired,
   }
 
+  /* Initial State */
+  state = { refreshing: false };
+
+  /* Refresh lista de todo */
   refreshTodo = () => (
     this.props.todoGetDay(this.props.user.id, this.props.user.token, this.props.calendar.date)
   );
 
+  /* Render Msg de Lista Vazia */
+  emptyMensagem = () => (
+    <View style={styles.containerEmpty}>
+      <Icon
+        name="calendar"
+        size={fonts.bigger}
+        color={colors.purpleDarker}
+      />
+      <Text style={styles.titleEmpty}>Nada foi encontrado</Text>
+    </View>
+  )
+
+  /* Render duh! */
   render() {
     return (
       <View style={styles.container}>
@@ -53,18 +80,18 @@ class Calendar extends Component {
           }
         >
           { this.props.ux.loading
-            ? <ActivityIndicator size="small" color={colors.white} style={styles.loading}/>
+            ? <ActivityIndicator size="small" color={colors.purpleDarker} style={styles.loading} />
             : <FlatList
               style={styles.list}
               data={this.props.todo.list}
+              ListEmptyComponent={this.emptyMensagem}
               keyExtractor={todo => todo.id}
-              renderItem={(todo) =>
+              renderItem={todo => (
                 <Cards
                   title={todo.item.title}
                   description={todo.item.text}
                   time={VMasker.toPattern(todo.item.time, '99:99')}
-                />}
-              ListEmptyComponent={() => <Text>Nada Encontrado</Text>}
+                />)}
             />
           }
         </ScrollView>

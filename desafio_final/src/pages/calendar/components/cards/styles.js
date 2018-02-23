@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     minHeight: metrics.navBarHeight * 1.5,
     backgroundColor: colors.white,
-    marginBottom: metrics.baseMargin / 4,
     marginTop: metrics.baseMargin / 2,
     borderRadius: metrics.baseRadius,
     padding: metrics.basePadding,

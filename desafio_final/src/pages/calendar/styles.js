@@ -15,10 +15,13 @@ const styles = StyleSheet.create({
   },
 
   medium: {
+    flex: 1,
   },
 
   list: {
     paddingHorizontal: metrics.basePadding,
+    marginBottom: metrics.baseMargin,
+    marginTop: metrics.baseMargin / 2,
   },
 
   modal: {
@@ -27,8 +30,21 @@ const styles = StyleSheet.create({
   },
 
   loading: {
-    marginTop: metrics.basePadding,
+    marginTop: metrics.basePadding * 4,
   },
+
+  containerEmpty: {
+    marginTop: metrics.basePadding * 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  titleEmpty: {
+    color: colors.purpleDarker,
+    fontSize: fonts.small,
+    fontWeight: 'bold',
+  },
+
 
 });
 

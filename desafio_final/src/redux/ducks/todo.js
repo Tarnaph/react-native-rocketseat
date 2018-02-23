@@ -2,13 +2,16 @@ import { createReducer, createActions } from 'reduxsauce';
 
 /* Types & Actions Creators */
 const { Types, Creators } = createActions({
+  /* Show Modal */
   todoShowModal: null,
   todoHideModal: null,
 
+  /* Cria Todo */
   todoRequest: ['id', 'token', 'dateTime', 'title', 'text', 'date'],
   todoRequestSuccess: null,
   todoRequestFailure: null,
 
+  /* Get Todo */
   todoGetDay: ['id', 'token', 'date'],
   todoGetDaySuccess: ['response'],
 

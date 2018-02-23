@@ -5,7 +5,7 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 
 | Pages | Layout | isRun | ESLINT | Proptypes | Test | Refactoring |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| Calendar | OK | OK | ------ | ------ | ------ | ------ |
+| Calendar | OK | OK | OK | OK | ------ | ------ |
 | Identification | OK | OK | OK | OK | ------ | ------ |
 | Register | OK | OK | OK | OK | ------ | ------ |
 | Login | OK | OK | OK | OK | ------ | ------ |
@@ -13,7 +13,7 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 | (＃´ー´)旦 |  |  |  |  |  |  |
 | **Calendar > Components** |  |  |  |  |  |  |
 | Adder | OK | OK | OK | OK | ------ | ------ |
-| Calendars | OK | OK | ------ | ------ | ------ | ------ |
+| Calendars | OK | OK | OK | OK | ------ | ------ |
 | Cards | OK | OK | OK| OK | ------ | ------ |
 |   ヾ(＾∇＾) |  |  |  |  |  |  |
 | **Global Components** |  |  |  |  |  |  |

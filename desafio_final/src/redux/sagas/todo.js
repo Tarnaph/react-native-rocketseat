@@ -57,7 +57,7 @@ export function* todoGetDay(action) {
     case 200:
       yield put(Calendar.calendarGetMarked(action.id, action.token, action.date));
       yield put(Todo.todoGetDaySuccess(response.data));
-      yield put(Notification.notificationShow(response.data));
+      // yield put(Notification.notificationShow(response.data));
       break;
     case 203:
       yield put(Notification.notificationShow(response.data));

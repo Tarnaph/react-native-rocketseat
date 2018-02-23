@@ -1,6 +1,7 @@
 /* Core */
 import React, { Component } from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 /* Presentational */
 import { Calendar, LocaleConfig } from 'react-native-calendars';
@@ -8,51 +9,48 @@ import { Calendar, LocaleConfig } from 'react-native-calendars';
 /* Redux */
 import { connect } from 'react-redux';
 import TodoActions from 'redux/ducks/todo';
-import CalendarActions from 'redux/ducks/calendar';
 
 /* Styles */
 import { colors } from 'styles';
 import styles from './styles';
 
 class Calendars extends Component {
-  /* Intial State */
-  state = {
-    selected: moment().format('YYYY-MM-DD'),
-    marked: this.props.calendar.marked,
-    today: moment().format('YYYY-MM-DD'),
+  /* Validacoes */
+  static propTypes = {
+    user: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      token: PropTypes.string.isRequired,
+    }).isRequired,
+    calendar: PropTypes.shape({
+      date: PropTypes.string.isRequired,
+      marked: PropTypes.objectOf(PropTypes.shape),
+    }).isRequired,
+    todoGetDay: PropTypes.func.isRequired,
   }
+
+  /* Intial State */
+  state = { today: moment().format('YYYY-MM-DD') }
 
   /* Antes de Montar */
   componentWillMount() {
+    if (this.props.calendar.date !== '') {
+      this.setState({ today: this.props.calendar.date });
+    }
+  }
+
+  /* Depois de montar */
+  componentDidMount() {
     this.getTodo(
       this.props.user.id,
       this.props.user.token,
       this.state.today,
     );
-    this.getMarked(
-      this.props.user.id,
-      this.props.user.token,
-      this.state.selected,
-    );
-    console.tron.log(this.props);
-    // console.tron.error(this.state);
-    //this.markedDates();
   }
 
-  componentDidUpdate() {
-    // console.tron.log(this.state)
-  }
-
-  /* Get Todo by a day */
+  /* Pega Todo do dia */
   getTodo = (id, token, date) => {
     this.props.todoGetDay(id, token, date);
-    this.markedDates();
   }
-
-  /* Get Market */
-  getMarked = (id, token, selected) => (
-    this.props.calendarGetMarked(id, token, selected)
-  )
 
   /* Render duh! */
   render() {
@@ -89,9 +87,9 @@ class Calendars extends Component {
           monthTextColor: colors.white,
         }}
         markedDates={this.props.calendar.marked}
-        onDayPress={(day) => this.getTodo(this.props.user.id, this.props.user.token, day.dateString)}
-        monthFormat={'MMMM'}
-        onMonthChange={(month) => {console.log('month changed', month)}}
+        onDayPress={day => this.getTodo(this.props.user.id, this.props.user.token, day.dateString)}
+        monthFormat="MMMM"
+        onMonthChange={month => console.log('month changed', month)}
         hideArrows={false}
         hideExtraDays={false}
         disableMonthChange={false}
@@ -116,7 +114,6 @@ const mapStateToProps = state => ({
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => ({
   todoGetDay: (id, token, date) => dispatch(TodoActions.todoGetDay(id, token, date)),
-  calendarGetMarked: (id, token, selected) => dispatch(CalendarActions.calendarGetMarked(id, token, selected)),
 });
 
 /* Connecta os dois, podendo ser null */

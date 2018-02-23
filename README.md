@@ -24,6 +24,7 @@ Dependência, plugins e links pessoais.
 | Reactotron | [github.com/infinitered/reactotron](https://github.com/infinitered/reactotron)|
 | ESLint| [eslint.org](https://eslint.org)|
 |Expo|[expo.io](https://expo.io)|
+|PropTypes|[Consulta](https://reactjs.org/docs/typechecking-with-proptypes.html)|
 
 ### Máterial de Apoio
 Máterial de apoio produzido pela Rocketseat e outros links pessoais:
