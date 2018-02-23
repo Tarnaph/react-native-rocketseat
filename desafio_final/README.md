@@ -3,24 +3,24 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 
 ##### Progress App
 
-| Pages | Layout | isRun | ESLINT | Proptypes | Test | Refactoring |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| Calendar | OK | OK | OK | OK | ------ | ------ |
-| Identification | OK | OK | OK | OK | ------ | ------ |
-| Register | OK | OK | OK | OK | ------ | ------ |
-| Login | OK | OK | OK | OK | ------ | ------ |
-| Dashboard | OK | OK | OK | OK | ------ | ------ |
+| Pages | Layout | isRun | ESLint | Proptypes | Test | Refactoring | Animation |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |------ |
+| Calendar | OK | OK | OK | OK | ------ | ------ |------ |
+| Identification | OK | OK | OK | OK | ------ | ------ |------ |
+| Register | OK | OK | OK | OK | ------ | ------ |------ |
+| Login | OK | OK | OK | OK | ------ | ------ |------ |
+| Dashboard | OK | OK | OK | OK | ------ | ------ |------ |
 | (＃´ー´)旦 |  |  |  |  |  |  |
 | **Calendar > Components** |  |  |  |  |  |  |
-| Adder | OK | OK | OK | OK | ------ | ------ |
-| Calendars | OK | OK | OK | OK | ------ | ------ |
-| Cards | OK | OK | OK| OK | ------ | ------ |
+| Adder | OK | OK | OK | OK | ------ | ------ |------ |
+| Calendars | OK | OK | OK | OK | ------ | ------ |------ |
+| Cards | OK | OK | OK| OK | ------ | ------ |------ |
 |   ヾ(＾∇＾) |  |  |  |  |  |  |
 | **Global Components** |  |  |  |  |  |  |
-| Btn | OK | OK | OK | OK | ------ | ------ |
-| Datapicker | OK | OK | OK | OK | ------ | ------ |
+| Btn | OK | OK | OK | OK | ------ | ------ |------ |
+| Datapicker | OK | OK | OK | OK | ------ | ------ |------ |
 | Input | OK | OK | OK | OK | ------ |
-| Notification | OK | OK | OK | OK | ------ | ------ |
+| Notification | OK | OK | OK | OK | ------ | ------ |------ |
 
 
 
