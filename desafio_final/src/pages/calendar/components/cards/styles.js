@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
     fontSize: fonts.regular,
     fontWeight: 'bold',
     color: colors.dark,
-    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4),
+    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4) - (metrics.statusBarHeight * 1.5),
   },
 
   description: {
     marginTop: metrics.tinyMargin,
     fontSize: fonts.regular,
     color: colors.dark,
-    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4),
+    maxWidth: (metrics.screenWidth / 2) + (metrics.baseMargin * 4) - (metrics.statusBarHeight * 1.5),
   },
 
   time: {

@@ -7,9 +7,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: colors.purple,
-    paddingVertical: metrics.smallMargin,
+    paddingTop: metrics.smallMargin + metrics.statusBarHeight,
+    paddingBottom: metrics.smallMargin,
     paddingHorizontal: metrics.baseMargin,
-    height: metrics.navBarHeight,
+    height: metrics.navBarHeight + metrics.statusBarHeight,
     borderBottomWidth: 1,
     borderBottomColor: colors.purpleDarker,
     elevation: 10,
@@ -49,6 +50,15 @@ const styles = StyleSheet.create({
     fontSize: fonts.bigger,
     fontWeight: 'bold',
     color: colors.white,
+  },
+
+  notification: {
+    zIndex: 20,
+  },
+
+  hide: {
+    position: 'absolute',
+    top: -100,
   },
 
 });

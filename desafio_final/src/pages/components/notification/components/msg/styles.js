@@ -4,12 +4,13 @@ import { colors, fonts, metrics } from 'styles';
 const styles = StyleSheet.create({
   container: {
     minWidth: metrics.screenWidth,
-    height: metrics.navBarHeight,
+    height: metrics.navBarHeight + metrics.statusBarHeight,
     position: 'absolute',
+    top: 0,
+    left: 0,
     zIndex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
     flexDirection: 'row',
     elevation: 10,
   },
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    padding: 5,
+
     fontWeight: 'bold',
     fontSize: fonts.regular,
     color: colors.lighter,

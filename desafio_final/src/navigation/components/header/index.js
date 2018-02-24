@@ -23,42 +23,54 @@ class Header extends Component {
 
   adder = () => (
     <TouchableOpacity
-      style={styles.iconAddContainer}
+      style={[styles.iconAddContainer,
+      this.props.notification.error === true
+      && styles.hide]}
       onPress={this.props.todoShowModal}
-      >
+    >
       <Icon name="plus" size={fonts.small} color={colors.white} />
     </TouchableOpacity>
   );
 
   back = () => (
     <TouchableOpacity
-      style={styles.iconBackContainer}
+      style={[styles.iconBackContainer,
+      this.props.notification.error === true
+      && styles.hide]}
       onPress={() => this.props.navigation.goBack()}
     >
       <Icon name="angle-left" style={styles.iconBack} />
     </TouchableOpacity>
   );
 
+  backOrAdder = () =>
+    { return this.props.scene.route.routeName != 'Calendar'
+      ? this.back()
+      : this.adder()
+    }
+
+
   render() {
     return (
       <View style={styles.container}>
 
-        <Notification />
-
-        { this.props.scene.route.routeName != 'Calendar'
-          ? this.back()
-          : this.adder()
-        }
-
-        <Text style={styles.title}>{this.props.defaultTitle}</Text>
-
+        <Notification style={styles.notification}/>
+        {this.backOrAdder()}
+        <Text
+          style={[styles.title,
+          this.props.notification.error === true
+          && styles.hide]}
+        >
+          {this.props.defaultTitle}
+        </Text>
         <TouchableOpacity
-          style={styles.iconContainer}
+          style={[styles.iconContainer,
+          this.props.notification.error === true
+          && styles.hide]}
           onPress={() => this.props.navigation.navigate('Dashboard')}
         >
           <Icon name="user" size={fonts.regular} color={colors.white} />
         </TouchableOpacity>
-
       </View>
     );
   }
