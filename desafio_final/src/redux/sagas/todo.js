@@ -1,6 +1,7 @@
 /* Presentational */
 import api from 'services/api';
 import { call, put } from 'redux-saga/effects';
+import { delay } from 'redux-saga';
 
 /* Actions */
 import Ux from 'redux/ducks/ux';
@@ -43,7 +44,7 @@ export function* todoRequest(action) {
   yield put(Todo.todoHideModal());
 }
 
-// Get TODO by Day
+/* Get TODO by Day */
 export function* todoGetDay(action) {
   yield put(Ux.uxLoadingTrue());
 
@@ -74,3 +75,39 @@ export function* todoGetDay(action) {
   yield put(Ux.uxLoadingFalse());
   yield put(Calendar.calendarSelectedDay(action.date));
 }
+
+/* Remove Todo  */
+export function* todoRemove(action) {
+  yield put(Ux.uxLoadingRemoveTrue());
+
+  yield call(delay, 1000);
+
+  const response = yield call(api.post, 'deleteTodo', {
+    id: action.id,
+    todoId: action.todoId,
+    token: action.token,
+  });
+
+  switch (response.status) {
+    case 200:
+      //yield put(Calendar.calendarGetMarked(action.id, action.token, action.date));
+      //yield put(Todo.todoGetDaySuccess(response.data));
+      yield put(Todo.todoGetDay(action.id, action.token, action.date));
+      yield put(Calendar.calendarGetMarked(action.id, action.token, action.date));
+      yield put(Notification.notificationShow(response.data));
+      break;
+    case 203:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    case 400:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    case 404:
+      yield put(Notification.notificationShow(response.data));
+      break;
+    default:
+      yield put(Notification.notificationShow(response.data));
+  }
+  yield put(Ux.uxLoadingRemoveFalse());
+}
+

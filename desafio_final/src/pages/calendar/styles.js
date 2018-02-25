@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    paddingHorizontal: metrics.basePadding,
+    paddingHorizontal: metrics.basePadding / 2,
     marginBottom: metrics.baseMargin,
     marginTop: metrics.baseMargin / 2,
   },

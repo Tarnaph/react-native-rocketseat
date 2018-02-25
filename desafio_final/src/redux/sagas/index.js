@@ -9,7 +9,7 @@ import { Types as CalendarTypes } from 'redux/ducks/calendar';
 /* Sagas */
 import { loginPhoneCheck, loginRequest, loginRequestRegister } from 'redux/sagas/login';
 import { userUpdateRequest } from 'redux/sagas/user';
-import { todoRequest, todoGetDay } from 'redux/sagas/todo';
+import { todoRequest, todoGetDay, todoRemove } from 'redux/sagas/todo';
 import { calendarGetMarked } from 'redux/sagas/calendar';
 
 /* Chamadas */
@@ -26,6 +26,7 @@ export default function* root() {
     /* Todo */
     takeLatest(TodoTypes.TODO_REQUEST, todoRequest),
     takeLatest(TodoTypes.TODO_GET_DAY, todoGetDay),
+    takeLatest(TodoTypes.TODO_REMOVE, todoRemove),
 
     /* Calendar */
     takeLatest(CalendarTypes.CALENDAR_GET_MARKED, calendarGetMarked),

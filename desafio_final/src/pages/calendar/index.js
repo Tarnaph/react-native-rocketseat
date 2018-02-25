@@ -88,6 +88,7 @@ class Calendar extends Component {
               keyExtractor={todo => todo.id}
               renderItem={todo => (
                 <Cards
+                  todoId={todo.item.id}
                   title={todo.item.title}
                   description={todo.item.text}
                   time={VMasker.toPattern(todo.item.time, '99:99')}

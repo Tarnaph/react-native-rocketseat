@@ -15,8 +15,8 @@ const { Types, Creators } = createActions({
   todoGetDay: ['id', 'token', 'date'],
   todoGetDaySuccess: ['response'],
 
-  todoShare: null,
-  todoDell: null,
+  /* Remvove Todo */
+  todoRemove: ['id', 'todoId', 'token', 'date'],
 });
 export { Types };
 export default Creators;
@@ -33,6 +33,7 @@ export const hideModal = state => ({ ...state, modal: false });
 export const request = state => ({ ...state });
 export const getByDay = state => ({ ...state });
 export const getByDaySuccess = (state, actions) => ({ ...state, list: actions.response.data });
+export const remove = (state) => ({...state});
 
 /* Reducers to Types */
 export const reducer = createReducer(INITIAL_STATE, {
@@ -41,4 +42,5 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.TODO_REQUEST]: request,
   [Types.TODO_GET_DAY]: getByDay,
   [Types.TODO_GET_DAY_SUCCESS]: getByDaySuccess,
+  [Types.TODO_REMOVE]: remove,
 });
