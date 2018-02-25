@@ -4,7 +4,7 @@ import moment from 'moment';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { Calendar, LocaleConfig } from 'react-native-calendars';
+import { Calendar, CalendarList, Agenda, LocaleConfig } from 'react-native-calendars';
 
 /* Redux */
 import { connect } from 'react-redux';
@@ -65,7 +65,7 @@ class Calendars extends Component {
         'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado',
       ],
       dayNamesShort: [
-        'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Dom',
+        'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab',
       ],
     };
 

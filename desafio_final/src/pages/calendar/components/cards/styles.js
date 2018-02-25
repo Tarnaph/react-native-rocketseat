@@ -11,8 +11,6 @@ const styles = StyleSheet.create({
     marginTop: metrics.baseMargin / 2,
     borderRadius: metrics.baseRadius,
     padding: metrics.basePadding,
-    borderLeftWidth: 5,
-    borderLeftColor: colors.green,
   },
 
   left: {
