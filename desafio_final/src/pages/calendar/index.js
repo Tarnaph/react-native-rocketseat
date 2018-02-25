@@ -59,6 +59,9 @@ class Calendar extends Component {
     </View>
   )
 
+  refreshOn = () => (
+    this.setState({ refreshing: true })
+  )
   /* Render duh! */
   render() {
     return (
@@ -79,22 +82,20 @@ class Calendar extends Component {
             />
           }
         >
-          { this.props.ux.loading
-            ? <ActivityIndicator size="small" color={colors.purpleDarker} style={styles.loading} />
-            : <FlatList
-              style={styles.list}
-              data={this.props.todo.list}
-              ListEmptyComponent={this.emptyMensagem}
-              keyExtractor={todo => todo.id}
-              renderItem={todo => (
-                <Cards
-                  todoId={todo.item.id}
-                  title={todo.item.title}
-                  description={todo.item.text}
-                  time={VMasker.toPattern(todo.item.time, '99:99')}
-                />)}
-            />
-          }
+          { this.props.ux.loading && <Text style={styles.loadingText}>Carregando ...</Text>}
+          <FlatList
+            style={styles.list}
+            data={this.props.todo.list}
+            ListEmptyComponent={this.emptyMensagem}
+            keyExtractor={todo => todo.id}
+            renderItem={todo => (
+              <Cards
+                todoId={todo.item.id}
+                title={todo.item.title}
+                description={todo.item.text}
+                time={VMasker.toPattern(todo.item.time, '99:99')}
+              />)}
+          />
         </ScrollView>
       </View>
     );

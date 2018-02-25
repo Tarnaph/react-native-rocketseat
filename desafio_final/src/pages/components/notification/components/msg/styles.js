@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-
+    marginLeft: metrics.tinyMargin,
     fontWeight: 'bold',
     fontSize: fonts.regular,
     color: colors.lighter,

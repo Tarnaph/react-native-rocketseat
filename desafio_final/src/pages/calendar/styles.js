@@ -39,12 +39,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  titleEmpty: {
+  loadingText: {
+    position: 'absolute',
+    alignSelf: 'center',
     color: colors.purpleDarker,
-    fontSize: fonts.small,
+    fontSize: fonts.smaller,
     fontWeight: 'bold',
   },
 
+  titleEmpty: {
+    color: colors.purpleDarker,
+    fontSize: fonts.smaller,
+    fontWeight: 'bold',
+  },
 
 });
 

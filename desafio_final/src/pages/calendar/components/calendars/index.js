@@ -22,10 +22,18 @@ class Calendars extends Component {
       token: PropTypes.string.isRequired,
     }).isRequired,
     calendar: PropTypes.shape({
-      date: PropTypes.string.isRequired,
+      date: PropTypes.string,
       marked: PropTypes.objectOf(PropTypes.shape),
-    }).isRequired,
+    }),
     todoGetDay: PropTypes.func.isRequired,
+  }
+
+  /* Default PropsTypes */
+  static defaultProps = {
+    calendar: PropTypes.shape({
+      date: null,
+      marked: [],
+    }),
   }
 
   /* Intial State */
