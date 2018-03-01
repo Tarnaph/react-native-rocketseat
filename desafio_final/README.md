@@ -14,6 +14,7 @@ Nesse desafio você irá construir um aplicativo de agenda, o usuário podera
 | **Calendar > Components** |  |  |  |  |  |  |
 | Adder | OK | OK | OK | OK | ------ | ------ |------ |
 | Calendars | OK | OK | OK | OK | ------ | ------ |------ |
+| MiniCalendar | OK | OK | OK | OK | ------ | ------ |------ |
 | Cards | OK | OK | OK | OK | ------ | ------ |------ |
 | (* ^ ^ * ‿)|  |  |  |  |  |  |
 | **Calendar > Components > Cards > Components** |  |  |  |  |  |  |

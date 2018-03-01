@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 /* Styles */
@@ -12,7 +12,7 @@ import styles from './styles';
 
 /* Const */
 const Msg = ({ error, msg }) => (
-  <TouchableOpacity
+  <View
     style={[styles.container,
       styles.show,
       error === true
@@ -25,7 +25,7 @@ const Msg = ({ error, msg }) => (
       color={colors.white}
     />
     <Text style={styles.title}>{msg}</Text>
-  </TouchableOpacity>
+  </View>
 );
 
 /* PropTypes */

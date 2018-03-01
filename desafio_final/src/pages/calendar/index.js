@@ -4,17 +4,19 @@ import VMasker from 'vanilla-masker';
 import PropTypes from 'prop-types';
 
 /* Presentational */
-import { View, Text, ScrollView, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
+import { View, Text, FlatList, ScrollView, RefreshControl } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 /* Components */
 import Cards from 'pages/calendar/components/cards';
 import MyCalendar from 'pages/calendar/components/calendars';
+import MiniCalendar from 'pages/calendar/components/miniCalendar';
 import Adder from 'pages/calendar/components/adder';
 
 /* Redux */
 import { connect } from 'react-redux';
 import TodoActions from 'redux/ducks/todo';
+import CalendarActions from 'redux/ducks/calendar';
 
 /* Styles */
 import { colors, fonts } from 'styles';
@@ -32,11 +34,13 @@ class Calendar extends Component {
     }).isRequired,
     calendar: PropTypes.shape({
       date: PropTypes.string.isRequired,
+      miniCalendar: PropTypes.bool.isRequired,
     }).isRequired,
     todo: PropTypes.shape({
       list: PropTypes.arrayOf(PropTypes.shape).isRequired,
     }).isRequired,
     todoGetDay: PropTypes.func.isRequired,
+    showMini: PropTypes.func.isRequired,
   }
 
   /* Initial State */
@@ -59,30 +63,37 @@ class Calendar extends Component {
     </View>
   )
 
-  refreshOn = () => (
-    this.setState({ refreshing: true })
+  /* Format Time */
+  formatTime = time => (
+    VMasker.toPattern(time, '99:99')
   )
+
   /* Render duh! */
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} >
         <Adder />
         <View style={styles.top}>
-          <MyCalendar />
+          { this.props.calendar.miniCalendar
+            ? <MiniCalendar />
+            : <MyCalendar />
+          }
         </View>
         <ScrollView
+          onScrollBeginDrag={this.props.showMini}
           style={styles.medium}
           refreshControl={
             <RefreshControl
               title="Atualizando"
-              color={colors.white}
+              colors={[colors.white, colors.green, colors.purple]}
+              tintColor={colors.green}
               progressBackgroundColor={colors.green}
               refreshing={this.state.refreshing}
               onRefresh={() => this.refreshTodo()}
             />
           }
         >
-          { this.props.ux.loading && <Text style={styles.loadingText}>Carregando ...</Text>}
+          { this.props.ux.loading && <Text style={styles.loadingText}>Atualizando ...</Text>}
           <FlatList
             style={styles.list}
             data={this.props.todo.list}
@@ -93,7 +104,7 @@ class Calendar extends Component {
                 todoId={todo.item.id}
                 title={todo.item.title}
                 description={todo.item.text}
-                time={VMasker.toPattern(todo.item.time, '99:99')}
+                time={this.formatTime(todo.item.time)}
               />)}
           />
         </ScrollView>
@@ -101,7 +112,6 @@ class Calendar extends Component {
     );
   }
 }
-
 
 /* Pega o global state para o props */
 const mapStateToProps = state => ({
@@ -116,6 +126,8 @@ const mapStateToProps = state => ({
 /* Pega func para o props */
 const mapDispatchToProps = dispatch => ({
   todoGetDay: (id, token, date) => dispatch(TodoActions.todoGetDay(id, token, date)),
+  showMini: () => dispatch(CalendarActions.calendarShowMini()),
+  hideMini: () => dispatch(CalendarActions.calendarHideMini()),
 });
 
 /* Connecta os dois, podendo ser null */
