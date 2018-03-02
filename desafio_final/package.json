@@ -8,10 +8,13 @@
   },
   "dependencies": {
     "apisauce": "^0.14.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint-import-resolver-babel-module": "^4.0.0",
     "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "16.0.0",
+    "react-dom": "^16.2.0",
     "react-native": "0.51.0",
     "react-native-calendars": "^1.17.0",
     "react-native-datepicker": "^1.6.0",
@@ -44,6 +47,12 @@
     "reactotron-react-native": "^1.14.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/__tests__/setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/__tests__/**/?(*.)(spec|test).js"
+    ]
   }
 }
