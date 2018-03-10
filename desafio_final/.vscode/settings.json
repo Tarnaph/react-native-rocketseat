@@ -1,0 +1,31 @@
+{ 
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "go",
+        "handlebars",
+        "html",
+        "jade",
+        "javascriptreact",
+        "json",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pub",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ],   
+    // "vscode_custom_css.imports": ["'/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/electron-browser/mystyles.css'"]
+}

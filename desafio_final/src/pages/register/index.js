@@ -16,7 +16,7 @@ import Notification from 'pages/components/notification';
 
 /* Redux */
 import { connect } from 'react-redux';
-import LoginActions from 'redux/ducks/login';
+import { LoginActions } from 'redux/ducks/login';
 
 /* Styles */
 import styles from './styles';

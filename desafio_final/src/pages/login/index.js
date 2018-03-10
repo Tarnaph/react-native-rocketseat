@@ -48,7 +48,7 @@ class Login extends Component {
 
   /* Antes de montar o component */
   componentWillMount() {
-    console.tron.log(this.props);
+    // console.tron.log(this.props);
   }
 
   /* Sempre que tiver update */

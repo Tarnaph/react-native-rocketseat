@@ -115,7 +115,6 @@ class Adder extends Component {
   }
 }
 
-
 /* Pega o global state para o props */
 const mapStateToProps = state => ({
   user: state.user,

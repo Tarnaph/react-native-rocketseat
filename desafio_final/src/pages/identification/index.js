@@ -21,7 +21,7 @@ import LoginActions from 'redux/ducks/login';
 /* Styles */
 import styles from './styles';
 
-class Identication extends Component {
+class Identification extends Component {
   /* Hide Header */
   static navigationOptions = { header: null }
 
@@ -108,4 +108,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 /* Connecta os dois, podendo ser null */
-export default connect(mapStateToProps, mapDispatchToProps)(Identication);
+export default connect(mapStateToProps, mapDispatchToProps)(Identification);
