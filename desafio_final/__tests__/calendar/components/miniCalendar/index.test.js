@@ -1,6 +1,7 @@
 /* Core */
 import React from 'react';
 import { shallow } from 'enzyme';
+import sinon from 'sinon';
 import configureStore from 'redux-mock-store';
 
 /* Presentational */
@@ -10,9 +11,8 @@ import MiniCalendar from '../../../../src/pages/calendar/components/miniCalendar
 
 /* Variaveis */
 const mockStore = configureStore([]);
-
-function todoGetDay() { }
-function hideMini() { }
+const todoGetDay = sinon.spy();
+const hideMini = sinon.spy();
 
 const initialState = {
   user: {

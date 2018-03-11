@@ -33,7 +33,7 @@ export const hideModal = state => ({ ...state, modal: false });
 export const request = state => ({ ...state });
 export const getByDay = state => ({ ...state });
 export const getByDaySuccess = (state, actions) => ({ ...state, list: actions.response.data });
-export const remove = (state) => ({...state});
+export const remove = state => ({ ...state });
 
 /* Reducers to Types */
 export const reducer = createReducer(INITIAL_STATE, {
