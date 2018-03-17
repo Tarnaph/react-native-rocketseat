@@ -55,7 +55,7 @@ class MiniCalendar extends Component {
       <View style={styles.container}>
 
         <View style={styles.containerCalendar}>
-          <TouchableOpacity style={styles.iconLeft} onPress={() => this.newDate(-1)}>
+          <TouchableOpacity id="addDate" style={styles.iconLeft} onPress={() => this.newDate(-1)}>
             <Icon name="angle-left" size={fonts.bigger} color={colors.white} />
           </TouchableOpacity>
 
@@ -66,7 +66,7 @@ class MiniCalendar extends Component {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity style={styles.iconRight} onPress={() => this.newDate(1)}>
+          <TouchableOpacity id="subDate" style={styles.iconRight} onPress={() => this.newDate(1)}>
             <Icon name="angle-right" size={fonts.bigger} color={colors.white} />
           </TouchableOpacity>
         </View>

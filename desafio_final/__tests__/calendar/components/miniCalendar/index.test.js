@@ -4,6 +4,9 @@ import { shallow } from 'enzyme';
 import sinon from 'sinon';
 import configureStore from 'redux-mock-store';
 
+/* Redux */
+import TodoActions from 'redux/ducks/todo';
+
 /* Presentational */
 import { Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -23,7 +26,7 @@ const initialState = {
     loading: false,
   },
   calendar: {
-    date: '',
+    date: '2018-10-12',
   },
   todo: {
     modal: false,
@@ -47,6 +50,22 @@ describe('Test Modal Adder', () => {
     expect(wrapper.dive().find(Text)).toHaveLength(1);
     expect(wrapper.dive().find(Icon)).toHaveLength(3);
     expect(wrapper.dive().find(TouchableOpacity)).toHaveLength(3);
+  });
+
+  it('function date br is ok', () => {
+    const wrapper = createWrapper();
+    wrapper.dive().instance().formatDateBR('');
+  });
+
+  it('function newDate is ok ', () => {
+    const wrapper = createWrapper();    
+    wrapper.dive().instance().newDate(0); 
+    expect(store.getActions()).toContainEqual(TodoActions.todoGetDay(initialState.user.id, initialState.user.token, initialState.calendar.date));
+  });
+
+  it('state ok', () => {
+    const wrapper = createWrapper();
+    expect(wrapper.dive().state()).toEqual(initialState.calendar.date);
   });
 
 });
