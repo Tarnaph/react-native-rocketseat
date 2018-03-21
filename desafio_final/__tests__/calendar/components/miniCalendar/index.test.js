@@ -65,7 +65,7 @@ describe('Test Modal Adder', () => {
 
   it('state ok', () => {
     const wrapper = createWrapper();
-    expect(wrapper.dive().state()).toEqual(initialState.calendar.date);
+    expect(wrapper.dive().state()).toEqual({toDay: initialState.calendar.date});
   });
 
 });
